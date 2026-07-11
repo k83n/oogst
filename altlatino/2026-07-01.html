@@ -5,185 +5,97 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alt.Latino — 1 juli 2026</title>
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Verdieping bij de Alt.Latino-aflevering van 1 juli 2026: per artiest de aanleiding en de besproken nummers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #12100d; --kaart: #1c1915; --rand: #2c2822;
-  --tekst: #ece5d8; --dim: #a89f8d; --accent: #e8b04b; --accent2: #d4713f;
-  --groen: #1db954; --apple: #fc5c76;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0; background: var(--bg); color: var(--tekst);
-  font-family: Inter, -apple-system, "Helvetica Neue", sans-serif;
-  line-height: 1.55; -webkit-font-smoothing: antialiased;
-}
-header {
-  padding: 46px 20px 26px; text-align: center;
-  background:
-    radial-gradient(ellipse 90% 120% at 50% -20%, #3a2c14 0%, transparent 60%),
-    var(--bg);
-}
-header .boventitel {
-  color: var(--accent); font-size: 13px; letter-spacing: .25em;
-  text-transform: uppercase; font-weight: 600;
-}
-h1 {
-  font-family: Fraunces, Georgia, serif; font-weight: 700;
-  font-size: clamp(30px, 7vw, 48px); margin: 8px 0 6px; line-height: 1.06;
-}
-header .datum { color: var(--dim); font-size: 14px; }
-header .intro {
-  color: var(--tekst); max-width: 600px; margin: 18px auto 0; font-size: 15.5px;
-  opacity: .92;
-}
-.spotify-knop {
-  display: inline-flex; align-items: center; gap: 8px; margin-top: 22px;
-  background: var(--groen); color: #04150a; text-decoration: none;
-  font-weight: 600; font-size: 15px; padding: 11px 22px; border-radius: 999px;
-}
-.spotify-knop small { font-weight: 500; opacity: .8; }
-
-main { max-width: 680px; margin: 0 auto; padding: 12px 18px 60px; }
-
-.artiest {
-  background: var(--kaart); border: 1px solid var(--rand); border-radius: 16px;
-  padding: 20px 20px 16px; margin: 16px 0;
-}
-.artiest-kop { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.artiest h2 {
-  font-family: Fraunces, Georgia, serif; font-weight: 600;
-  font-size: 24px; margin: 0; line-height: 1.1;
-}
-.pill {
-  font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase;
-  font-weight: 600; color: var(--accent2); border: 1px solid var(--accent2);
-  border-radius: 999px; padding: 3px 10px; white-space: nowrap;
-}
-.beschrijving { color: var(--dim); font-size: 14.5px; margin: 10px 0 14px; }
-.aanleiding { color: var(--tekst); font-size: 14.5px; margin: 0 0 12px; }
-.aanleiding b { color: var(--accent); font-weight: 600; }
-
-.apple {
-  display: inline-flex; align-items: center; gap: 6px; margin: 0 0 16px;
-  font-size: 13px; font-weight: 600; color: var(--apple); text-decoration: none;
-  border: 1px solid #45323a; border-radius: 999px; padding: 5px 13px;
-}
-.apple:hover { border-color: var(--apple); }
-
-.nummers { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rand); }
-.nummers li {
-  display: flex; align-items: center; gap: 12px;
-  padding: 11px 2px; border-bottom: 1px solid var(--rand);
-}
-.nummers li:last-child { border-bottom: none; }
-.noot { color: var(--groen); flex: none; font-size: 15px; }
-.titel { font-weight: 500; }
-.sub { color: var(--dim); font-size: 13px; }
-
-footer { text-align: center; color: var(--dim); font-size: 12.5px; padding: 0 20px 40px; }
-footer a { color: var(--dim); }
-a { color: var(--accent); }
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:46px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
 </style>
 </head>
 <body>
 <header>
-  <div class="boventitel">Alt.Latino · NPR Music</div>
-  <h1>Mon Laferte's captivating coda</h1>
-  <div class="datum">Aflevering 1 juli 2026 · met Felix Contreras &amp; Ana María Sayre</div>
+  <div class="boventitel">Alt.Latino</div>
+  <h1>Mon Laferte&#x27;s captivating coda</h1>
+  <div class="datum">Aflevering 1 juli 2026</div>
   <p class="intro">Een aflevering vol nieuwe Latijns-Amerikaanse muziek — van Chicano-soul uit Chicago en cumbia uit Austin tot Braziliaanse songwriters en de nieuwe plaat van Mon Laferte.</p>
   <a class="spotify-knop" href="https://open.spotify.com/playlist/15Z6rpndmAToR4jWLVd74e">▶ Open de playlist <small>in Spotify</small></a>
 </header>
-
 <main>
 
   <section class="artiest">
-    <div class="artiest-kop">
-      <h2>Sparklmami</h2>
-      <span class="pill">Debuutalbum uit</span>
-    </div>
+    <div class="artiest-kop"><h2>Sparklmami</h2><span class="pill">Debuutalbum uit</span></div>
     <p class="beschrijving">Artiest uit Chicago (geboren in Texas, opgegroeid in Chicago). Zong in de kerk, wat doorklinkt in haar jazzy Chicano-soul — geworteld in de Pilsen-buurt, met vleugjes Braziliaanse jazz.</p>
-    <p class="aanleiding">Aanleiding: haar <b>debuutalbum <i>In This Body</i></b> is uit.</p>
-    <a class="apple" href="https://music.apple.com/nl/album/in-this-body/1887972910">◎ Album op Apple Music →</a>
-    <ul class="nummers">
-      <li><span class="noot">♪</span> <span class="titel">No Te Vayas</span></li>
-      <li><span class="noot">♪</span> <span class="titel">Quisiera</span></li>
-    </ul>
+    <p class="aanleiding">Aanleiding: haar debuutalbum In This Body is uit.</p>
+    <a class="apple" href="https://music.apple.com/nl/album/in-this-body/1887972910?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">No Te Vayas</span></li><li><span class="noot">♪</span> <span class="titel">Quisiera</span></li></ul>
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop">
-      <h2>The Animeros</h2>
-      <span class="pill">Album komt in augustus</span>
-    </div>
-    <p class="beschrijving">Band uit Austin, Texas. Electric-guitar cumbia geworteld in de Peruaanse <i>chicha</i> — eindeloze, joyeuze grooves.</p>
-    <p class="aanleiding">Aanleiding: hun album <b><i>¡Qué Bárbaro!</i> komt in augustus</b>. Dit nummer is een remake van een Traffic Sound-track uit 1971.</p>
-    <a class="apple" href="https://music.apple.com/nl/album/6773447055">◎ Album op Apple Music →</a>
-    <ul class="nummers">
-      <li><span class="noot">♪</span> <span class="titel">Calmita</span> <span class="sub">— single</span></li>
-    </ul>
+    <div class="artiest-kop"><h2>The Animeros</h2><span class="pill">Album komt in augustus</span></div>
+    <p class="beschrijving">Band uit Austin, Texas. Electric-guitar cumbia geworteld in de Peruaanse chicha — eindeloze, joyeuze grooves.</p>
+    <p class="aanleiding">Aanleiding: hun album ¡Qué Bárbaro! komt in augustus; dit nummer is een remake van een Traffic Sound-track uit 1971.</p>
+    
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Calmita</span></li></ul>
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop">
-      <h2>Mon Laferte</h2>
-      <span class="pill">Nieuw album uit</span>
-    </div>
-    <p class="beschrijving">Chileens-Mexicaanse artiest, geroemd als veelzijdige "shape-shifter" die zichzelf per plaat — en zelfs binnen één nummer — opnieuw uitvindt.</p>
-    <p class="aanleiding">Aanleiding: haar nieuwe album <b><i>Femme Fatale Vol. 2</i></b> (een paar weken uit) — een heruitvinding en uitbreiding van <i>Femme Fatale</i>.</p>
-    <a class="apple" href="https://music.apple.com/nl/album/femme-fatale-vol-2/6771957515">◎ Album op Apple Music →</a>
-    <ul class="nummers">
-      <li><span class="noot">♪</span> <span class="titel">No Le Regales Tu Corazón</span> <span class="sub">— episch nummer van ~9 min</span></li>
-      <li><span class="noot">♪</span> <span class="titel">While I'll Keep Writing Songs for You</span> <span class="sub">— met St. Vincent</span></li>
-    </ul>
+    <div class="artiest-kop"><h2>Mon Laferte</h2><span class="pill">Nieuw album uit</span></div>
+    <p class="beschrijving">Chileens-Mexicaanse artiest, geroemd als veelzijdige &quot;shape-shifter&quot; die zichzelf per plaat — en zelfs binnen één nummer — opnieuw uitvindt.</p>
+    <p class="aanleiding">Aanleiding: haar nieuwe album Femme Fatale Vol. 2 (een paar weken uit), een heruitvinding van Femme Fatale.</p>
+    <a class="apple" href="https://music.apple.com/nl/album/femme-fatale-vol-2/6771957515?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">No Le Regales Tu Corazón</span></li><li><span class="noot">♪</span> <span class="titel">While I&#x27;ll Keep Writing Songs for You (met St. Vincent)</span></li></ul>
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop">
-      <h2>Iveth Luna</h2>
-      <span class="pill">Nieuwe EP</span>
-    </div>
-    <p class="beschrijving">Texaans-Mexicaanse christelijke artiest uit Mesquite (bij Dallas). Uit een familie van voorgangers; koos na een spirituele ervaring voor muzikale ministry — aanleiding voor een gesprek over Latin christelijke muziek.</p>
-    <p class="aanleiding">Aanleiding: haar nieuwe <b>EP</b> rond deze bilinguale single.</p>
-    <ul class="nummers">
-      <li><span class="noot">♪</span> <span class="titel">Making Ways</span> <span class="sub">— Abriendo Caminos</span></li>
-    </ul>
+    <div class="artiest-kop"><h2>Iveth Luna</h2><span class="pill">Nieuwe EP</span></div>
+    <p class="beschrijving">Texaans-Mexicaanse christelijke artiest uit Mesquite (bij Dallas). Uit een familie van voorgangers; koos na een spirituele ervaring voor muzikale ministry.</p>
+    <p class="aanleiding">Aanleiding: haar nieuwe EP rond deze bilinguale single.</p>
+    
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Making Ways (Abriendo Caminos)</span></li></ul>
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop">
-      <h2>Tijolo</h2>
-      <span class="pill">Nieuw album uit</span>
-    </div>
-    <p class="beschrijving">Braziliaanse singer-songwriter uit São Paulo. Ingetogen, "sweet" luistermuziek met subtiele invloeden (o.a. milonga), in de rijke Braziliaanse songwriter-traditie.</p>
-    <p class="aanleiding">Aanleiding: zijn nieuwe album <b><i>Y</i></b>.</p>
-    <a class="apple" href="https://music.apple.com/nl/album/6769550021">◎ Album op Apple Music →</a>
-    <ul class="nummers">
-      <li><span class="noot">♪</span> <span class="titel">Atrás do Sentir</span></li>
-      <li><span class="noot">♪</span> <span class="titel">Gosto do Sol</span></li>
-    </ul>
+    <div class="artiest-kop"><h2>Tijolo</h2><span class="pill">Nieuw album uit</span></div>
+    <p class="beschrijving">Braziliaanse singer-songwriter uit São Paulo. Ingetogen, &quot;sweet&quot; luistermuziek met subtiele invloeden (o.a. milonga), in de rijke Braziliaanse songwriter-traditie.</p>
+    <p class="aanleiding">Aanleiding: zijn nieuwe album Y.</p>
+    <a class="apple" href="https://music.apple.com/nl/album/y/6769550021?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Atrás do Sentir</span></li><li><span class="noot">♪</span> <span class="titel">Gosto do Sol</span></li></ul>
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop">
-      <h2>MOMO.</h2>
-      <span class="pill">Nieuw album uit</span>
-    </div>
+    <div class="artiest-kop"><h2>MOMO.</h2><span class="pill">Nieuw album uit</span></div>
     <p class="beschrijving">Braziliaans project. Het gedraaide nummer heeft bossanova-legende Marcos Valle als gast.</p>
-    <p class="aanleiding">Aanleiding: zijn nieuwe album <b><i>Tum Tum Tum</i></b>.</p>
-    <a class="apple" href="https://music.apple.com/nl/album/1892076337">◎ Album op Apple Music →</a>
-    <ul class="nummers">
-      <li><span class="noot">♪</span> <span class="titel">Morena</span> <span class="sub">— feat. Marcos Valle</span></li>
-    </ul>
+    <p class="aanleiding">Aanleiding: zijn nieuwe album Tum Tum Tum.</p>
+    <a class="apple" href="https://music.apple.com/nl/album/tum-tum-tum/1892076337?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Morena (feat. Marcos Valle)</span></li></ul>
   </section>
 
 </main>
-
-<footer>
-  Samengesteld uit de aflevering van <a href="https://pca.st/episode/a6b03f6e-1f92-4080-bd0e-99d68376b65f">Alt.Latino</a> · 9 nummers, 6 artiesten
-</footer>
+<footer>9 nummers · 6 artiesten</footer>
 </body>
 </html>
