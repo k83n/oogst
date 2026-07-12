@@ -29,5 +29,13 @@
     "type": "albums",
     "show": "Alt.Latino",
     "episode": "The best Latin music of 2026 (so far)"
+  },
+  {
+    "path": "npr-music/2026-07-10.html",
+    "slug": "npr-music",
+    "datum": "2026-07-10",
+    "type": "albums",
+    "show": "NPR Music",
+    "episode": "New Music Friday: The best albums out July 10"
   }
 ]
