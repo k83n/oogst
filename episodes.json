@@ -21,5 +21,13 @@
     "type": "albums",
     "show": "NPR Music",
     "episode": "The best albums of 2026 (so far)"
+  },
+  {
+    "path": "altlatino/2026-07-08.html",
+    "slug": "altlatino",
+    "datum": "2026-07-08",
+    "type": "albums",
+    "show": "Alt.Latino",
+    "episode": "The best Latin music of 2026 (so far)"
   }
 ]
