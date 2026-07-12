@@ -13,5 +13,13 @@
     "type": "albums",
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out June 19"
+  },
+  {
+    "path": "npr-music/2026-07-03.html",
+    "slug": "npr-music",
+    "datum": "2026-07-03",
+    "type": "albums",
+    "show": "NPR Music",
+    "episode": "The best albums of 2026 (so far)"
   }
 ]
