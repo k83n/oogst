@@ -27,56 +27,74 @@ a.kaart .pod { color:var(--accent); font-size:12.5px; letter-spacing:.12em; text
 a.kaart .badge { color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
 a.kaart h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:20px; margin:4px 0 2px; }
 a.kaart .datum { color:var(--dim); font-size:13.5px; }
+.filters { margin-top:20px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap; }
+.chip { background:none; cursor:pointer; color:var(--dim); font:600 12.5px Inter,sans-serif; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:5px 14px; }
+.chip:hover { color:var(--accent); border-color:var(--accent); }
+.chip.actief { color:var(--bg); background:var(--accent); border-color:var(--accent); }
 </style>
 </head>
 <body>
 <header>
   <div class="boventitel">Podcastgids</div>
-  <h1>Muziek uit mijn podcasts</h1>
-  <p>Elke oogst uit mijn muziekpodcasts als eigen post: de besproken albums en nummers, met verdieping per artiest.</p>
+  <h1>Tips uit mijn podcasts en artikelen</h1>
+  <p>Elke oogst als eigen post: wat er besproken en aangeraden werd, met verdieping per item.</p>
   <a class="rss" href="feed.xml">⚡ RSS</a>
+  
 </header>
 <main>
-  <a class="kaart" href="npr-music/2026-07-10.html">
+  <a class="kaart" href="npr-music/2026-07-10.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
     <h2>New Music Friday: The best albums out July 10</h2>
     <div class="datum">10 juli 2026</div>
   </a>
-  <a class="kaart" href="altlatino/2026-07-08.html">
+  <a class="kaart" href="altlatino/2026-07-08.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">◎ albums</span></div>
     <h2>The best Latin music of 2026 (so far)</h2>
     <div class="datum">8 juli 2026</div>
   </a>
-  <a class="kaart" href="npr-music/2026-07-03.html">
+  <a class="kaart" href="npr-music/2026-07-03.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
     <h2>The best albums of 2026 (so far)</h2>
     <div class="datum">3 juli 2026</div>
   </a>
-  <a class="kaart" href="altlatino/2026-07-01.html">
+  <a class="kaart" href="altlatino/2026-07-01.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
     <h2>Mon Laferte&#x27;s captivating coda</h2>
     <div class="datum">1 juli 2026</div>
   </a>
-  <a class="kaart" href="npr-music/2026-06-19.html">
+  <a class="kaart" href="npr-music/2026-06-19.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
     <h2>New Music Friday: The best albums out June 19</h2>
     <div class="datum">19 juni 2026</div>
   </a>
-  <a class="kaart" href="spin/2026-01-01.html">
+  <a class="kaart" href="spin/2026-01-01.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">SPIN</span><span class="badge">◎ albums</span></div>
     <h2>The 40 Best Albums From the Last 40 Years That You Probably Didn&#x27;t Hear (But Should&#x27;ve)</h2>
     <div class="datum">1 januari 2026</div>
   </a>
-  <a class="kaart" href="loud-and-quiet/2024-11-28.html">
+  <a class="kaart" href="loud-and-quiet/2024-11-28.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">Loud And Quiet</span><span class="badge">◎ albums</span></div>
     <h2>Albums of the Year 2024</h2>
     <div class="datum">28 november 2024</div>
   </a>
-  <a class="kaart" href="guardian/2023-12-26.html">
+  <a class="kaart" href="guardian/2023-12-26.html" data-domein="muziek">
     <div class="kaart-kop"><span class="pod">The Guardian</span><span class="badge">◎ albums</span></div>
     <h2>The 10 best jazz albums of 2023</h2>
     <div class="datum">26 december 2023</div>
   </a>
 </main>
+<script>
+document.querySelectorAll('.chip').forEach(function (chip) {
+  chip.addEventListener('click', function () {
+    document.querySelectorAll('.chip').forEach(function (c) {
+      c.classList.toggle('actief', c === chip);
+    });
+    var d = chip.dataset.domein;
+    document.querySelectorAll('a.kaart').forEach(function (k) {
+      k.style.display = (d === 'alles' || k.dataset.domein === d) ? '' : 'none';
+    });
+  });
+});
+</script>
 </body>
 </html>

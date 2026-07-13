@@ -5,7 +5,8 @@
     "datum": "2026-07-01",
     "type": "songs",
     "show": "Alt.Latino",
-    "episode": "Mon Laferte's captivating coda"
+    "episode": "Mon Laferte's captivating coda",
+    "domein": "muziek"
   },
   {
     "path": "npr-music/2026-06-19.html",
@@ -13,7 +14,8 @@
     "datum": "2026-06-19",
     "type": "albums",
     "show": "NPR Music",
-    "episode": "New Music Friday: The best albums out June 19"
+    "episode": "New Music Friday: The best albums out June 19",
+    "domein": "muziek"
   },
   {
     "path": "npr-music/2026-07-03.html",
@@ -21,7 +23,8 @@
     "datum": "2026-07-03",
     "type": "albums",
     "show": "NPR Music",
-    "episode": "The best albums of 2026 (so far)"
+    "episode": "The best albums of 2026 (so far)",
+    "domein": "muziek"
   },
   {
     "path": "altlatino/2026-07-08.html",
@@ -29,7 +32,8 @@
     "datum": "2026-07-08",
     "type": "albums",
     "show": "Alt.Latino",
-    "episode": "The best Latin music of 2026 (so far)"
+    "episode": "The best Latin music of 2026 (so far)",
+    "domein": "muziek"
   },
   {
     "path": "npr-music/2026-07-10.html",
@@ -37,7 +41,8 @@
     "datum": "2026-07-10",
     "type": "albums",
     "show": "NPR Music",
-    "episode": "New Music Friday: The best albums out July 10"
+    "episode": "New Music Friday: The best albums out July 10",
+    "domein": "muziek"
   },
   {
     "path": "spin/2026-01-01.html",
@@ -45,13 +50,15 @@
     "datum": "2026-01-01",
     "type": "albums",
     "show": "SPIN",
-    "episode": "The 40 Best Albums From the Last 40 Years That You Probably Didn't Hear (But Should've)"
+    "episode": "The 40 Best Albums From the Last 40 Years That You Probably Didn't Hear (But Should've)",
+    "domein": "muziek"
   },
   {
     "path": "guardian/2023-12-26.html",
     "slug": "guardian",
     "datum": "2023-12-26",
     "type": "albums",
+    "domein": "muziek",
     "show": "The Guardian",
     "episode": "The 10 best jazz albums of 2023"
   },
@@ -60,6 +67,7 @@
     "slug": "loud-and-quiet",
     "datum": "2024-11-28",
     "type": "albums",
+    "domein": "muziek",
     "show": "Loud And Quiet",
     "episode": "Albums of the Year 2024"
   }
