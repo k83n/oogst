@@ -46,5 +46,13 @@
     "type": "albums",
     "show": "SPIN",
     "episode": "The 40 Best Albums From the Last 40 Years That You Probably Didn't Hear (But Should've)"
+  },
+  {
+    "path": "guardian/2023-12-26.html",
+    "slug": "guardian",
+    "datum": "2023-12-26",
+    "type": "albums",
+    "show": "The Guardian",
+    "episode": "The 10 best jazz albums of 2023"
   }
 ]
