@@ -6,7 +6,8 @@
     "type": "songs",
     "show": "Alt.Latino",
     "episode": "Mon Laferte's captivating coda",
-    "domein": "muziek"
+    "domein": "muziek",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   },
   {
     "path": "npr-music/2026-06-19.html",
@@ -15,7 +16,8 @@
     "type": "albums",
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out June 19",
-    "domein": "muziek"
+    "domein": "muziek",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   },
   {
     "path": "npr-music/2026-07-03.html",
@@ -24,7 +26,8 @@
     "type": "albums",
     "show": "NPR Music",
     "episode": "The best albums of 2026 (so far)",
-    "domein": "muziek"
+    "domein": "muziek",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   },
   {
     "path": "altlatino/2026-07-08.html",
@@ -33,7 +36,8 @@
     "type": "albums",
     "show": "Alt.Latino",
     "episode": "The best Latin music of 2026 (so far)",
-    "domein": "muziek"
+    "domein": "muziek",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   },
   {
     "path": "npr-music/2026-07-10.html",
@@ -42,7 +46,8 @@
     "type": "albums",
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out July 10",
-    "domein": "muziek"
+    "domein": "muziek",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   },
   {
     "path": "spin/2026-01-01.html",
@@ -51,7 +56,8 @@
     "type": "albums",
     "show": "SPIN",
     "episode": "The 40 Best Albums From the Last 40 Years That You Probably Didn't Hear (But Should've)",
-    "domein": "muziek"
+    "domein": "muziek",
+    "beeld": "https://static.spinmagazine.com/files/2025/12/GettyImages-1362561389-e1767223100733.jpg"
   },
   {
     "path": "guardian/2023-12-26.html",
@@ -60,7 +66,8 @@
     "type": "albums",
     "domein": "muziek",
     "show": "The Guardian",
-    "episode": "The 10 best jazz albums of 2023"
+    "episode": "The 10 best jazz albums of 2023",
+    "beeld": "https://i.guim.co.uk/img/media/f1ccb2116a5750e7cf891d36d55a9bcae670b56d/0_0_5000_3000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctYWdlLTIwMjMucG5n&enable=upscale&s=5416ec9eff4d2dec233f0c3a4460379e"
   },
   {
     "path": "loud-and-quiet/2024-11-28.html",
@@ -69,7 +76,8 @@
     "type": "albums",
     "domein": "muziek",
     "show": "Loud And Quiet",
-    "episode": "Albums of the Year 2024"
+    "episode": "Albums of the Year 2024",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!o8vV!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb414724c-f438-4227-b90d-04f74521fc60_1440x951.gif"
   },
   {
     "path": "altlatino/2026-07-15.html",
@@ -78,7 +86,8 @@
     "type": "songs",
     "domein": "muziek",
     "show": "Alt.Latino",
-    "episode": "Country twang, Brazilian flow"
+    "episode": "Country twang, Brazilian flow",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   },
   {
     "path": "npr-music/2026-07-14.html",
@@ -87,7 +96,8 @@
     "type": "songs",
     "domein": "muziek",
     "show": "NPR Music",
-    "episode": "beabadoobee, The Rolling Stones, Four Tet, more"
+    "episode": "beabadoobee, The Rolling Stones, Four Tet, more",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   },
   {
     "path": "filmspotting/2026-07-17.html",
@@ -96,6 +106,7 @@
     "type": "kijktips",
     "domein": "film",
     "show": "Filmspotting",
-    "episode": "Top 5 Films of 2026 (So Far) | #1073"
+    "episode": "Top 5 Films of 2026 (So Far) | #1073",
+    "beeld": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d28227f8-56d8-46d9-b2c5-b3d3012db5ab/83c52568-54c6-438a-8751-b3d3012db5c3/image.jpg?t=1768501110&size=Large"
   }
 ]
