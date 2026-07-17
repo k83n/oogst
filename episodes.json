@@ -80,16 +80,6 @@
     "beeld": "https://substackcdn.com/image/fetch/$s_!o8vV!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb414724c-f438-4227-b90d-04f74521fc60_1440x951.gif"
   },
   {
-    "path": "altlatino/2026-07-15.html",
-    "slug": "altlatino",
-    "datum": "2026-07-15",
-    "type": "songs",
-    "domein": "muziek",
-    "show": "Alt.Latino",
-    "episode": "Country twang, Brazilian flow",
-    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
-  },
-  {
     "path": "npr-music/2026-07-14.html",
     "slug": "npr-music",
     "datum": "2026-07-14",
@@ -108,5 +98,15 @@
     "show": "Filmspotting",
     "episode": "Top 5 Films of 2026 (So Far) | #1073",
     "beeld": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d28227f8-56d8-46d9-b2c5-b3d3012db5ab/83c52568-54c6-438a-8751-b3d3012db5c3/image.jpg?t=1768501110&size=Large"
+  },
+  {
+    "path": "altlatino/2026-07-15.html",
+    "slug": "altlatino",
+    "datum": "2026-07-15",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "Alt.Latino",
+    "episode": "Country twang, Brazilian flow",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   }
 ]
