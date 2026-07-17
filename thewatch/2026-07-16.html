@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Watch — 16 juli 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">The Watch</div>
+  <h1>The Best Shows of the Year (So Far)</h1>
+  <div class="datum">Aflevering 16 juli 2026</div>
+  <p class="intro">Chris Ryan en Andy Greenwald maken de halfjaarbalans van het tv-jaar op. Hun top 5 blijkt vrijwel identiek — alleen op plek 2 wijken ze af (Industry vs. Beef) — en daaronder lopen de lijstjes uiteen, met één gezamenlijke afrader als toegift. Opvallend veel van deze titels heb je al gezien, dus dit is deels een vergelijk-je-oordeel-post.</p>
+  
+</header>
+<main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="pcorn" viewBox="0 0 24 24">
+  <circle cx="7.2" cy="7.4" r="3.1"/>
+  <circle cx="12" cy="5.6" r="3.4"/>
+  <circle cx="16.8" cy="7.4" r="3.1"/>
+  <path d="M4.6 10 L6.6 21.2 L17.4 21.2 L19.4 10 Z"/>
+  <path d="M9.4 10.2 L10.1 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+  <path d="M14.6 10.2 L13.9 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+</symbol></defs></svg>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/623/1559488.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Widow&#x27;s Bay</h2><div class="albumtitel">serie · seizoen 1 · 2026 · Apple TV+</div></div><span class="pill">Beider #1</span></div>
+    <p class="aanleiding">De onbetwiste nummer 1 van allebei. Voor de hosts is dit alles waar ze tv voor kijken: de wekelijkse collectieve euforie die aan The Pitt en The Bear deed denken, maar dan met nieuwe mensen en een nieuwe wereld. Ze roemen vooral hoe schepper Katie Dippold (Mike Schur-sitcomschool) en regisseur Hiro Murai samen een volledig doordachte visuele wereld bouwden — van production design tot kostuums — en noemen het esthetisch én schrijverstechnisch het hoogst gelegde niveau van het jaar.</p>
+    <p class="ontvangst">Vrijwel unaniem bejubeld: 98% op Rotten Tomatoes, geprezen om de tonale balans tussen horror en comedy, en zojuist beloond met 19 Emmy-nominaties (waaronder beste comedy); seizoen 2 is al besteld.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 5 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">5/5</span></div><p class="inschatting">Jij gaf seizoen 1 een ★5 — de hosts bevestigen vooral wat je al wist. Mooi om te horen wáárom het zo goed werkt.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S1 Completed · ★5)</p>
+    <a class="kijk" href="sequel://search/Widow%27s%20Bay">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.hollywoodreporter.com/tv/tv-reviews/widows-bay-review-matthew-rhys-apple-1236578528/">The Hollywood Reporter — review</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/621/1554643.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Beef</h2><div class="albumtitel">serie · seizoen 2 · 2026 · Netflix</div></div><span class="pill">Andy · #2</span></div>
+    <p class="aanleiding">Andy&#x27;s bewondering voor dit seizoen is alleen maar gegroeid: hij noemt hoe Lee Sung Jin het Netflix-model en de sterrenmachine (Oscar Isaac, Carey Mulligan, muziek van Finneas) inzet op elite-niveau, voor een koorddans van klucht en snijdend sociaal drama over hoe we via schermen leven. Bij Chris haalde het de top 5 nét niet, maar wel de top 10.</p>
+    <p class="ontvangst">Sterk ontvangen: critici noemen het een tweede seizoen dat de topreeks van seizoen 1 waarmaakt, met Isaac en Mulligan als &quot;tv&#x27;s volgende grote helhuwelijk&quot; — al vindt een deel het slot met de misdaadplot wat overladen.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Je kijkt hem al (S1 was een ★5 voor je) — Andy&#x27;s enthousiasme belooft dat het de moeite blijft tot het eind.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S1 ★5 · S2 Currently Broadcasting)</p>
+    <a class="kijk" href="sequel://search/Beef">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.hollywoodreporter.com/tv/tv-reviews/beef-season-2-review-oscar-isaac-carey-mulligan-netflix-1236565867/">The Hollywood Reporter — review</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/df/ed/10/dfed1030-5469-a0a7-d9e7-5dcb5caa8e6c/Industry_S4_S_KA_TT_3000x3000_300dpi_EN.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Industry</h2><div class="albumtitel">serie · seizoen 4 · 2026 · HBO Max</div></div><span class="pill">Chris #2 · Andy #7</span></div>
+    <p class="aanleiding">Voor Chris de serie die dit jaar de grootste risico&#x27;s nam: &quot;ze proberen áltijd iets, ze verdedigen nooit een 1-0-voorsprong&quot;. Hij rekent Industry inmiddels tot het beste van dit decennium en kijkt vol ongeloof terug op de reis van Yasmin en Harper sinds aflevering één. Andy zag naast ongelooflijke hoogtepunten ook dieptepunten en parkeerde hem daarom op 7.</p>
+    <p class="ontvangst">Met 96% op Rotten Tomatoes wordt dit alom als het sterkste seizoen tot nu toe gezien: een ambitieuze herstart na de verkoop van Pierpoint, met veel lof voor wat de makers met Harper en Eric doen. Seizoen 5 wordt het slot.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Jij zat er met ★4 precies tussen de twee hosts in (jouw S3 was de ★5) — Andy&#x27;s &quot;hoogtepunten én dieptepunten&quot; klinkt als jouw ervaring.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S4 Completed · ★4)</p>
+    <a class="kijk" href="sequel://search/Industry">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://variety.com/2026/tv/reviews/industry-season-4-review-hbo-1236624038/">Variety — review</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/622/1556438.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Star City</h2><div class="albumtitel">serie · seizoen 1 · 2026 · Apple TV+</div></div><span class="pill">Beider #3</span></div>
+    <p class="aanleiding">Bij allebei op 3, en het gesprek ging vooral over de finale: de keuze voor het emotioneel meeslepende einde boven wetenschappelijke logica (&quot;fuck logic, we&#x27;re going with our heart&quot;) vonden ze precies goed — wie klaagt dat een baanlancering niet klopt &quot;moet gras aanraken&quot;. Ze prijzen hoe de serie het innerlijk leven van de personages boven het geschiedenis-Wikipedia-model stelt, en willen allebei vurig een tweede seizoen over Anastasia, Sasha en Irina.</p>
+    <p class="ontvangst">Sterk ontvangen: een broeierige, paranoïde Sovjet-spiegel van For All Mankind die volgens critici prima op zichzelf staat — &quot;onberispelijk gespeeld en vol intrige&quot;, al vindt een enkeling de personages wat verstikt door de sombere toon.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Staat al op je To Watch-lijst, en dit is een flinke duw: het zit in de hoek van je ★5&#x27;s als Andor en Severance — prestige-genrewerk met karakter voorop.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S1 To Watch)</p>
+    <a class="kijk" href="sequel://search/Star%20City">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://variety.com/2026/tv/reviews/star-city-review-for-all-mankind-spinoff-1236761675/">Variety — review</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/606/1516776.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Pitt</h2><div class="albumtitel">serie · seizoen 2 · 2026 · HBO Max</div></div><span class="pill">Beider #4</span></div>
+    <p class="aanleiding">Op beide lijsten nummer 4 — &quot;gedaald door zijn eigen consistentie&quot;, aldus Chris, en dat is geen kritiek. Ze prijzen de wijze keuze om geen mass-casualty-event te herhalen maar gewoon één zware dag te tonen, over dokters die hun eigen medicijn nodig hebben; vooral de laatste afleveringen vonden ze buitengewoon.</p>
+    <p class="ontvangst">Nog beter ontvangen dan seizoen 1 (98% op Rotten Tomatoes): een bijna perfect medisch drama dat volgens critici zijn plek tussen de beste ziekenhuisseries ooit verstevigt.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Al gezien en met ★4 gewaardeerd — de hosts zaten er net iets euforischer in dan jij.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S2 Completed · ★4)</p>
+    <a class="kijk" href="sequel://search/The%20Pitt">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://editorial.rottentomatoes.com/article/the-pitt-season-2-first-reviews/">Rotten Tomatoes — first reviews S2</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/a0/4d/d0/a04dd09c-6a0e-4544-510c-e1c13ab3692c/KnightSevenKingdoms_S1_S_KA_TT_3000x3000_300dpi_EN.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>A Knight of the Seven Kingdoms</h2><div class="albumtitel">serie · seizoen 1 · 2026 · HBO Max</div></div><span class="pill">Beider #5</span></div>
+    <p class="aanleiding">Volgens Andy ondanks de Emmy-nominatie nog altijd onderschat — zeker afgezet tegen het huidige House of the Dragon-seizoen, dat volgens de hosts wankelt zodra het buiten zijn sjabloon treedt. Deze serie zette zich juist moeiteloos neer als eigen ding: &quot;hé man, het is gewoon een toernooi, chill&quot;. Voor het eerst sinds Game of Thrones werden ze weer verliefd op gloednieuwe personages.</p>
+    <p class="ontvangst">Positief ontvangen (94% op Rotten Tomatoes) en goed voor negen Emmy-nominaties, waaronder beste dramaserie; critici prijzen precies wat de hosts noemen — de kleinschaligheid en lichte toon als contrast met de grimmigheid van de andere Westeros-series.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 5 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">5/5</span></div><p class="inschatting">Jouw ★5 zegt genoeg — je zit hier op één lijn met de hosts (en iets boven de critici).</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S1 Completed · ★5)</p>
+    <a class="kijk" href="sequel://search/A%20Knight%20of%20the%20Seven%20Kingdoms">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://en.wikipedia.org/wiki/A_Knight_of_the_Seven_Kingdoms_(TV_series)">Wikipedia — ontvangst &amp; Emmy&#x27;s</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/629/1574642.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Bear</h2><div class="albumtitel">serie · seizoen 5 · 2026 · Disney+</div></div><span class="pill">Chris · #6</span></div>
+    <p class="aanleiding">Chris vond het slotseizoen een prachtig afscheid: de laatste twee afleveringen maken het begin cohesiever, de beeldtaal is geëvolueerd naar een stilte die contrasteert met de vroege hectiek, en Ebon Moss-Bachrach speelt zijn mooiste seizoen. Beiden vermoeden dat de tijd (en bingen als geheel) deze reeks milder zal beoordelen dan de week-tot-week-receptie deed.</p>
+    <p class="ontvangst">Critici zijn het daarmee eens: het slotseizoen — acht afleveringen over één etmaal richting één beslissende avondservice — wordt &quot;het beste dat The Bear in jaren was&quot; genoemd, een back-to-basics-einde dat de nalatenschap veiligstelt.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Je bent er nu in bezig en zit voorlopig op ★3 — de hosts en critici beloven dat vooral het einde loont. Doorzetten dus.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S5 Watching · voorlopig ★3)</p>
+    <a class="kijk" href="sequel://search/The%20Bear">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.indiewire.com/criticism/shows/the-bear-season-5-review-final-season-fx-hulu-1235202029/">IndieWire — review slotseizoen</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/621/1554073.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Dark Wizard</h2><div class="albumtitel">serie · seizoen 1 · 2026 · HBO Max</div></div><span class="pill">Chris #7 · Andy #8</span></div>
+    <p class="aanleiding">Het diepst besproken item van de aflevering: de vierdelige docuserie over klimmer/basejumper Dean Potter, van de makers van The Alpinist. De hosts raken niet uitgepraat over het onwaarschijnlijke archiefmateriaal, de spanning tussen Potters spirituele zelfbeeld en zijn publiciteitsdrang, het generatiecontrast met de nuchtere Alex Honnold, en één verpletterende sequentie op Chinese staatstelevisie die ze tot de scènes van het jaar rekenen.</p>
+    <p class="ontvangst">Zeer goed ontvangen: &quot;een masterclass documentair vertellen&quot;, knap gebalanceerd tussen Potters prestaties en zijn mentale worstelingen — al waarschuwen recensenten dat het door de intensiteit soms ongemakkelijk kijken is.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Nog niet op je lijst, maar dit zit precies in jouw docu-hoek: Fire of Love (★4), TraumaZone en Planet Earth III (★5). Natuur, obsessie en karakterdrama in één.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk" href="sequel://search/The%20Dark%20Wizard">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.outsideonline.com/culture/books-media/dean-potter-hbo-series-dark-wizard-review/">Outside — review</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/629/1573992.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Agency</h2><div class="albumtitel">serie · seizoen 2 · 2026 · SkyShowtime</div></div><span class="pill">Beider top-10</span></div>
+    <p class="aanleiding">Bij allebei in de staart van de top 10, met de kanttekening dat geen van beiden het seizoen al uit had. Chris noemt het tempo sterk verbeterd ten opzichte van seizoen 1 en ziet — net als bij Le Bureau — bijpersonages die hun eigen serie zouden kunnen dragen.</p>
+    <p class="ontvangst">Overwegend lovend: critici noemen het seizoen verslavender en strakker dan het eerste, met een Fassbender in topvorm; de bingedrop verving de wekelijkse release.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Hier ben jij juist de criticaster: jouw S2-oordeel (★3) lag onder je S1 (★4). De hosts en critici waren positiever — misschien wint het bij hen nog terrein omdat ze nog niet bij het slot waren.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S2 Completed · ★3)</p>
+    <a class="kijk" href="sequel://search/The%20Agency">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.indiewire.com/criticism/shows/the-agency-season-2-review-more-michael-fassbender-not-less-1235200778/">IndieWire — review S2</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/619/1548691.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Something Very Bad Is Going to Happen</h2><div class="albumtitel">serie · seizoen 1 · 2026 · Netflix</div></div><span class="pill">Chris · #10</span></div>
+    <p class="aanleiding">Chris&#x27; nummer 10: een Netflix-horrorserie over een vervloekte bruid, die hij een interessante tegenhanger van Widow&#x27;s Bay noemt — horror over een lange vertelvorm, een van de moeilijkste dingen die er zijn. Andy bewonderde de eerste aflevering (&quot;ze nailt het&quot;) maar haakte af: zonder komische verlichting was het hem te zwaar, met &quot;veel bloedende ogen&quot;.</p>
+    <p class="ontvangst">Goed ontvangen (85% op Rotten Tomatoes): sfeervolle psychologische horror met een sterke Camila Morrone, al vinden critici dat de serie te lang verbergt wat hij eigenlijk is.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Staat al op je To Watch-lijst. Pure, zware horror zonder humor is niet je veiligste serie-hoek — Andy&#x27;s afhaakmoment kon zomaar ook het jouwe zijn.</p></div>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Notion-database (S1 To Watch)</p>
+    <a class="kijk" href="sequel://search/Something%20Very%20Bad%20Is%20Going%20to%20Happen">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://variety.com/2026/tv/reviews/something-very-bad-is-going-to-happen-netflix-horror-2-1236699606/">Variety — review</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/629/1574176.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Sugar</h2><div class="albumtitel">serie · seizoen 2 · 2026 · Apple TV+</div></div><span class="pill">De afrader</span></div>
+    <p class="aanleiding">De grote afrader van de aflevering, met liefde gebracht: Andy wíl zo graag van deze LA-noir met Colin Farrell houden (prachtpakken, sterke castuitbreiding, een brutale yada-yada-opening die de alien-plot van S1 wegmoffelt), maar de serie blijft volgens hem cosplayen zonder knetterende dialogen — zijn eindoordeel is het Succession-citaat &quot;I love you, but you&#x27;re not serious people&quot;. Chris na één scène-analyse: &quot;I won&#x27;t be watching. Thank you for saving me some time.&quot;</p>
+    <p class="ontvangst">Opvallend: de reviews zijn milder dan de hosts — meerdere critici noemen S2 juist verfijnder dan S1, al erkennen ook zij dat het verhaal slordiger wordt naarmate het vordert en de sci-fi-premisse wringt.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 1 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">1/5</span></div><p class="inschatting">Je hebt seizoen 1 nooit gekeken en dit gesprek geeft geen reden daar verandering in te brengen — hooguit als curiosum voor de Farrell-fan.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk" href="sequel://search/Sugar">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://collider.com/sugar-season-2-review-colin-farrell-apple-tv/">Collider — review S2</a></p>
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/the-watch/792fcb40-f630-0133-9c6b-59d98c6b72b8/the-best-shows-of-the-year-so-far/341a014e-4f0c-4cd6-b415-11cc82373c83">The Watch — The Best Shows of the Year (So Far)</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li><li><a href="https://www.theringer.com/podcasts/the-watch">The Ringer — The Watch</a></li></ul>
+  </section>
+
+</main>
+<footer>11 titels · 11 series</footer>
+</body>
+</html>
