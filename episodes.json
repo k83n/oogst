@@ -70,5 +70,14 @@
     "domein": "muziek",
     "show": "Loud And Quiet",
     "episode": "Albums of the Year 2024"
+  },
+  {
+    "path": "altlatino/2026-07-15.html",
+    "slug": "altlatino",
+    "datum": "2026-07-15",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "Alt.Latino",
+    "episode": "Country twang, Brazilian flow"
   }
 ]
