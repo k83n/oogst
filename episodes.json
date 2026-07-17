@@ -88,5 +88,14 @@
     "domein": "muziek",
     "show": "NPR Music",
     "episode": "beabadoobee, The Rolling Stones, Four Tet, more"
+  },
+  {
+    "path": "filmspotting/2026-07-17.html",
+    "slug": "filmspotting",
+    "datum": "2026-07-17",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "Filmspotting",
+    "episode": "Top 5 Films of 2026 (So Far) | #1073"
   }
 ]
