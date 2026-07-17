@@ -79,5 +79,14 @@
     "domein": "muziek",
     "show": "Alt.Latino",
     "episode": "Country twang, Brazilian flow"
+  },
+  {
+    "path": "npr-music/2026-07-14.html",
+    "slug": "npr-music",
+    "datum": "2026-07-14",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "NPR Music",
+    "episode": "beabadoobee, The Rolling Stones, Four Tet, more"
   }
 ]
