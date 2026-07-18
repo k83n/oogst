@@ -36,6 +36,13 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .chip { background:none; cursor:pointer; color:var(--dim); font:600 12.5px Inter,sans-serif; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:5px 14px; }
 .chip:hover { color:var(--accent); border-color:var(--accent); }
 .chip.actief { color:var(--bg); background:var(--accent); border-color:var(--accent); }
+.terug { text-align:left; max-width:680px; margin:0 auto 14px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+.maand { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:30px 0 4px; letter-spacing:.04em; text-transform:uppercase; }
+.archief { text-align:center; color:var(--dim); font-size:13px; margin-top:40px; }
+.archief a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.archief a:hover { color:var(--accent); }
 </style>
 </head>
 <body>
@@ -48,123 +55,124 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
   <nav class="filters"><button class="chip actief" data-domein="alles">alles</button><button class="chip" data-domein="muziek">muziek</button><button class="chip" data-domein="film">film</button><button class="chip" data-domein="tv">tv</button><button class="chip" data-domein="games">games</button><button class="chip" data-domein="boeken">boeken</button></nav>
 </header>
 <main>
-  <a class="kaart" href="filmspotting/2026-07-17.html" data-domein="film">
-    <img class="kaart-beeld" src="https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d28227f8-56d8-46d9-b2c5-b3d3012db5ab/83c52568-54c6-438a-8751-b3d3012db5c3/image.jpg?t=1768501110&amp;size=Large" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Filmspotting</span><span class="badge">film</span></div>
-    <h2>Top 5 Films of 2026 (So Far) | #1073</h2>
-    <div class="datum">17 juli 2026</div>
-    </div>
-  </a>
-  <a class="kaart" href="npr-music/2026-07-17.html" data-domein="muziek">
+<h2 class="maand" id="m-2026-07" data-maand="2026-07">Juli 2026</h2>
+  <a class="kaart" href="npr-music/2026-07-17.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
     <h2>New Music Friday: The best albums out July 17</h2>
     <div class="datum">17 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="empire/2026-07-17.html" data-domein="film">
+  <a class="kaart" href="empire/2026-07-17.html" data-domein="film" data-maand="2026-07">
     <img class="kaart-beeld" src="https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&amp;h=1500&amp;w=1500&amp;s=6a762a9b020795352cb68f92dbc69062" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">The Empire Film Podcast</span><span class="badge">film</span></div>
     <h2>Do You See? (ft. Christopher Nolan)</h2>
     <div class="datum">17 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="thewatch/2026-07-16.html" data-domein="tv">
-    <img class="kaart-beeld" src="https://megaphone.imgix.net/podcasts/f78d6b50-7837-11ea-9c78-731a047fd120/image/e0a00a4163c6242d19c01404d5baf089.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Watch</span><span class="badge">tv</span></div>
-    <h2>The Best Shows of the Year (So Far)</h2>
-    <div class="datum">16 juli 2026</div>
-    </div>
-  </a>
-  <a class="kaart" href="altlatino/2026-07-15.html" data-domein="muziek">
-    <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
-    <h2>Country twang, Brazilian flow</h2>
-    <div class="datum">15 juli 2026</div>
-    </div>
-  </a>
-  <a class="kaart" href="de-videogame-show/2026-07-15.html" data-domein="games">
+  <a class="kaart" href="de-videogame-show/2026-07-15.html" data-domein="games" data-maand="2026-07">
     <img class="kaart-beeld" src="https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">De Videogame Show</span><span class="badge">games</span></div>
     <h2>#149 — Gigantisch overpowered</h2>
     <div class="datum">15 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="npr-music/2026-07-14.html" data-domein="muziek">
-    <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
-    <h2>beabadoobee, The Rolling Stones, Four Tet, more</h2>
-    <div class="datum">14 juli 2026</div>
-    </div>
-  </a>
-  <a class="kaart" href="npr-music/2026-07-10.html" data-domein="muziek">
-    <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
-    <h2>New Music Friday: The best albums out July 10</h2>
-    <div class="datum">10 juli 2026</div>
-    </div>
-  </a>
-  <a class="kaart" href="altlatino/2026-07-08.html" data-domein="muziek">
-    <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">◎ albums</span></div>
-    <h2>The best Latin music of 2026 (so far)</h2>
-    <div class="datum">8 juli 2026</div>
-    </div>
-  </a>
-  <a class="kaart" href="boeken-fm/2026-07-08.html" data-domein="boeken">
+  <a class="kaart" href="boeken-fm/2026-07-08.html" data-domein="boeken" data-maand="2026-07">
     <img class="kaart-beeld" src="https://www.omnycontent.com/d/playlist/61ee9ca4-a1b2-4660-9651-b2b70035edf5/e6e46e6b-430a-4c7a-8a8d-b30c0070083a/ae45be2f-1b95-406b-bc4e-b30c00700849/image.jpg?t=1769584892&amp;size=Large" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">Boeken FM</span><span class="badge">boeken</span></div>
     <h2>Joosts Franse college | Patrick Modiano — Huwelijksreis</h2>
     <div class="datum">8 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="loud-and-quiet/2026-07-08.html" data-domein="muziek">
+  <a class="kaart" href="loud-and-quiet/2026-07-08.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://substackcdn.com/feed/podcast/45221/s/163033/ed71c7896d4a88e0ee31e392c0833123.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
     <h2>Roundtable: Kelsey Lu, YHWH Nailgun, Madonna, albums of the year so far</h2>
     <div class="datum">8 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="npr-music/2026-07-03.html" data-domein="muziek">
-    <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
-    <h2>The best albums of 2026 (so far)</h2>
-    <div class="datum">3 juli 2026</div>
+  <a class="kaart" href="filmspotting/2026-07-17.html" data-domein="film" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d28227f8-56d8-46d9-b2c5-b3d3012db5ab/83c52568-54c6-438a-8751-b3d3012db5c3/image.jpg?t=1768501110&amp;size=Large" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">Filmspotting</span><span class="badge">film</span></div>
+    <h2>Top 5 Films of 2026 (So Far) | #1073</h2>
+    <div class="datum">17 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="altlatino/2026-07-01.html" data-domein="muziek">
+  <a class="kaart" href="thewatch/2026-07-16.html" data-domein="tv" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://megaphone.imgix.net/podcasts/f78d6b50-7837-11ea-9c78-731a047fd120/image/e0a00a4163c6242d19c01404d5baf089.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">The Watch</span><span class="badge">tv</span></div>
+    <h2>The Best Shows of the Year (So Far)</h2>
+    <div class="datum">16 juli 2026</div>
+    </div>
+  </a>
+  <a class="kaart" href="altlatino/2026-07-15.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
-    <h2>Mon Laferte&#x27;s captivating coda</h2>
-    <div class="datum">1 juli 2026</div>
+    <h2>Country twang, Brazilian flow</h2>
+    <div class="datum">15 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="npr-music/2026-06-19.html" data-domein="muziek">
+  <a class="kaart" href="npr-music/2026-07-14.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
-    <h2>New Music Friday: The best albums out June 19</h2>
-    <div class="datum">19 juni 2026</div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
+    <h2>beabadoobee, The Rolling Stones, Four Tet, more</h2>
+    <div class="datum">14 juli 2026</div>
     </div>
   </a>
-  <a class="kaart" href="spin/2026-01-01.html" data-domein="muziek">
-    <img class="kaart-beeld" src="https://static.spinmagazine.com/files/2025/12/GettyImages-1362561389-e1767223100733.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">SPIN</span><span class="badge">◎ albums</span></div>
-    <h2>The 40 Best Albums From the Last 40 Years That You Probably Didn&#x27;t Hear (But Should&#x27;ve)</h2>
-    <div class="datum">1 januari 2026</div>
-    </div>
-  </a>
-  <a class="kaart" href="loud-and-quiet/2024-11-28.html" data-domein="muziek">
+  <a class="kaart" href="loud-and-quiet/2024-11-28.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!o8vV!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb414724c-f438-4227-b90d-04f74521fc60_1440x951.gif" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">Loud And Quiet</span><span class="badge">◎ albums</span></div>
     <h2>Albums of the Year 2024</h2>
     <div class="datum">28 november 2024</div>
     </div>
   </a>
-  <a class="kaart" href="guardian/2023-12-26.html" data-domein="muziek">
+  <a class="kaart" href="guardian/2023-12-26.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://i.guim.co.uk/img/media/f1ccb2116a5750e7cf891d36d55a9bcae670b56d/0_0_5000_3000/master/5000.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctYWdlLTIwMjMucG5n&amp;enable=upscale&amp;s=5416ec9eff4d2dec233f0c3a4460379e" alt="" loading="lazy"><div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">The Guardian</span><span class="badge">◎ albums</span></div>
     <h2>The 10 best jazz albums of 2023</h2>
     <div class="datum">26 december 2023</div>
+    </div>
+  </a>
+  <a class="kaart" href="npr-music/2026-07-10.html" data-domein="muziek" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <h2>New Music Friday: The best albums out July 10</h2>
+    <div class="datum">10 juli 2026</div>
+    </div>
+  </a>
+  <a class="kaart" href="altlatino/2026-07-08.html" data-domein="muziek" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">◎ albums</span></div>
+    <h2>The best Latin music of 2026 (so far)</h2>
+    <div class="datum">8 juli 2026</div>
+    </div>
+  </a>
+  <a class="kaart" href="npr-music/2026-07-03.html" data-domein="muziek" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <h2>The best albums of 2026 (so far)</h2>
+    <div class="datum">3 juli 2026</div>
+    </div>
+  </a>
+  <a class="kaart" href="npr-music/2026-06-19.html" data-domein="muziek" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <h2>New Music Friday: The best albums out June 19</h2>
+    <div class="datum">19 juni 2026</div>
+    </div>
+  </a>
+  <a class="kaart" href="spin/2026-01-01.html" data-domein="muziek" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://static.spinmagazine.com/files/2025/12/GettyImages-1362561389-e1767223100733.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">SPIN</span><span class="badge">◎ albums</span></div>
+    <h2>The 40 Best Albums From the Last 40 Years That You Probably Didn&#x27;t Hear (But Should&#x27;ve)</h2>
+    <div class="datum">1 januari 2026</div>
+    </div>
+  </a>
+  <a class="kaart" href="altlatino/2026-07-01.html" data-domein="muziek" data-maand="2026-07">
+    <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <h2>Mon Laferte&#x27;s captivating coda</h2>
+    <div class="datum">1 juli 2026</div>
     </div>
   </a>
 </main>
@@ -175,8 +183,14 @@ document.querySelectorAll('.chip').forEach(function (chip) {
       c.classList.toggle('actief', c === chip);
     });
     var d = chip.dataset.domein;
+    var zichtbaar = {};
     document.querySelectorAll('a.kaart').forEach(function (k) {
-      k.style.display = (d === 'alles' || k.dataset.domein.split(' ').indexOf(d) !== -1) ? '' : 'none';
+      var toon = d === 'alles' || k.dataset.domein.split(' ').indexOf(d) !== -1;
+      k.style.display = toon ? '' : 'none';
+      if (toon) zichtbaar[k.dataset.maand] = true;
+    });
+    document.querySelectorAll('.maand').forEach(function (h) {
+      h.style.display = zichtbaar[h.dataset.maand] ? '' : 'none';
     });
   });
 });
