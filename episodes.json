@@ -158,5 +158,15 @@
     "show": "The Empire Film Podcast",
     "episode": "Do You See? (ft. Christopher Nolan)",
     "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
+  },
+  {
+    "path": "loud-and-quiet/2026-07-08.html",
+    "slug": "loud-and-quiet",
+    "datum": "2026-07-08",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "The Loud And Quiet Podcast",
+    "episode": "Roundtable: Kelsey Lu, YHWH Nailgun, Madonna, albums of the year so far",
+    "beeld": "https://substackcdn.com/feed/podcast/45221/s/163033/ed71c7896d4a88e0ee31e392c0833123.jpg"
   }
 ]
