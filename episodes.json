@@ -118,5 +118,15 @@
     "show": "Filmspotting",
     "episode": "Top 5 Films of 2026 (So Far) | #1073",
     "beeld": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d28227f8-56d8-46d9-b2c5-b3d3012db5ab/83c52568-54c6-438a-8751-b3d3012db5c3/image.jpg?t=1768501110&size=Large"
+  },
+  {
+    "path": "de-videogame-show/2026-07-15.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-07-15",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#149 — Gigantisch overpowered",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]

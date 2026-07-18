@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Videogame Show — 15 juli 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">De Videogame Show</div>
+  <h1>#149 — Gigantisch overpowered</h1>
+  <div class="datum">Aflevering 15 juli 2026</div>
+  <p class="intro">Maarten en Kees vieren bijna hun 150e aflevering met een kaasplankje aan games: Keez&#x27; grote aanrader Öoo, drie nieuwe canon-toevoegingen (Pentiment, Hades en Slay the Spire), de gameclub over Shadow of the Colossus, en nostalgie die wél (BioShock Infinite) en niet (Sonic) standhoudt.</p>
+  
+</header>
+<main>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2721890/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Öoo</h2><div class="albumtitel">2025 · Steam (€5) / Switch</div></div><span class="pill">De aanrader</span></div>
+    <p class="aanleiding">Keez&#x27; indie-parel van de week: een puzzle-platformer waarin je een blopje met bommetjes bent — springen kan niet, je lanceert jezelf door je eigen bommen te laten ontploffen. Pixel art à la Animal Well, scherm-voor-scherm design als oude Zelda-dungeons, en volgens Keez &#x27;gamedesign gedestilleerd tot zijn allerconcreetst&#x27;: elke pixel heeft een reden, en het ene eureka-moment volgt op het andere. Compact (2,5–3 uur), perfect op de Steam Deck, en een &#x27;dikke vette aanrader&#x27;.</p>
+    <p class="ontvangst">Op Steam &#x27;Overwhelmingly Positive&#x27; (99% van ruim 2000 reviews). PC Gamer noemde het &#x27;the cleverest puzzle game I played in 2025&#x27;, Kotaku &#x27;stunningly inventive&#x27;.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=%C3%96oo">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.pcgamer.com/games/puzzle/ooo-is-a-4-hour-platformer-about-solving-problems-with-bombs-and-its-the-cleverest-puzzle-game-i-played-in-2025/">PC Gamer</a> · <a href="https://kotaku.com/ooo-review-metroidvania-puzzle-platformer-nama-takahashi-2000616880">Kotaku</a> · <a href="https://store.steampowered.com/app/2721890/oo/">Steam</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1205520/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Pentiment</h2><div class="albumtitel">2022 · PC/Xbox/PS/Switch</div></div><span class="pill">Canon-toevoeging</span></div>
+    <p class="aanleiding">Kees&#x27; persoonlijke canon-keuze en een van zijn favoriete games ooit — &#x27;heeft mij aan het huilen gekregen&#x27;. Een soort Disco Elysium in een fictief 16e-eeuws dorp: je bent kunstenaar-in-opleiding Andreas Maler die manuscripten verlucht in een klooster. Geen voice-acting, maar lettertypes díe als stemmen werken; historisch waanzinnig goed uitgezocht en juist over de kleine menselijke verhalen. Traag en veel lezen — je moet in het tempo meegaan, zoals bij een boek — maar dan wacht er veel moois. Zo&#x27;n 15–20 uur.</p>
+    <p class="ontvangst">Metacritic 86. Alom geprezen als een van de bijzonderste narratieve games van 2022, van de Fallout New Vegas-director Josh Sawyer (Obsidian).</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Pentiment">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/pentiment/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Hades</h2><div class="albumtitel">2020 · Overal</div></div><span class="pill">Canon-toevoeging</span></div>
+    <p class="aanleiding">Werd met open deuren de canon in geschoven: &#x27;één van de beste spellen aller tijden&#x27; en volgens de heren dé game waar de show het meest over heeft gepraat — gameplay, voice-acting, verhaal én de horniness. Er is zelfs maar één luisteraarsrecensie over de podcast, en die gaat vooral over Hades.</p>
+    <p class="ontvangst">Metacritic 93; een van de best beoordeelde games van 2020 (Supergiant Games).</p>
+    <p class="notion-status aanwezig">✓ Staat al in mijn Sequel-lijst (To Play)</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Hades">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/hades/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Slay the Spire</h2><div class="albumtitel">2019 · Overal</div></div><span class="pill">Canon-toevoeging</span></div>
+    <p class="aanleiding">Maartens eeuwige rabbit hole — hij viel er de ochtend van de opname wéér in. &#x27;Het is gewoon zo goed: heb je weer een run, en weer een run.&#x27; Erbij in de canon dus. Er ligt zelfs een plan om een run te streamen waarin Maarten noob Kees door elke kaartkeuze heen praat.</p>
+    <p class="ontvangst">Metacritic 89; dé standaard binnen de deckbuilder-roguelikes.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Slay%20the%20Spire">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/slay-the-spire/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Shadow of the Colossus</h2><div class="albumtitel">2018 · PS4/PS5 (remake)</div></div><span class="pill">Gameclub</span></div>
+    <p class="aanleiding">De doorlopende gameclub: dit keer kolossen drie tot vijf. Beide heren lyrisch — &#x27;zo simpel, maar zo cinematisch en thrilling&#x27;, met Dark Souls-achtig animaties lezen bij de zwaard-kolos. Praktische tips: houd driehoek ingedrukt om in galop te blijven sturen én om al rennend op je paard te springen. Kanttekening: Kees liep op de PS5 Pro twee keer tegen een vastloper aan bij de vliegende vijfde kolos. Op 12 augustus de volgende vijf.</p>
+    <p class="ontvangst">De PS4-remake van Bluepoint (2018) scoorde Metacritic 93 — &#x27;a master class in how to remake a true classic&#x27;.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Shadow%20of%20the%20Colossus">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/shadow-of-the-colossus/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/8870/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>BioShock Infinite</h2><div class="albumtitel">2013 · PC/PS/Xbox</div></div><span class="pill">Terugspeeltip</span></div>
+    <p class="aanleiding">Maarten startte eindelijk de DLC (Burial at Sea, terug naar het Rapture van vóór de ramp) en was opnieuw verwonderd: &#x27;een van mijn top 10 games&#x27;. Zijn punt: remasters van dit soort tien-plus jaar oude games komen op moderne hardware in volle glorie binnen — hoge framerate, mooiere textures, de game blijft intact. Kees moet BioShock 1 nog altijd spelen en noemt dat zelf &#x27;een groot gat&#x27;.</p>
+    <p class="ontvangst">Metacritic 94 (pc) destijds; geldt nog steeds als hoogtepunt van de serie.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=BioShock%20Infinite">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/bioshock-infinite/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Detroit: Become Human</h2><div class="albumtitel">2018 · PS4/PS5 (PS Plus) / PC</div></div></div>
+    <p class="aanleiding">Maarten betrapte zichzelf op zijn David Cage-vooroordeel (&#x27;eigenlijk kan die gast niet schrijven&#x27;) en kwam er al spelend op terug: de openingsmissie als onderhandelaar-androïde raakte hem direct, en de wereld zit vol slimme, smaakvolle keuzes. Soms wat lomp geschreven, maar ambitieus en visueel nog altijd indrukwekkend. Staat op PS Plus; de eerste missie is los als demo te proberen.</p>
+    <p class="ontvangst">Metacritic 78 — critici destijds verdeeld over het schrijfwerk, publiek aanzienlijk enthousiaster; Quantic Dreams meest succesvolle game.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Detroit%3A%20Become%20Human">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/detroit-become-human/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1281040/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Baby Steps</h2><div class="albumtitel">2025 · PC/PS5</div></div><span class="pill">Al in de canon</span></div>
+    <p class="aanleiding">Stond al in de show-canon, maar kreeg een nakomertje: wie de game heeft uitgespeeld moet de video kijken van de 28 minuten durende, niet-skipbare eindcutscene die je krijgt als je álle cutscenes skipt. &#x27;Meta op meta op meta&#x27; van makers Bennett Foddy en co — het verdiepte Maartens liefde voor de game alleen maar. Ook genoemd: de ijscoman die na genoeg verloren ijsjes gewoon stopt met geven.</p>
+    <p class="ontvangst">Metacritic 77 — bewust polariserend: geprezen om humor en ambitie, de frustratie-physics zijn niet voor iedereen.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Baby%20Steps">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/baby-steps/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2513280/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Sonic X Shadow Generations</h2><div class="albumtitel">2024 · PS Plus / overal</div></div><span class="pill">De afrader</span></div>
+    <p class="aanleiding">Maarten probeerde de remaster (net op PS Plus) uit jeugdsentiment — Sonic op de Mega Drive en Sonic Adventure op de Dreamcast waren heilig — en &#x27;vond er eigenlijk geen klap aan&#x27;: je rent vooral heel snel naar rechts en kunt nauwelijks reageren. Het leverde wel het beste gesprek van de aflevering op: is het verlies of gewin als je de schoonheid van je jeugdgames niet meer ziet? Conclusie: verrijking van je smaak gaat boven nostalgie.</p>
+    <p class="ontvangst">Metacritic 80 — als remaster juist goed ontvangen (op één na best beoordeelde 3D-Sonic); Maartens oordeel is dus vooral een nostalgie-, geen kwaliteitskwestie.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Sonic%20X%20Shadow%20Generations">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/sonic-x-shadow-generations/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Golden Axe</h2><div class="albumtitel">1989 · Arcade (Sega)</div></div><span class="pill">Nostalgie-hoek</span></div>
+    <p class="aanleiding">Kees&#x27; &#x27;game die ik graag zou willen spelen&#x27;: de arcadekast van een Italiaanse camping uit zijn jeugd. Chunky barbaren, high fantasy ten top, dwergjes die je geld stelen, en quasi-3D dat destijds indruk maakte — plus de GTA Vice City-arcadehal die de herinnering weer aanwakkerde. Geen echte tip, wel aanstekelijk verlangen.</p>
+    
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Golden%20Axe">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>TMNT: The Last Ronin</h2><div class="albumtitel">PC/consoles — geen releasedatum</div></div><span class="pill">Aangekondigd</span></div>
+    <p class="aanleiding">Kees leest de graphic novel (één overlevende turtle, in het zwart, met de wapens van alle vier zijn broers) en is &#x27;nóg enthousiaster&#x27; over de aangekondigde game: vier wapens betekent waarschijnlijk vier stances met elk een eigen vechtstijl. De comic is opvallend melancholisch en ontroerend voor een Turtles-verhaal.</p>
+    <p class="ontvangst">Nog niet uit. De game is in handen van PlatinumGames (Bayonetta, Nier: Automata) en Paramount Game Studios; eerste trailer op Summer Game Fest, juni 2026, nog geen releasedatum.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=TMNT%3A%20The%20Last%20Ronin">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://gameinformer.com/sgf-2026/2026/06/05/teenage-mutant-ninja-turtles-the-last-ronin-is-being-developed-by-platinum">Game Informer</a> · <a href="https://variety.com/2026/gaming/news/teenage-mutant-ninja-turtles-last-ronin-game-trailer-1236768243/">Variety</a></p>
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/de-videogame-show/7340f460-d0ce-013b-f469-0acc26574db2/149-gigantisch-overpowered-met-oa-sonic-generations-%C3%B6oo-xbox-detroit-become-human-shadow-of-the-colossus/1c226ba1-18db-432d-abcd-af98f1105dad">De Videogame Show — #149 — Gigantisch overpowered</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li><li>Show notes van de aflevering</li></ul>
+  </section>
+
+</main>
+<footer>11 games</footer>
+</body>
+</html>
