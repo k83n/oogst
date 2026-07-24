@@ -229,5 +229,16 @@
     "show": "Alt.Latino",
     "episode": "Spain wins (at music, too)",
     "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
+  },
+  {
+    "path": "de-videogame-show/2026-07-22.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-07-22",
+    "geoogst": "2026-07-24",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#150 - We zijn dankbaar",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]

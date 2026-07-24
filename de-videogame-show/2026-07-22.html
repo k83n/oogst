@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Videogame Show — 22 juli 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.extra-kop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:34px 0 2px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">De Videogame Show</div>
+  <h1>#150 - We zijn dankbaar</h1>
+  <div class="datum">Aflevering 22 juli 2026</div>
+  <p class="intro">In hun 150ste aflevering — op afstand opgenomen, maar dankbaar zonder reserves — praten de hosts van De Videogame Show over wat ze spelen: van de nieuwe Resident Evil en een Switch 2-exclusive tot janky RPG&#x27;s met charme, plus drie inducties in de VGS Canon.</p>
+  
+</header>
+<main>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/3764200/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Resident Evil Requiem (RE9)</h2><div class="albumtitel">2026 · PS5 · Xbox Series · PC · Switch 2</div></div><span class="pill">Aan het spelen</span></div>
+    <p class="aanleiding">De hosts zitten er middenin, maar hangen vooral aan het eeuwige RE-pijnpunt: de combat en het richten voelen wonky. Ze mopperen dat game-journalistiek die houterigheid altijd goedpraat als &#x27;spanning uit het DNA van de serie&#x27; (de tank controls van weleer), terwijl deel 4 juist bewees hoe lekker snappy het kán zijn.</p>
+    <p class="ontvangst">Bejubeld: OpenCritic 90 / Metacritic 88 — het best gerecenseerde spel van 2026 tot nu toe en de hoogst scorende originele mainline-RE sinds deel 4. Lof voor de mix van horror en actie, de scope en de fanservice; sommige critici noemen pacing-issues.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Resident%20Evil%20Requiem%20%28RE9%29">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://opencritic.com/game/18716/resident-evil-requiem">OpenCritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2721890/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Öoo</h2><div class="albumtitel">2025 · PC (Steam) · Switch</div></div><span class="pill">De aanrader</span></div>
+    <p class="aanleiding">Blijft tot en met het einde goed: strak, straightforward puzzeldesign zonder de vage &#x27;onderspanning&#x27; die veel indies opzoeken — gewoon een heerlijk korte ervaring. Ook ná het uitspelen raden ze &#x27;m iedereen aan. En spotgoedkoop: ~5 euro op Steam, 7-8 op Switch.</p>
+    <p class="ontvangst">Breed geprezen: OpenCritic &#x27;Mighty&#x27; (gemiddeld 90, 100% van de critici beveelt aan), op Steam 99% positief. Een ~4 uur durende bom-puzzel-platformer die de gebruikelijke power-up-progressie vervangt door pure speler-kennis.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=%C3%96oo">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.pcgamer.com/games/puzzle/ooo-is-a-4-hour-platformer-about-solving-problems-with-bombs-and-its-the-cleverest-puzzle-game-i-played-in-2025/">PC Gamer</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Splatoon Raiders</h2><div class="albumtitel">2026 · Switch 2</div></div><span class="pill">Switch 2-exclusive · net uit</span></div>
+    <p class="aanleiding">Bij Nintendo langs geweest om deze nieuwe Switch 2-exclusive te checken (uit 23 juli, scherpere prijs van 50 euro). Aanleiding voor een ode aan Splatoon als serie: een verrassend frisse, jonge wind binnen Nintendo — een third-person kleuren-shooter waarin je als squid/octopus levels onderspuit en wint wie het grootste oppervlak kleurt.</p>
+    <p class="ontvangst">Positief onthaald: Metacritic 80 / OpenCritic 83 (&#x27;Strong&#x27;, door 83% van de critici aanbevolen). Geprezen als een welkome single-player-spin-off; er is een uitschieter naar beneden (The Guardian gaf 4/10).</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Splatoon%20Raiders">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://opencritic.com/game/20454/splatoon-raiders">OpenCritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1297900/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Gothic 1 Remake</h2><div class="albumtitel">2026 · PC</div></div><span class="pill">Op het verlanglijstje</span></div>
+    <p class="aanleiding">Genoemd als wat een van de hosts nú zou willen spelen: de remake van de Duitse RPG uit begin jaren 2000 — janky, weird, awkward, maar juist in die meedogenloosheid weer vet. Een podcast (Side Story met Austin Walker) wakkerde de zin aan; het bruggetje naar Dragon&#x27;s Dogma en de charme van games met heldere, budget-gedreven keuzes.</p>
+    <p class="ontvangst">Gemengd tot positief: OpenCritic &#x27;Fair&#x27; (gemiddeld 73, 56% beveelt aan). IGN (7/10) noemt het &#x27;undeniably the best way to play this cult classic RPG&#x27;; anderen struikelen over gedateerd quest-design en houterige combat.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Gothic%201%20Remake">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://opencritic.com/game/20135/gothic-1-remake">OpenCritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/367500/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Dragon&#x27;s Dogma</h2><div class="albumtitel">2012 · PS3 · Xbox 360 · later PC/Switch (Dark Arisen)</div></div><span class="pill">Blijft fascineren</span></div>
+    <p class="aanleiding">Blijft fascineren: net als Gothic een beetje meedogenloos, weird, awkward en houterig — maar juist daardoor meeslepend, met een eigen charme. Precies dat begin-2000s/2010s &#x27;jank&#x27;-tijdvak waar de hosts zwak voor hebben.</p>
+    <p class="ontvangst">Bij release gemengd tot positief (Metacritic 75-78), maar uitgegroeid tot een geliefde cult-RPG — jarenlang als een van de meest onderschatte games genoemd, mede doordat het in 2012 tussen Skyrim en Kingdoms of Amalur verscheen.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Dragon%27s%20Dogma">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/game/dragons-dogma/">Metacritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/243000/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Omikron: The Nomad Soul</h2><div class="albumtitel">1999 · PC · Dreamcast</div></div><span class="pill">Curiosum · met David Bowie</span></div>
+    <p class="aanleiding">Een fascinatie-uitstapje: de allereerste game van Quantic Dream (nu bekend van Detroit), lang voordat ze &#x27;films met keuzes&#x27; maakten. Beroemd doordat David Bowie er niet alleen muziek voor schreef, maar ook twee personages speelde en meedacht over verhaal en mechanics — &#x27;I&#x27;ve written a game for the future.&#x27;</p>
+    <p class="ontvangst">Destijds gemengd ontvangen — een ambitieuze genre-mix die veel spelers verbaasde (IGN was met 8,5/10 positiever dan gemiddeld). De duurzaamste erfenis is de muziek: nummers uit de soundtrack verschenen in bewerkte vorm op Bowies album &#x27;Hours&#x27; (1999).</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Omikron%3A%20The%20Nomad%20Soul">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.nme.com/features/gaming-features/how-the-david-bowie-starring-the-nomad-soul-imagined-the-idea-of-an-open-world-3184433">NME</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1547000/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>GTA: San Andreas</h2><div class="albumtitel">2004 · PS2 · Xbox · PC (&amp; Definitive Edition)</div></div><span class="pill">VGS Canon</span></div>
+    <p class="aanleiding">Een van de canon-inducties. De mooiste GTA volgens de host: op het perfecte snijvlak waar Rockstar de engine eindelijk volledig in de vingers had (zoals Link to the Past en Final Fantasy VI vlak vóór hun 3D-sprong). Drie steden, een hele staat, en ongekend veel liefdevol detail in de nietige hoekjes — puur voor de sfeer gemaakt.</p>
+    <p class="ontvangst">Vrijwel universeel geprezen (Metacritic ~95) — een van de hoogst gewaardeerde games ooit en het commerciële en creatieve hoogtepunt van de PS2-Rockstar-era.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=GTA%3A%20San%20Andreas">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/552520/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Far Cry 5</h2><div class="albumtitel">2018 · PS4 · Xbox One · PC</div></div><span class="pill">VGS Canon</span></div>
+    <p class="aanleiding">Canon-inductie die &#x27;rent free&#x27; in het hoofd van de host woont — de enige Far Cry die echt bij hem klikte. Een fictief Amerika waar een familie onder de oudste broer een gewelddadige drugscult heeft gesticht. Mooie, sfeervolle omgeving, maar de échte ster is de soundtrack: elk deel van de map heeft een eigen &#x27;album&#x27;, via in-game radiostations.</p>
+    <p class="ontvangst">Positief onthaald (Metacritic ~78-81): lof voor de setting, de open wereld en juist die soundtrack, met kritiek op de wat losjes verbonden verhaalstructuur.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Far%20Cry%205">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Resident Evil Village — VR</h2><div class="albumtitel">2021 · PS VR2 (basisgame: PS · Xbox · PC)</div></div><span class="pill">VGS Canon</span></div>
+    <p class="aanleiding">De derde canon-toevoeging van deze aflevering: Resident Evil VIII (Village) in VR. Als je &#x27;s avonds maar een lampje aan laat, prima te doen — kort maar krachtig aangestipt als &#x27;super cool&#x27;.</p>
+    <p class="ontvangst">De basisgame werd geprezen (Metacritic ~84); de gratis VR-modus (PS VR2, 2023) gold als een van de indrukwekkendste showcases voor de headset.</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Resident%20Evil%20Village%20%E2%80%94%20VR">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/de-videogame-show/7340f460-d0ce-013b-f469-0acc26574db2/150-we-zijn-dankbaar-met-oa-splatoon-raiders-resident-evil-9-dragons-dogma-gta-san-andreas-far-cry-5/fb6d94ef-d9cf-410c-925d-575a2e013834">De Videogame Show — #150 - We zijn dankbaar</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li></ul>
+  </section>
+
+</main>
+<footer>9 games</footer>
+</body>
+</html>
