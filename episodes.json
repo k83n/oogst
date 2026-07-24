@@ -207,5 +207,16 @@
     "show": "NPR Music",
     "episode": "Sylvan Esso, Phoebe Bridgers, feeble little horse, more",
     "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
+  },
+  {
+    "path": "npr-music/2026-07-24.html",
+    "slug": "npr-music",
+    "datum": "2026-07-24",
+    "geoogst": "2026-07-24",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "NPR Music",
+    "episode": "New Music Friday: The best albums out July 24",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   }
 ]
