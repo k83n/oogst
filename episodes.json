@@ -218,5 +218,16 @@
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out July 24",
     "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
+  },
+  {
+    "path": "altlatino/2026-07-22.html",
+    "slug": "altlatino",
+    "datum": "2026-07-22",
+    "geoogst": "2026-07-24",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "Alt.Latino",
+    "episode": "Spain wins (at music, too)",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   }
 ]

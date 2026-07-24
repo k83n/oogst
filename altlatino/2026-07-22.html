@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alt.Latino — 22 juli 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.extra-kop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:34px 0 2px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">Alt.Latino</div>
+  <h1>Spain wins (at music, too)</h1>
+  <div class="datum">Aflevering 22 juli 2026</div>
+  <p class="intro">Naar aanleiding van Spanje&#x27;s WK-winst maken Felix Contreras en Ana Maria Sayer een liefdesverklaring aan de Spaanse muziekscene: van de elektronische producers in Madrid en de indierock in het noorden tot de organische jazz-folk van Barcelona.</p>
+  <a class="spotify-knop" href="https://open.spotify.com/playlist/0AuoVFlHLqZ38N9pRUNBZs">▶ Open de playlist <small>in Spotify</small></a>
+</header>
+<main>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/53/f3/fc/53f3fccd-2024-789e-8858-c9562cc1edfa/886449216321.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>C. Tangana</h2></div><span class="pill">Tiny Desk-klassieker</span></div>
+    <p class="beschrijving">Madrileense artiest/producer, spilfiguur van de nieuwe Spaanse golf; werkte mee aan Rosalía&#x27;s vroege werk en bracht met El Madrileño een ode aan tradities uit de hele Spaanstalige wereld.</p>
+    <p class="aanleiding">Aanleiding: Zijn befaamde home-Tiny Desk uit 2021, waarin hij &#x27;Me Maten&#x27; (met Antonio Carmona) debuteerde temidden van de sobremesa-sfeer..</p>
+    <a class="apple" href="https://music.apple.com/nl/album/el-madrile%C3%B1o-live-at-nprs-tiny-desk-single/1562779045?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Me Maten</span></li></ul>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Ralphie Choo</h2></div><span class="pill">Rusia IDK-collectief</span></div>
+    <p class="beschrijving">Een van de originators van het Madrileense producerscollectief Rusia IDK — regelvrije, elektronische pop die zonder schroom uit alle hoeken van de Spaanstalige muziek plukt.</p>
+    <p class="aanleiding">Aanleiding: Zijn nieuwe single &#x27;Baby Baby&#x27;..</p>
+    
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Baby Baby</span></li></ul>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Mora</h2></div><span class="pill">Bachata met urban-esthetiek</span></div>
+    <p class="beschrijving">Puerto Ricaanse artiest die opereert in de kruisbestuiving tussen Latijns-Amerika en de Madrid-scene.</p>
+    <p class="aanleiding">Aanleiding: &#x27;Droga&#x27;, zijn collab met C. Tangana van het album &#x27;Lo Mismo De Siempre&#x27; — een bachata met een urban randje die Ana een van haar favoriete nummers van het jaar noemt..</p>
+    
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Droga</span></li></ul>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3a/cb/6a/3acb6a12-6e48-454f-8438-a9fdc5ef22ff/5063549393380_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Bikôkô</h2></div><span class="pill">Alt-pop uit Barcelona</span></div>
+    <p class="beschrijving">Eigenzinnige alternatieve artiest met een flamenco-getinte ritmiek en veel Europese dance-invloed; thema&#x27;s van afgunst en mentale gezondheid.</p>
+    <p class="aanleiding">Aanleiding: Twee singles van haar project &#x27;A 1 IS BETTER THAN A 0&#x27;: &#x27;Força&#x27; (met AMORE &amp; Irenegarry) en &#x27;La Mano&#x27; (met Crystal Murray)..</p>
+    <a class="apple" href="https://music.apple.com/nl/album/a-1-is-better-than-a-0-ep/1760332465?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Força</span></li><li><span class="noot">♪</span> <span class="titel">La Mano</span></li></ul>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music/v4/9c/11/ff/9c11ffe6-b589-6cfa-a363-be96ef6c8ae6/825646442805.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Buika</h2></div><span class="pill">Flamenco-stem</span></div>
+    <p class="beschrijving">Vocaliste uit Palma de Mallorca met een diepe flamenco-stem en een brede muzikale horizon (o.a. een plaat met Chucho Valdés); een grote NPR-favoriet.</p>
+    <p class="aanleiding">Aanleiding: Haar Tiny Desk uit 2013 met &#x27;La Nave del Olvido&#x27;..</p>
+    <a class="apple" href="https://music.apple.com/nl/album/la-noche-m%C3%A1s-larga/640810955?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">La Nave del Olvido</span></li></ul>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Repión</h2></div><span class="pill">Noord-Spaanse indierock</span></div>
+    <p class="beschrijving">Rauwe indierock/punk-band uit het noorden van Spanje — erfgenamen van de punkgolf die na het einde van de Franco-dictatuur losbarstte.</p>
+    <p class="aanleiding">Aanleiding: &#x27;Barrio Somavilla&#x27;, dat Ana live zag op het Monkey Week-festival..</p>
+    
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Barrio Somavilla</span></li></ul>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/1c/81/681c81ed-1520-d148-58ab-db942697c3a8/8447352001088.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Lucía Fumero</h2></div><span class="pill">Barcelona jazz-folk</span></div>
+    <p class="beschrijving">Pianiste/zangeres uit de organische, lokale Barcelonese scene, waar muziek maken vooral uit vriendschap en samenspel ontstaat.</p>
+    <p class="aanleiding">Aanleiding: &#x27;La bamba&#x27; met Rita Payés, van haar dubbelalbum &#x27;Folklore I&#x27; (2024)..</p>
+    <a class="apple" href="https://music.apple.com/nl/album/folklore-i-feat-rita-pay%C3%A9s-magal%C3%AD-datzira-eva-fern%C3%A1ndez/1764005157?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">La bamba</span></li></ul>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8c/c5/39/8cc5394c-6235-99b3-18e5-7c17a57eba08/196872109009.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Maestro Espada</h2></div><span class="pill">Broerduo</span></div>
+    <p class="beschrijving">Duo van twee broers met een warme, akoestische klank en verrassende texturen (tot een Indiase tabla in de percussie aan toe); beholden to no one.</p>
+    <p class="aanleiding">Aanleiding: &#x27;La Despedida&#x27;, een van Ana&#x27;s favoriete nummers uit deze scene..</p>
+    <a class="apple" href="https://music.apple.com/nl/album/maestro-espada/1754925754?uo=4">◎ Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">La Despedida</span></li></ul>
+    
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/altlatino/76b8d7b0-3905-012e-1115-00163e1b201c/spain-wins-at-music-too/b9b247b2-6b06-4c24-afe3-b75755764ba9">Alt.Latino — Spain wins (at music, too)</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li></ul>
+  </section>
+
+</main>
+<footer>9 nummers · 8 artiesten</footer>
+</body>
+</html>
