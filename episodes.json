@@ -240,5 +240,16 @@
     "show": "De Videogame Show",
     "episode": "#150 - We zijn dankbaar",
     "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
+  },
+  {
+    "path": "the-big-picture/2026-07-28.html",
+    "slug": "the-big-picture",
+    "datum": "2026-07-28",
+    "geoogst": "2026-07-28",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "The Big Picture",
+    "episode": "Sex, Hell, and 10 Movies We Missed This Summer. Plus: Gregg Araki!",
+    "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/dae1f60a426a8e658f3a6321e43e4226.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]

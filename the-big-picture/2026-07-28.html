@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Big Picture — 28 juli 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.extra-kop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:34px 0 2px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">The Big Picture</div>
+  <h1>Sex, Hell, and 10 Movies We Missed This Summer. Plus: Gregg Araki!</h1>
+  <div class="datum">Aflevering 28 juli 2026</div>
+  <p class="intro">Op zijn verjaardag neemt Sean Fennessey samen met Amanda Dobbins tien films door die ze deze zomer gemist hadden — van een dure live-action Moana tot een dialoogloze wraakfilm met Jack White-needledrops. Daarna spreekt Sean regisseur Gregg Araki over &#x27;I Want Your Sex&#x27;, zijn eerste film in twaalf jaar.</p>
+  
+</header>
+<main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="pcorn" viewBox="0 0 24 24">
+  <circle cx="7.2" cy="7.4" r="3.1"/>
+  <circle cx="12" cy="5.6" r="3.4"/>
+  <circle cx="16.8" cy="7.4" r="3.1"/>
+  <path d="M4.6 10 L6.6 21.2 L17.4 21.2 L19.4 10 Z"/>
+  <path d="M9.4 10.2 L10.1 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+  <path d="M14.6 10.2 L13.9 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+</symbol></defs></svg>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/0/0/0/2/7/7/1000277-moana-0-600-0-900-crop.jpg?v=e60c5cd42d" alt="" loading="lazy"><div class="kop-tekst"><h2>Moana</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div><span class="pill">Live-action remake</span></div>
+    <p class="aanleiding">Amanda nam haar zoontje mee en vond het ronduit slecht: de CGI-oceaanwereld voelt als &#x27;uncanny valley&#x27;-cosplay en zodra Dwayne Johnson niet in beeld is zakt de energie helemaal weg. Ze noemt Disney&#x27;s live-actionstrategie een van de deprimerendste trends van de laatste tien jaar en had liever gezien dat het studio in nieuw werk had geïnvesteerd — zoals het wél doet met zijn animatiefilms.</p>
+    <p class="ontvangst">Groot verschil tussen pers en publiek: critici waren hard (34% op Rotten Tomatoes, de laagste score van alle Disney live-action-remakes), terwijl het publiek juist erg positief was (91%). Roger Ebert en Variety prijzen de visuele stijl en nieuwkomer Catherine Laga&#x27;aia; andere recensenten noemen Dwayne Johnsons Maui &#x27;catatonisch&#x27; en de film overbodig naast het origineel.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Koen gaf de animatiefilms The Mitchells vs. the Machines en Turning Red vijf en viereneenhalf sterren, maar een live-action Disney-remake met dit soort kritiek haalt die lat niet.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/moana/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Moana">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rottentomatoes.com/m/moana_2026">Rotten Tomatoes-critici- en publieksscore</a> · <a href="https://www.rogerebert.com/reviews/moana-dwayne-johnson-disney-remake-film-review-2026">Recensie Roger Ebert</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/1/9/6/8/0/8/1196808-minions-monsters-2026-0-600-0-900-crop.jpg?v=8ff282e996" alt="" loading="lazy"><div class="kop-tekst"><h2>Minions &amp; Monsters</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div></div>
+    <p class="aanleiding">Amanda is gecharmeerd: ze noemt de film een liefdesverklaring aan cinema, met verrassend rijke knipogen naar de stomme film en Buster Keaton middenin een Minions-plot over 1920s Hollywood. Sean blijft sceptisch — hij noemt het &#x27;Babylon met Minions&#x27; en vindt de slapstick-animatie op den duur meer inane dan insane, al erkent hij de ambitie.</p>
+    <p class="ontvangst">Verrassend sterk ontvangen: 89% op Rotten Tomatoes, de hoogste score ooit in de Despicable Me-franchise. Critici prijzen vooral de liefde voor klassiek Hollywood, al noemt niet iedereen het overtuigend — de AP noemde het een &#x27;navelstarend misfire&#x27;.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Een Minions-film past niet bij Koens smaakprofiel van doordachte animatie zoals Turning Red — leuk voor onderweg, geen prioriteit.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/minions-monsters-2026/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Minions%20%26%20Monsters">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rottentomatoes.com/m/minions_and_monsters/reviews">Rotten Tomatoes-score en critici-reacties</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/2/4/9/4/7/5/1249475-the-dink-0-600-0-900-crop.jpg?v=0f00f70cf0" alt="" loading="lazy"><div class="kop-tekst"><h2>The Dink</h2><div class="albumtitel">film · 2026 · Apple TV+</div></div></div>
+    <p class="aanleiding">Sean is geamuseerd door de pickleball-satire (zijn moeder speelt het zelf fanatiek) maar vindt de film ongelijk — hij had liever gezien dat de flirt tussen Jake Johnsons personage en Mary Steenburgen verder was doorgezet richting iets als The Graduate. Amanda vond vooral de dynamiek tussen de twee hoofdrolspelers het sterkste element.</p>
+    <p class="ontvangst">Gemengd: sommige critici (The Guardian, IndieWire) noemen het goedaardig, weinig veeleisend vermaak, andere (Hollywood Reporter, The Wrap) vinden het &#x27;vanille&#x27; en ronduit saai.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Een nette maar middelmatige sportcomedy — niet in de buurt van Koens vijf-sterrenfilms, wel een onschuldige avond tussendoor.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/the-dink/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Dink">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.hollywoodreporter.com/movies/movie-reviews/the-dink-review-jake-johnson-pickleball-apple-tv-1236650681/">Recensies Hollywood Reporter en The Wrap</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/3/5/3/4/0/8/1353408-gail-daughtry-and-the-celebrity-sex-pass-0-600-0-900-crop.jpg?v=cd9d330b88" alt="" loading="lazy"><div class="kop-tekst"><h2>Gail Daughtry and the Celebrity Sex Pass</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div></div>
+    <p class="aanleiding">Sean had een gemengd gevoel: leuke cast (Zoey Deutch, Jon Hamm, Ken Marino), af en toe echt grappig, maar het premise — een bruid gaat op zoek naar haar &#x27;celebrity sex pass&#x27; nadat haar verloofde ermee vreemdgaat — werkt volgens hem niet vaak genoeg. Hij vergelijkt de structuur met een Wizard of Oz-roadtrip vol steeds nieuwe bijfiguren.</p>
+    <p class="ontvangst">Beter ontvangen dan Sean liet doorschemeren: 81% op Rotten Tomatoes (&#x27;Certified Fresh&#x27;), met lof voor de cast en de onbeschaamde absurditeit van het premise.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Grove studio-comedy die buiten Koens gebruikelijke smaak valt — geen aanrader, ook al scoort hij bij critici verrassend hoog.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/gail-daughtry-and-the-celebrity-sex-pass/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Gail%20Daughtry%20and%20the%20Celebrity%20Sex%20Pass">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.metacritic.com/movie/gail-daughtry-and-the-celebrity-sex-pass/">Rotten Tomatoes-score</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/0/9/7/0/2/2/1097022-evil-dead-burn-0-600-0-900-crop.jpg?v=398ff82d46" alt="" loading="lazy"><div class="kop-tekst"><h2>Evil Dead Burn</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div></div>
+    <p class="aanleiding">Sean is fan van de Evil Dead-franchise maar valt hier af: hij vindt regisseur Sébastien Vaniček (bekend van de spinnenfilm Infested) de reeks steeds meedogenlozer en minder grappig maken. Hij noemt het een vreemde keuze binnen de franchise en geeft de film geen aanbeveling, ondanks knap gemaakte, zeer expliciete horrorsequenties.</p>
+    <p class="ontvangst">Critici zijn juist enthousiast: rond de 92% op Rotten Tomatoes, geprezen als de meedogenlooste en &#x27;evilste&#x27; Evil Dead tot nu toe, met lof voor Vaniček&#x27;s regie en de viscerale aanpak.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 1 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">1/5</span></div><p class="inschatting">Extreme, expliciete horror zit niet in Koens waarderingsgeschiedenis van vijf-sterrenfilms — dit is eerder iets om over te slaan.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/evil-dead-burn/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Evil%20Dead%20Burn">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://editorial.rottentomatoes.com/article/evil-dead-burn-first-reviews/">Rotten Tomatoes First Reviews</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/1/7/0/9/5/4/1170954-i-want-your-sex-0-600-0-900-crop.jpg?v=c13a0c57b7" alt="" loading="lazy"><div class="kop-tekst"><h2>I Want Your Sex</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div><span class="pill">Araki&#x27;s comeback</span></div>
+    <p class="aanleiding">In het interview vertelt Gregg Araki dat hij zichzelf verdeeld heeft over de twee hoofdpersonages: de naïeve, gevoelige jongeman van Cooper Hoffman en de onbeschaamde, dominante kunstenares van Olivia Wilde. Sean vindt Wilde de reden om te gaan — &#x27;fearless&#x27; en op een geweldige reeks — en waardeert de screwball-toon en de Sunset Boulevard-achtige framing, al is Araki&#x27;s humor typisch hit-or-miss.</p>
+    <p class="ontvangst">Sterk ontvangen: 88% op Rotten Tomatoes. De reacties zijn wel gepolariseerd — sommige critici noemen het een festivalhoogtepunt, anderen vinden Araki&#x27;s kink-benadering uit de tijd.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Als terugkeer van een auteur met een herkenbare, seksueel-vrijgevochten signatuur past dit bij Koens interesse in gedurfd arthouse-werk, al is expliciete screwball-comedy niet zijn kernsmaak.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/i-want-your-sex/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=I%20Want%20Your%20Sex">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rottentomatoes.com/m/i_want_your_sex">Rotten Tomatoes-score en recensies</a> · Interview met Gregg Araki in de aflevering zelf (eigen transcriptie)</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/3/4/6/0/5/7/1346057-her-private-hell-2026-0-600-0-900-crop.jpg?v=b28d97d826" alt="" loading="lazy"><div class="kop-tekst"><h2>Her Private Hell</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div><span class="pill">Refn&#x27;s comeback</span></div>
+    <p class="aanleiding">Amanda was zo weinig onder de indruk dat ze na Cannes zelfs vergat te vermelden dat ze de film had gezien. Ze vindt &#x27;m vergelijkbaar met Minions &amp; Monsters in de zin dat hij voortdurend naar andere stijlen wijst (Giallo, Lynch, Russ Meyer) zonder er echt iets van te maken — mooi vormgegeven, maar traag en &#x27;turgide&#x27;, ontstaan uit wat Refn zelf omschreef als het letterlijk opschrijven van een droom.</p>
+    <p class="ontvangst">Grotendeels negatief: recensenten noemen het een &#x27;neon-drenkte uithoudingstest&#x27; met een oninteressant plot, en zien het niet als een sterke terugkeer voor Refn.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Stijlvolle, trage arthouse-genrecinema kan Koen soms bekoren, maar de consensus (dun plot, weinig karakter) maakt dit een risicovollere gok.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/her-private-hell-2026/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Her%20Private%20Hell">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rogerebert.com/reviews/her-private-hell-nicolas-winding-refn-movie-review-2026">Recensie IndieWire en Roger Ebert</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/1/9/0/3/5/3/1190353-young-washington-0-600-0-900-crop.jpg?v=08eb32bafd" alt="" loading="lazy"><div class="kop-tekst"><h2>Young Washington</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div></div>
+    <p class="aanleiding">Amanda vond de Angel Studios-biopic over de jonge George Washington vooral saai: de veldslagen en het acteerwerk overtuigen haar niet, en ze proeft duidelijk conservatieve ondertonen in hoe het verhaal wordt verteld — zonder dat de film expliciet dogmatisch wordt. Ze concludeert dat de film weinig nieuws onthult buiten een vage moraal over regels en land.</p>
+    <p class="ontvangst">Kritisch verdeeld: 61% critici-score tegenover 94% publieksscore op Rotten Tomatoes. Sommige critici prijzen het patriottische, toegankelijke verhaal, anderen vinden het stijf en clichématig.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 1 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">1/5</span></div><p class="inschatting">Een patriottische Angel Studios-productie ligt ver van Koens smaakprofiel — geen aanrader.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/young-washington/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Young%20Washington">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.forbes.com/sites/timlammers/2026/07/03/young-washington-rotten-tomatoes-reviews-mixed-over-early-tale-of-george-washington/">Rotten Tomatoes-scores critici vs. publiek</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/7/3/6/5/1/73651-motor-city-0-600-0-900-crop.jpg?v=b458c62984" alt="" loading="lazy"><div class="kop-tekst"><h2>Motor City</h2><div class="albumtitel">film · 2025 · Bioscoop</div></div></div>
+    <p class="aanleiding">Sean is onder de indruk van de vorm: een bijna dialoogloze wraakfilm uit 1977 Detroit, met Alan Ritchson en Shailene Woodley, gedragen door slow-motion actie en opvallende needledrops (mede geproduceerd door Jack White&#x27;s Third Man Records). Hij noemt het afwisselend prachtig-schilderachtig en soms bijna ondraaglijk traag door het gebrek aan verhaal en dialoog, maar wel knap volgehouden.</p>
+    <p class="ontvangst">Verdeeld maar overwegend positief: 75% critici-score en 69% publieksscore op Rotten Tomatoes. Recensenten roemen de stijl en de soundtrack, al vinden sommigen het gebrek aan dialoog een obstakel.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Stijlvolle, muzikaal gedreven genrecinema — in dezelfde hoek als Sinners (Koens vijf sterren) qua sfeer, al minimalistischer in verhaal.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/motor-city/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Motor%20City">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rottentomatoes.com/m/motor_city">Rotten Tomatoes-scores</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/5/4/1/9/7/5/541975-voicemails-for-isabelle-0-600-0-900-crop.jpg?v=1a9f45496a" alt="" loading="lazy"><div class="kop-tekst"><h2>Voicemails for Isabelle</h2><div class="albumtitel">film · 2026 · Netflix</div></div></div>
+    <p class="aanleiding">Beide hosts zagen deze Netflix-rom-com over een vrouw die na de dood van haar zus voicemails naar haar oude nummer blijft sturen — die door een vreemde worden ontvangen. Sean vond het te voorspelbaar: hij zag elke plotwending al aankomen zodra het premise duidelijk werd, al vond hij het geheel &#x27;prima, gewoon prima&#x27;.</p>
+    <p class="ontvangst">Overwegend positief: critici prijzen vooral Zoey Deutchs spel, al noemen sommigen het premise — een rouwverwerking die uitmondt in romantiek met een vreemde die haar voicemails afluistert — nogal &#x27;creepy&#x27;.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Een lichte Netflix-rom-com die buiten Koens gebruikelijke arthouse-voorkeur valt.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/voicemails-for-isabelle/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Voicemails%20for%20Isabelle">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://deadline.com/2026/06/voicemails-for-isabelle-review-zoey-deutch-nick-robinson-1236960991/">Recensie Deadline en Slate</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/4/8/8/8/2/0/1488820-the-samurai-and-the-prisoner-0-600-0-900-crop.jpg?v=45ed2fe898" alt="" loading="lazy"><div class="kop-tekst"><h2>The Samurai and the Prisoner</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div><span class="pill">Verrassend goed</span></div>
+    <p class="aanleiding">Sean is positief verrast: Kiyoshi Kurosawa&#x27;s film wordt in vier bedrijven een soort &#x27;Columbo in feudaal Japan&#x27;, met de gevangene als Watson-figuur voor de belegerde heer die mysteries binnen zijn kasteel oplost. Hij prijst vooral de elegante, rustigere toon vergeleken met Kurosawa&#x27;s gebruikelijke psychologische horror, met één schokkend keerpunt in het derde bedrijf.</p>
+    <p class="ontvangst">Zeer goed ontvangen door internationale critici: omschreven als intelligent, meeslepend en vakkundig vormgegeven, met een sterke hoofdrol van Masahiro Motoki als de wijze, geduldige heer.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Precies het soort doordachte, internationaal geprezen arthouse-cinema dat past bij Koens hoogst gewaardeerde titels zoals Athena en Quo vadis, Aida?.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/the-samurai-and-the-prisoner/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Samurai%20and%20the%20Prisoner">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.hollywoodreporter.com/movies/movie-reviews/the-samurai-and-the-prisoner-review-kiyoshi-kurosawa-1236605158/">Recensies Hollywood Reporter en Screen Daily</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/4/2/8/0/6/8/1428068-sheep-in-the-box-0-600-0-900-crop.jpg?v=a0cc7b97fb" alt="" loading="lazy"><div class="kop-tekst"><h2>Sheep in the Box</h2><div class="albumtitel">film · 2026 · Bioscoop (zeer beperkt)</div></div></div>
+    <p class="aanleiding">Sean sloeg de Cannes-vertoning over op Amanda&#x27;s aanraden, maar zag de film uiteindelijk toch en noemt hem &#x27;zo goed als een fiasco&#x27; — een grote teleurstelling van een regisseur wiens werk hij normaal erg waardeert. De film volgt een rouwend ouderpaar dat hun overleden zoon vervangt door een AI-android.</p>
+    <p class="ontvangst">Gemengd: 56% op Rotten Tomatoes. Critici noemen het een zeldzame misser van Kore-eda — een ingetogen dramafilm die zijn kenmerkende warmte mist ondanks een sterk premise.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Kore-eda&#x27;s beste werk zit in Koens comfortzone van ingetogen drama&#x27;s, maar de consensus dat dit een zwakkere film is, temperen de verwachtingen.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/sheep-in-the-box/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Sheep%20in%20the%20Box">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://variety.com/2026/film/reviews/sheep-in-the-box-review-hirokazu-kore-eda-1236751690/">Recensie Variety en Rotten Tomatoes-consensus</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/1/6/9/2/1/0/1169210-late-fame-0-600-0-900-crop.jpg?v=6ef3c974be" alt="" loading="lazy"><div class="kop-tekst"><h2>Late Fame</h2><div class="albumtitel">film · 2025 · Bioscoop</div></div></div>
+    <p class="aanleiding">Amanda genoot vooral van Willem Dafoe op het scherm en van de Whit Stillman-achtige sfeer rond de groep jonge kunstenaars die een vergeten dichter herontdekt; ze was gemengd over de casting van Greta Lee maar uiteindelijk overtuigd. Sean vond het interessant maar niet volledig geslaagd — hij denkt dat de film zichzelf een net iets te sterke twist toedicht wanneer blijkt dat de bewonderende groep vooral uit poseurs bestaat.</p>
+    <p class="ontvangst">Overwegend positief, vooral voor de hoofdrolspelers: Willem Dafoes vertolking wordt geroemd als awards-waardig, en ook Greta Lee krijgt veel lof; de film zelf krijgt gemengdere reacties (waaronder een &#x27;C+&#x27;).</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Een New Yorkse arthouse-karakterstudie met een groot acteursduo — dicht bij het soort films dat Koen hoog waardeert.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/late-fame/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Late%20Fame">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.hollywoodreporter.com/movies/movie-reviews/late-fame-review-willem-dafoe-greta-lee-1236350399/">Recensie AwardsWatch en Hollywood Reporter</a></p>
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/the-big-picture/b45f7320-b909-0136-7b93-27f978dac4db/sex-hell-and-10-movies-we-missed-this-summer-plus-gregg-araki/cfa5d8f1-2336-4522-aebb-548b3a3e5b9e">The Big Picture — Sex, Hell, and 10 Movies We Missed This Summer. Plus: Gregg Araki!</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li><li>Titels en meningen gedestilleerd uit de aflevering zelf (eigen transcriptie)</li><li>Kritische ontvangst per titel geverifieerd via Rotten Tomatoes en filmrecensies (Variety, IndieWire, Hollywood Reporter, Roger Ebert e.a.)</li></ul>
+  </section>
+
+</main>
+<footer>13 titels · 13 films</footer>
+</body>
+</html>
