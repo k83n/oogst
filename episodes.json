@@ -262,5 +262,16 @@
     "show": "Movies Update (The New York Times)",
     "episode": "Movies Update: All “Odyssey,” all the time.",
     "beeld": "https://static01.nyt.com/email-images/newsletters/padded-logos/MoviesUpdate.png"
+  },
+  {
+    "path": "the-empire-film-podcast/2026-07-24.html",
+    "slug": "the-empire-film-podcast",
+    "datum": "2026-07-24",
+    "geoogst": "2026-07-28",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "The Empire Film Podcast",
+    "episode": "Dogg Day Afternoon (ft. Mary Steenburgen; and Tom Hiddleston)",
+    "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
   }
 ]
