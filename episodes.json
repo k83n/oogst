@@ -251,5 +251,16 @@
     "show": "The Big Picture",
     "episode": "Sex, Hell, and 10 Movies We Missed This Summer. Plus: Gregg Araki!",
     "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/dae1f60a426a8e658f3a6321e43e4226.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "movies-update-nyt/2026-07-24.html",
+    "slug": "movies-update-nyt",
+    "datum": "2026-07-24",
+    "geoogst": "2026-07-28",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "Movies Update (The New York Times)",
+    "episode": "Movies Update: All “Odyssey,” all the time.",
+    "beeld": "https://static01.nyt.com/email-images/newsletters/padded-logos/MoviesUpdate.png"
   }
 ]
