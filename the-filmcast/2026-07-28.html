@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Filmcast — 28 juli 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.extra-kop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:34px 0 2px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">The Filmcast</div>
+  <h1>Ep. 885 - Avatar Aang: The Last Airbender</h1>
+  <div class="datum">Aflevering 28 juli 2026</div>
+  <p class="intro">David Chen, Devindra Hardawar en Jeff Cannata doen hun wekelijkse ronde: een onnavolgbare Nicolas Winding Refn, een nieuwe anime-versie van Ghost in the Shell, een heistserie op Apple TV, een teleurstellende terugblik op Troy en een pickleballkomedie. De hoofdreview is Avatar Aang: The Last Airbender — voor Devindra en Jeff een lang gekoesterde wens die uitkomt, voor David een eerste kennismaking met de franchise.</p>
+  
+</header>
+<main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="pcorn" viewBox="0 0 24 24">
+  <circle cx="7.2" cy="7.4" r="3.1"/>
+  <circle cx="12" cy="5.6" r="3.4"/>
+  <circle cx="16.8" cy="7.4" r="3.1"/>
+  <path d="M4.6 10 L6.6 21.2 L17.4 21.2 L19.4 10 Z"/>
+  <path d="M9.4 10.2 L10.1 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+  <path d="M14.6 10.2 L13.9 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+</symbol></defs></svg>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/8/8/2/4/3/2/882432-avatar-aang-the-last-airbender-0-600-0-900-crop.jpg?v=7049f9a3e5" alt="" loading="lazy"><div class="kop-tekst"><h2>Avatar Aang: The Last Airbender</h2><div class="albumtitel">film · 2026 · Paramount+</div></div><span class="pill">Hoofdreview</span></div>
+    <p class="aanleiding">Devindra en Jeff zijn door het dolle heen: eindelijk zien we de personages uit de oorspronkelijke serie als volwassenen, in de periode tussen de originele serie en Korra. Beiden noemen de animatie het echte hoogtepunt — Devindra hoort er de invloed van moderne anime als Jujutsu Kaisen in, Jeff vindt het een theatrale ervaring die het niet verdient om alleen te streamen. Ook David, die niets van de franchise kende, zegt dat de animatie alleen al reden is om te kijken. Zijn kanttekening, die de anderen delen: het verhaal voelt gehaast, nieuwe personages worden geïntroduceerd en meteen weer losgelaten, en de emotionele reis van Aang bleef bij hem op &#x27;oké&#x27; steken. Het lukte de film niet om hem verliefd te maken op de franchise.</p>
+    <p class="ontvangst">89% op Rotten Tomatoes, de best beoordeelde Avatar-productie sinds de originele serie. Critici prijzen vrijwel unaniem de 2D-animatie; de klacht die terugkeert (o.a. bij The Hollywood Reporter) is precies wat de podcast ook noemt: een te gehaast verteld verhaal.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">De animatie is het argument: je gaf Spider-Man: Across the Spider-Verse en The Mitchells vs. The Machines allebei ★5, en dit wordt in diezelfde categorie van ambachtelijk hoogstandje genoemd. Het risico is dat je zonder franchisekennis instapt — precies de positie waarin David zat, en die viel bij hem net niet goed.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/avatar-aang-the-last-airbender/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Avatar%20Aang%3A%20The%20Last%20Airbender">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rottentomatoes.com/m/avatar_aang_the_last_airbender">Rotten Tomatoes</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/632/1582019.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Lucky</h2><div class="albumtitel">serie · seizoen 1 · 2026 · Apple TV</div></div><span class="pill">Jeffs tip</span></div>
+    <p class="aanleiding">Jeff is na twee afleveringen al verkocht. Anya Taylor-Joy speelt de dochter van een meesteroplichter (Timothy Olyphant), door hem opgevoed tot supercrimineel. De serie begint ná de geslaagde overval — en dan gaat het mis. Wat Jeff eraan pakt is vindingrijkheid als karaktertrek: een personage dat zich uit een onmogelijke situatie denkt op een manier waar je zelf nooit op was gekomen. Hij noemt de pilot briljant, Annette Bening geniet zichtbaar, en over Olyphants haar raakt hij niet uitgepraat.</p>
+    <p class="ontvangst">Verdeeld. The Daily Beast noemt het een van de beste series van het jaar en TheWrap spreekt van een &#x27;electrifying&#x27; thriller; The Hollywood Reporter vond de con juist onbevredigend, en meerdere critici vinden dat de eerste twee afleveringen te veel op actie leunen ten koste van de personages.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Strak gemaakte genre-series met een sterk hoofdpersonage zitten in je zoete zone — denk aan Slow Horses (★5), Dept. Q en Black Bird (beide ★4). Zeven afleveringen van drie kwartier, dus geen grote investering.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Lucky">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.thedailybeast.com/obsessed/lucky-anya-taylor-joys-apple-tv-series-is-one-of-the-years-best/">The Daily Beast</a> · <a href="https://www.hollywoodreporter.com/tv/tv-reviews/lucky-review-anya-taylor-joy-apple-tv-1236648186/">The Hollywood Reporter</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://static.tvmaze.com/uploads/images/medium_portrait/615/1539490.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Ghost in the Shell</h2><div class="albumtitel">serie · seizoen 1 · 2026 · Prime Video</div></div><span class="pill">Devindra&#x27;s tip</span></div>
+    <p class="aanleiding">Devindra legt uit dat dit een nieuwe anime-serie is die dichter bij de originele manga blijft dan de bekende films van Mamoru Oshii — losser, grappiger, met een Motoko Kusanagi die vooral herrie wil schoppen. Het grote verschil zit in de look: animatiestudio Science Saru (Scott Pilgrim Takes Off, Star Wars: Visions) heeft een eigen stijl waarin gedetailleerde scènes en cartooneske gezichten naast elkaar bestaan. De actie noemt hij fantastisch. Er stonden pas drie afleveringen online en hij wilde het liefst het hele seizoen in één keer wegkijken. Wie afgeknapt was op de CGI-serie op Netflix moet volgens hem hier zijn.</p>
+    <p class="ontvangst">Sterk ontvangen. Recensenten noemen het een vroege kandidaat voor anime van het jaar en prijzen de terugkeer naar de speelsere, expressievere stijl van de manga. De kanttekening die meermaals terugkomt: juist die trouw aan het bronmateriaal kan tegenvallen voor wie van Oshii&#x27;s filosofische, ingetogen films houdt.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Anime is een blinde vlek in je lijst — Star Wars: Visions en Love, Death &amp; Robots (beide ★4) zijn zo&#x27;n beetje de enige aanknopingspunten. Als je ergens instapt is dit wel het moment, want de lof gaat vooral over vormgeving en actie, niet over franchisekennis.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Ghost%20in%20the%20Shell">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://gizmodo.com/the-ghost-in-the-shell-science-saru-anime-premiere-review-anime-expo-prime-video-2000781580">Gizmodo</a> · <a href="https://variety.com/2026/tv/global/science-saru-the-ghost-in-the-shell-annecy-prime-video-1236789023/">Variety</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/2/4/9/4/7/5/1249475-the-dink-0-600-0-900-crop.jpg?v=0f00f70cf0" alt="" loading="lazy"><div class="kop-tekst"><h2>The Dink</h2><div class="albumtitel">film · 2026 · Apple TV</div></div><span class="pill">Jeffs tip</span></div>
+    <p class="aanleiding">Jeff had lol met deze pickleballkomedie: een bewuste terugkeer naar de brede sportkomedie van Adam Sandler en Will Ferrell, met Jake Johnson en een fenomenaal deadpan spelende Ed Harris. De eerste helft zit vol grappen, gastrollen (Ben Stiller, Patton Oswalt, Chris Parnell) en dolle pickleball-tegen-tennis-strijd. Daarna kantelt de film naar een May-December-romance tussen Johnson en Mary Steenburgen, en dat vindt Jeff zonde: de film vergeet halverwege dat hij een komedie is en wil ineens hartverwarmend zijn. Hij noemt hem alsnog &#x27;decent and worth watching&#x27;.</p>
+    <p class="ontvangst">Lauw tot verdeeld. The Hollywood Reporter: kijkbaar maar volstrekt vanille; TheWrap is harder — niet aanstootgevend slecht, wel saai en niet grappig. IndieWire is juist de uitzondering en prijst hoe oprecht de film zijn eigen ouderwetsheid omarmt.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Dit is precies het genre dat in jouw lijst structureel onderaan bungelt — The Bubble, Spin Me Round, I Want You Back en Marry Me kregen allemaal ★2. Zelfs de enthousiaste bespreker haakt halverwege af.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/the-dink/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Dink">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.hollywoodreporter.com/movies/movie-reviews/the-dink-review-jake-johnson-pickleball-apple-tv-1236650681/">The Hollywood Reporter</a> · <a href="https://www.indiewire.com/criticism/movies/the-dink-movie-review-pickleball-apple-tv-1235206293/">IndieWire</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/3/4/6/0/5/7/1346057-her-private-hell-2026-0-600-0-900-crop.jpg?v=b28d97d826" alt="" loading="lazy"><div class="kop-tekst"><h2>Her Private Hell</h2><div class="albumtitel">film · 2026 · Bioscoop</div></div><span class="pill">Davids tip</span></div>
+    <p class="aanleiding">David is een onvoorwaardelijke Nicolas Winding Refn-fan en zag zijn nieuwste. Zijn conclusie is eerlijk vernietigend: hij stelde de film nog voor als hoofdreview van de week en is blij dat dat niet doorging — &#x27;it would have been our private hell&#x27;. Twee verhaallijnen (een vrouw die zich tot haar vader probeert te verhouden; Charles Melton als naoorlogse veteraan op wraaktocht) die volgens hem nergens expliciet met elkaar verbonden worden. Personages gedragen zich niet als herkenbare mensen, van een drieaktestructuur is geen sprake. Tegelijk: visueel verbluffende beelden en een bombastische, ouderwetse score. Hij kan de film niemand aanraden, maar verwacht er over een half jaar tot vijf jaar op terug te komen en hem dan veel meer te waarderen.</p>
+    <p class="ontvangst">Gemengd tot negatief. De film ging in première op Cannes 2026 en draait sinds 24 juli in beperkte release. Critici noemen hem stijlvol maar hol en doelloos, met één recensent die spreekt van een van de naarste bioscoopervaringen in jaren; anderen verdedigen hem juist als pure kunst, een hypnotische neon-koortsdroom die meer om het artistieke proces geeft dan om het verhaal.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Je durft arthouse aan, maar stijl zonder houvast valt bij jou consequent verkeerd — Crimes of the Future en Dual kregen allebei ★2. Zelfs de fan die de film verdedigt zegt er expliciet bij dat hij hem aan niemand kan aanraden.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/her-private-hell-2026/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Her%20Private%20Hell">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.indiewire.com/criticism/movies/her-private-hell-review-nicolas-winding-refn-1235194806/">IndieWire</a> · <a href="https://bloody-disgusting.com/reviews/3960830/her-private-hell-review-nicolas-winding-refn-returns-with-a-hypnotic-inscrutable-neon-fever-dream/">Bloody Disgusting</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/sm/upload/s4/d9/77/ed/edMlij7nw2NMla32xskDnzMCFBM-0-600-0-900-crop.jpg?v=e7b13d27e0" alt="" loading="lazy"><div class="kop-tekst"><h2>Troy</h2><div class="albumtitel">film · 2004</div></div><span class="pill">Terugkijk</span></div>
+    <p class="aanleiding">Na Nolans The Odyssey wilde David weten hoe Wolfgang Petersens Troje-film zich houdt. Antwoord: slecht. Hij vindt hem in vrijwel elk opzicht — verhaal, dialoog — onderdoen voor The Odyssey, comprimeert tien jaar oorlog tot wat aanvoelt als twee weken, en heeft volgens hem het slechtste slot dat je je kunt wensen: de film stopt gewoon, zonder catharsis. Wat er wél inzit: de Trojaanse-paardscène, de enorme (weliswaar grotendeels digitale) veldslagen, Brad Pitt op zijn knapst, en Brian Cox die als Agamemnon alle ruimte krijgt. Over Pitts Britse accent is hij onverbiddelijk — &#x27;his Achilles heel&#x27;.</p>
+    <p class="ontvangst">54% op Rotten Tomatoes (221 recensies), met als consensus: een gespierd, vermakelijk spektakel dat emotionele resonantie mist. Commercieel was de film wel een succes.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 1 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">1/5</span></div><p class="inschatting">Vooral opgenomen als waarschuwing: de bespreking is bijna volledig afbrekend en er zit niets in dit soort spektakel dat aansluit bij wat je hoog waardeert. Alleen relevant als je na The Odyssey nieuwsgierig bent naar de vergelijking.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/troy/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Troy">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rottentomatoes.com/m/troy/">Rotten Tomatoes</a></p>
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/the-filmcast/9879f2c0-0cf8-012e-fb78-00163e1b201c/ep-885-avatar-aang-the-last-airbender/05782450-3d77-4d40-907c-478dbf28ac0d">The Filmcast — Ep. 885 - Avatar Aang: The Last Airbender</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li><li>Besprekingen gedestilleerd uit de aflevering zelf (eigen transcriptie); kritische ontvangst per titel apart via het web geverifieerd</li></ul>
+  </section>
+
+</main>
+<footer>6 titels · 4 films · 2 series</footer>
+</body>
+</html>
