@@ -273,5 +273,16 @@
     "show": "The Empire Film Podcast",
     "episode": "Dogg Day Afternoon (ft. Mary Steenburgen; and Tom Hiddleston)",
     "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
+  },
+  {
+    "path": "altlatino/2026-07-29.html",
+    "slug": "altlatino",
+    "datum": "2026-07-29",
+    "geoogst": "2026-07-30",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "Alt.Latino",
+    "episode": "Is Bill Evans techno?",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   }
 ]
