@@ -83,7 +83,7 @@
     "geoogst": "2026-07-13",
     "type": "albums",
     "domein": "muziek",
-    "show": "Loud And Quiet",
+    "show": "The Loud And Quiet Podcast",
     "episode": "Albums of the Year 2024",
     "beeld": "https://substackcdn.com/image/fetch/$s_!o8vV!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb414724c-f438-4227-b90d-04f74521fc60_1440x951.gif"
   },
@@ -295,5 +295,16 @@
     "show": "The Filmcast",
     "episode": "Ep. 885 - Avatar Aang: The Last Airbender",
     "beeld": "https://audioboom.com/i/38227180.jpg"
+  },
+  {
+    "path": "npr-music/2026-07-31.html",
+    "slug": "npr-music",
+    "datum": "2026-07-31",
+    "geoogst": "2026-07-31",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "NPR Music",
+    "episode": "New Music Friday: The best albums out July 31",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   }
 ]
