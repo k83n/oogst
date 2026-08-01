@@ -45,6 +45,10 @@ p { font-size:15px; }
 .disco dt { color:var(--dim); font-variant-numeric:tabular-nums; }
 .disco dd { margin:0; }
 .disco dd em { color:var(--dim); font-style:normal; font-size:13px; }
+.disco dd a, .kaart a.plaat { color:var(--tekst); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.disco dd a:hover, .kaart a.plaat:hover { color:var(--accent); text-decoration-color:var(--accent); }
+.disco dd a::after, .kaart a.plaat::after { content:"♪"; color:var(--accent); font-size:11px; vertical-align:2px; margin-left:5px; text-decoration:none; display:inline-block; }
+.geen-am { color:var(--dim); font-size:12.5px; margin-top:10px; }
 .route { counter-reset:stap; padding:0; list-style:none; margin:12px 0 0; }
 .route li { position:relative; padding:0 0 14px 34px; font-size:14.5px; }
 .route li::before { counter-increment:stap; content:counter(stap); position:absolute; left:0; top:1px; width:22px; height:22px; border-radius:50%; background:var(--grid); color:var(--accent); font-size:12px; font-weight:600; display:grid; place-items:center; }
@@ -82,13 +86,13 @@ footer a { color:var(--dim); }
   <p class="ondertitel">Beide op Burning Fik. Samen nog geen anderhalf uur.</p>
 
   <div class="kaart">
-    <h3>IJsland <span class="pill">2024 · #9</span></h3>
+    <h3><a class="plaat" href="https://music.apple.com/nl/album/ijsland/1745325385">IJsland</a> <span class="pill">2024 · #9</span></h3>
     <p class="meta">21 juni 2024</p>
     <p>Het debuut, en meteen het scherpst geformuleerd. Experimentele protesthiphop waarin Sefs gladde, gecontroleerde flow botst met Abels rauwe, directe Amsterdamse aanpak. Dat contrast ís het idee: de een cirkelt om een punt heen, de ander schreeuwt het.</p>
   </div>
 
   <div class="kaart">
-    <h3>IJsland 2 <span class="pill">2026 · #4</span></h3>
+    <h3><a class="plaat" href="https://music.apple.com/nl/album/ijsland-2/1876579984">IJsland 2</a> <span class="pill">2026 · #4</span></h3>
     <p class="meta">6 februari 2026</p>
     <p>Hoger in de lijst en breder van klank, met producties van Faisal die alle kanten op schieten. Dit is het album waar de tour omheen hangt, dus de kans is groot dat het zwaartepunt van de set hier ligt. Als je maar één plaat draait voor 3 oktober, draai deze.</p>
   </div>
@@ -97,13 +101,13 @@ footer a { color:var(--dim); }
   <p class="ondertitel">Yousef Gnaoui, 1984, Amsterdam. Zeven soloalbums, twee Edisons.</p>
   <p>Begon in de hiphopgroep Flinke Namen (2004–2009) en brak solo door met <em>Stuk</em> en <em>Me Nikes</em> in 2008. Wat hem interessant maakt is de bocht die hij daarna nam: van vlotte rap naar een van de meest uitgesproken politieke stemmen in Nederlandse muziek, zonder de lichtheid helemaal weg te gooien.</p>
   <dl class="disco">
-    <dt>2011</dt><dd>De leven</dd>
-    <dt>2015</dt><dd>In kleur</dd>
-    <dt>2016</dt><dd>Meer kleuren</dd>
-    <dt>2017</dt><dd>Excusez moi</dd>
-    <dt>2020</dt><dd>El Salvador</dd>
-    <dt>2023</dt><dd>Ik zou voor veel kunnen sterven maar niet voor een vlag <em>— Edison album van het jaar, 3voor12 Award</em></dd>
-    <dt>2025</dt><dd>lieve monsters <em>— Edison album van het jaar, 3FM Award</em></dd>
+    <dt>2011</dt><dd><a href="https://music.apple.com/nl/album/de-leven/1442411795">De leven</a></dd>
+    <dt>2015</dt><dd><a href="https://music.apple.com/nl/album/in-kleur/1442382652">In kleur</a></dd>
+    <dt>2016</dt><dd><a href="https://music.apple.com/nl/album/meer-kleuren/1442634852">Meer kleuren</a></dd>
+    <dt>2017</dt><dd><a href="https://music.apple.com/nl/album/excusez-moi/1442803492">Excusez moi</a></dd>
+    <dt>2020</dt><dd><a href="https://music.apple.com/nl/album/el-salvador/1503580991">El Salvador</a></dd>
+    <dt>2023</dt><dd><a href="https://music.apple.com/nl/album/ik-zou-voor-veel-kunnen-sterven-maar-niet-voor-een-vlag/1666596540">Ik zou voor veel kunnen sterven maar niet voor een vlag</a> <em>— Edison album van het jaar, 3voor12 Award</em></dd>
+    <dt>2025</dt><dd><a href="https://music.apple.com/nl/album/lieve-monsters/1818905492">lieve monsters</a> <em>— Edison album van het jaar, 3FM Award</em></dd>
   </dl>
   <p style="margin-top:14px"><strong>Waar te beginnen:</strong> <em>Ik zou voor veel kunnen sterven maar niet voor een vlag</em> (2023) is de directe voorloper van IJsland — daar zit ook <em>De machine</em> op, het nummer waar het mee begon. <em>lieve monsters</em> (2025) is juist het tegenovergestelde: naar binnen gekeerd, geleund op house en garage. Twee Edisons op rij, en toch twee heel verschillende platen.</p>
 
@@ -112,12 +116,13 @@ footer a { color:var(--dim); }
   <p>Hang Youth is hardcore punk met korte nummers en kortere titels, altijd maatschappijkritisch, regelmatig spelend op demonstraties. De band begon in 2015 met een stunt die je moeilijk kunt overtreffen: vier albums in één maand, met nummers van onder de minuut. Naast Abel op zang zijn dat Kaj Bos (gitaar), Ben Kraak (bas, piano, harmonica) en Nout Kooij (drums).</p>
   <dl class="disco">
     <dt>2015</dt><dd>HANG YOUTH · GELD IS NEP · MEDIA AANDACHT · DOE HET ZELF</dd>
-    <dt>2020</dt><dd>BOEL AAN DE HAND · ALLES MOET BETER</dd>
-    <dt>2021</dt><dd>HET K-WOORD</dd>
+    <dt>2020</dt><dd><a href="https://music.apple.com/nl/album/boel-aan-de-hand/1518809709">BOEL AAN DE HAND</a> · <a href="https://music.apple.com/nl/album/alles-moet-beter/1539901390">ALLES MOET BETER</a></dd>
+    <dt>2021</dt><dd><a href="https://music.apple.com/nl/album/het-k-woord/1567872611">HET K-WOORD</a></dd>
     <dt>2021</dt><dd>VEEL SPULLEN ZIJN REDELIJK AAN DE PRIJS <em>— 28 gecrowdsourcede remixes</em></dd>
-    <dt>2023</dt><dd>BEN JE BANG?</dd>
-    <dt>2024</dt><dd>ER IS HOOP*</dd>
+    <dt>2023</dt><dd><a href="https://music.apple.com/nl/album/ben-je-bang-ep/1670158320">BEN JE BANG?</a> <em>— EP</em></dd>
+    <dt>2024</dt><dd><a href="https://music.apple.com/nl/album/er-is-hoop/1761564222">ER IS HOOP*</a></dd>
   </dl>
+  <p class="geen-am">De vier platen uit 2015 en het remixalbum staan niet op Apple Music — die leven op Bandcamp. Hang Youths catalogus daar begint pas in 2020.</p>
   <p style="margin-top:14px"><strong>Waar te beginnen:</strong> <em>ER IS HOOP*</em> (2024) als je wilt horen waar Abel nu staat, <em>GELD IS NEP</em> (2015) als je het idee in zijn puurste vorm wilt — een album dat je in de tijd van dit zinnetje uit hebt.</p>
 
   <h2>Faisal Chatar</h2>
@@ -134,22 +139,22 @@ footer a { color:var(--dim); }
     <p>Hetzelfde duo als op de radio, maar dan als muziekproject.</p>
   </div>
   <div class="kaart">
-    <h3>Sef — Ik zou voor veel kunnen sterven… <span class="pill">productie</span></h3>
-    <p class="meta">2023</p>
-    <p>Faisal droeg productie-ideeën aan op Sefs Edison-album, ruim voordat IJsland een naam had. Van <em>IJsland 2</em> (2026) is hij de producer; of hij ook het debuut uit 2024 produceerde, spreken de bronnen elkaar over tegen.</p>
+    <h3>Werk met Sef <span class="pill">productie</span></h3>
+    <p class="meta">2023 · 2025</p>
+    <p>Faisal droeg productie-ideeën aan op <a class="plaat" href="https://music.apple.com/nl/album/ik-zou-voor-veel-kunnen-sterven-maar-niet-voor-een-vlag/1666596540">Sefs Edison-album</a> uit 2023, ruim voordat IJsland een naam had. En hij is bij Sefs solowerk gebleven: op <a class="plaat" href="https://music.apple.com/nl/album/voor-alles-bang-oeps-faisals-versies-feat-faisal-single/1832986464">voor alles bang / oeps (FAISAL's versies)</a> uit 2025 staat hij met naam en toenaam. Van <em>IJsland 2</em> (2026) is hij de producer; of hij ook het debuut uit 2024 produceerde, spreken de bronnen elkaar over tegen.</p>
   </div>
 
   <h2>Luisterroute</h2>
   <p class="ondertitel">Als je met een halve week voorbereiding binnen wilt lopen.</p>
   <ol class="route">
-    <li><strong>IJsland 2</strong> (2026) — het album waar de tour omheen hangt. Twee keer draaien.</li>
-    <li><strong>IJsland</strong> (2024) — om te horen waar het vandaan komt, en waarom het contrast tussen die twee stemmen werkt.</li>
-    <li><strong>Sef — Ik zou voor veel kunnen sterven maar niet voor een vlag</strong> (2023) — de directe voorloper, inclusief <em>De machine</em>.</li>
-    <li><strong>Hang Youth — ER IS HOOP*</strong> (2024) — Abels andere helft, en de reden dat hij op het podium klinkt zoals hij klinkt.</li>
+    <li><strong><a class="plaat" href="https://music.apple.com/nl/album/ijsland-2/1876579984">IJsland 2</a></strong> (2026) — het album waar de tour omheen hangt. Twee keer draaien.</li>
+    <li><strong><a class="plaat" href="https://music.apple.com/nl/album/ijsland/1745325385">IJsland</a></strong> (2024) — om te horen waar het vandaan komt, en waarom het contrast tussen die twee stemmen werkt.</li>
+    <li><strong><a class="plaat" href="https://music.apple.com/nl/album/ik-zou-voor-veel-kunnen-sterven-maar-niet-voor-een-vlag/1666596540">Sef — Ik zou voor veel kunnen sterven maar niet voor een vlag</a></strong> (2023) — de directe voorloper, inclusief <em>De machine</em>.</li>
+    <li><strong><a class="plaat" href="https://music.apple.com/nl/album/er-is-hoop/1761564222">Hang Youth — ER IS HOOP*</a></strong> (2024) — Abels andere helft, en de reden dat hij op het podium klinkt zoals hij klinkt.</li>
     <li><strong>Abattoir Anvers</strong> — een willekeurige aflevering, voor Faisals smaak. Optioneel, maar het verklaart veel.</li>
   </ol>
 
-  <p class="bron">Samengesteld op 1 augustus 2026 uit Paard, Wikipedia (IJsland, Sef, Hang Youth) en 3voor12. Support en speeltijden kunnen nog wijzigen — check Paard in de week zelf.</p>
+  <p class="bron">Samengesteld op 1 augustus 2026 uit Paard, Wikipedia (IJsland, Sef, Hang Youth) en 3voor12; albumlinks via de Apple Music-catalogus (NL). Support en speeltijden kunnen nog wijzigen — check Paard in de week zelf.</p>
 
 </main>
 <footer><a href="../">← terug naar de oogst</a></footer>
