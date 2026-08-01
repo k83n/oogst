@@ -58,6 +58,22 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .archief { text-align:center; color:var(--dim); font-size:13px; margin-top:40px; }
 .archief a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
 .archief a:hover { color:var(--accent); }
+/* Portaal: de ingangen naast de feed. Alleen de index vult {ingangen}. */
+.ingangen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 30px; }
+a.ingang { display:block; text-decoration:none; color:var(--tekst); background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:14px 15px; }
+a.ingang:hover { border-color:var(--accent); }
+a.ingang .teken { color:var(--accent); font-size:17px; line-height:1; }
+/* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
+a.ingang.breed { grid-column:1 / -1; }
+a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
+a.ingang p { color:var(--dim); font-size:13px; margin:0; }
+.sectiekop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 2px; letter-spacing:.04em; text-transform:uppercase; }
+/* Op het portaal staan álle kaarten in de pagina (zoeken en filteren moeten
+   over het hele jaar werken), maar in rust tonen we alleen de nieuwste —
+   plus wat nog niet geopend is; dat laatste haalt de klasse er in JS af.
+   Let op de selector: 'a.kaart' zet display:flex en wint qua specificiteit
+   van een kale '.later', dus die moet even specifiek zijn. */
+a.kaart.later { display:none; }
 </style>
 </head>
 <body>
@@ -169,6 +185,11 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 
   function pasToe() {
     var zichtbaar = {}, aantal = 0;
+    // In rust (geen zoekterm, geen domeinfilter) toont het portaal alleen de
+    // nieuwste kaarten; zodra er gezocht of gefilterd wordt doet het hele
+    // jaar mee. Op de archief- en showpagina's heeft geen kaart '.later',
+    // dus daar verandert er niets.
+    var rust = !term && domein === 'alles';
     document.querySelectorAll('a.kaart').forEach(function (k) {
       var okDomein = domein === 'alles'
         || k.dataset.domein.split(' ').indexOf(domein) !== -1;
@@ -179,8 +200,11 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
         raak = treffers(k);
         if (raak.length) okTerm = true;
       }
-      var toon = okDomein && okTerm;
-      k.style.display = toon ? '' : 'none';
+      var toon = okDomein && okTerm
+        && !(rust && k.classList.contains('later'));
+      // expliciet 'flex', niet '': bij een leegmaken zou de CSS-regel
+      // a.kaart.later een gevonden kaart alsnog verbergen
+      k.style.display = toon ? 'flex' : 'none';
       if (toon) { zichtbaar[k.dataset.maand] = true; aantal++; }
 
       var oud = k.querySelector('.raak');
@@ -225,6 +249,10 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
         if (gezien.indexOf(k.getAttribute('href')) === -1) {
           var pod = k.querySelector('.pod');
           if (pod) pod.classList.add('nieuw');
+          // Op het portaal: wat nog niet geopend is hoort zichtbaar te zijn,
+          // ook als het buiten de nieuwste paar valt. Anders verstopt de
+          // inkorting juist datgene waarvoor je kwam.
+          k.classList.remove('later');
         }
       });
       kaarten.forEach(function (k) {
