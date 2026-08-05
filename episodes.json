@@ -361,5 +361,15 @@
     "show": "Boeken FM",
     "episode": "Zomerverrassing | Elena Ferrante - De verborgen dochter",
     "beeld": "https://www.omnycontent.com/d/playlist/61ee9ca4-a1b2-4660-9651-b2b70035edf5/e6e46e6b-430a-4c7a-8a8d-b30c0070083a/ae45be2f-1b95-406b-bc4e-b30c00700849/image.jpg?t=1769584892&size=Large"
+  },
+  {
+    "path": "altlatino/2026-08-05.html",
+    "slug": "altlatino",
+    "datum": "2026-08-05",
+    "geoogst": "2026-08-05",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "Alt.Latino",
+    "episode": "Ana's summer playlist"
   }
 ]
