@@ -371,5 +371,15 @@
     "domein": "muziek",
     "show": "Alt.Latino",
     "episode": "Ana's summer playlist"
+  },
+  {
+    "path": "npr-music/2026-08-04.html",
+    "slug": "npr-music",
+    "datum": "2026-08-04",
+    "geoogst": "2026-08-05",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "NPR Music",
+    "episode": "Slayyyter's new single, King Princess covers Neil Young"
   }
 ]
