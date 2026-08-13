@@ -449,5 +449,16 @@
     "show": "TV Is Good",
     "episode": "Why is Ted Lasso back, exactly?",
     "beeld": "https://assets.pippa.io/shows/69f4aa1b9dcd58edd9e316e9/1778158492973-a6dbfd2d-6d9b-45a2-90a7-b65ddcbc944f.jpeg"
+  },
+  {
+    "path": "de-videogame-show/2026-08-12.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-08-12",
+    "geoogst": "2026-08-13",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#151 - Sad Robot Core [met Beast of Reincarnation, Pragmata, Splatoon Raiders, Resident Evil 9, Ocarina of Time]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
