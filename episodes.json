@@ -460,5 +460,16 @@
     "show": "De Videogame Show",
     "episode": "#151 - Sad Robot Core [met Beast of Reincarnation, Pragmata, Splatoon Raiders, Resident Evil 9, Ocarina of Time]",
     "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
+  },
+  {
+    "path": "nyt-movies-update/2026-08-14.html",
+    "slug": "nyt-movies-update",
+    "datum": "2026-08-14",
+    "geoogst": "2026-08-15",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "NYT Movies Update",
+    "episode": "Movies Update: In the suburbs: swimming pools, dinosaurs",
+    "beeld": "https://static01.nyt.com/email-images/newsletters/padded-logos/MoviesUpdate.png"
   }
 ]
