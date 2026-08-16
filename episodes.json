@@ -504,5 +504,16 @@
     "show": "Opgedoken",
     "episode": "Vijf platen uit het archief",
     "beeld": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5b/da/8d/5bda8d04-7f2f-4417-12a0-e039dd011152/886449800193.jpg/300x300bb.jpg"
+  },
+  {
+    "path": "nyt-book-review/2026-08-04.html",
+    "slug": "nyt-book-review",
+    "datum": "2026-08-04",
+    "geoogst": "2026-08-16",
+    "type": "leestips",
+    "domein": "boeken",
+    "show": "The New York Times Book Review",
+    "episode": "De 50 beste thrillers van de 21e eeuw — de top 10",
+    "beeld": "https://covers.openlibrary.org/b/id/12272568-L.jpg"
   }
 ]
