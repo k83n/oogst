@@ -515,5 +515,16 @@
     "show": "The New York Times Book Review",
     "episode": "De 50 beste thrillers van de 21e eeuw — de top 10",
     "beeld": "https://covers.openlibrary.org/b/id/12272568-L.jpg"
+  },
+  {
+    "path": "prestige-tv-podcast/2026-08-19.html",
+    "slug": "prestige-tv-podcast",
+    "datum": "2026-08-19",
+    "geoogst": "2026-08-20",
+    "type": "kijktips",
+    "domein": "tv",
+    "show": "The Prestige TV Podcast",
+    "episode": "The Best TV of the Year (So Far): Shows, Episodes, Performances, and More!",
+    "beeld": "https://megaphone.imgix.net/podcasts/9a6d96c8-8568-11ea-bb1a-d31839e9e8d2/image/2f318433650795e43d621b6a70866519.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
