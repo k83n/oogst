@@ -526,5 +526,16 @@
     "show": "The Prestige TV Podcast",
     "episode": "The Best TV of the Year (So Far): Shows, Episodes, Performances, and More!",
     "beeld": "https://megaphone.imgix.net/podcasts/9a6d96c8-8568-11ea-bb1a-d31839e9e8d2/image/2f318433650795e43d621b6a70866519.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "the-filmcast/2026-08-18.html",
+    "slug": "the-filmcast",
+    "datum": "2026-08-18",
+    "geoogst": "2026-08-20",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "The Filmcast",
+    "episode": "Ep. 888 - The End of Oak Street",
+    "beeld": "https://audioboom.com/i/38227180.jpg"
   }
 ]
