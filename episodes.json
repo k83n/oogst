@@ -580,5 +580,16 @@
     "domein": "muziek",
     "show": "Opgedoken",
     "episode": "Acht platen die weer bovenkomen"
+  },
+  {
+    "path": "the-watch/2026-08-20.html",
+    "slug": "the-watch",
+    "datum": "2026-08-20",
+    "geoogst": "2026-08-21",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "The Watch",
+    "episode": "Is ‘Sterling Point’ the Show of the Summer? Plus, ‘Tires’ Season 3.",
+    "beeld": "https://megaphone.imgix.net/podcasts/f78d6b50-7837-11ea-9c78-731a047fd120/image/e0a00a4163c6242d19c01404d5baf089.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
