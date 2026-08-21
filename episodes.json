@@ -570,5 +570,15 @@
     "show": "De Videogame Show",
     "episode": "#152 - Koetsje Rijden [met oa Red Dead Redemption 2, Pragmata, GTA VI, Beast of Reincarnation, Brievenbus]",
     "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
+  },
+  {
+    "path": "opgedoken/2026-08-21.html",
+    "slug": "opgedoken",
+    "datum": "2026-08-21",
+    "geoogst": "2026-08-21",
+    "type": "opgedoken",
+    "domein": "muziek",
+    "show": "Opgedoken",
+    "episode": "Acht platen die weer bovenkomen"
   }
 ]
