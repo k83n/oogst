@@ -602,5 +602,16 @@
     "show": "Movies Update (The New York Times)",
     "episode": "Movies Update: A new Gen Z horror entry.",
     "beeld": "https://static01.nyt.com/email-images/newsletters/padded-logos/MoviesUpdate.png"
+  },
+  {
+    "path": "filmspotting/2026-08-21.html",
+    "slug": "filmspotting",
+    "datum": "2026-08-21",
+    "geoogst": "2026-08-22",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "Filmspotting",
+    "episode": "The End of Oak Street, plus Tony and Late Fame | #1077",
+    "beeld": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d28227f8-56d8-46d9-b2c5-b3d3012db5ab/83c52568-54c6-438a-8751-b3d3012db5c3/image.jpg?t=1768501110&size=Large"
   }
 ]
