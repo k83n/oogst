@@ -624,5 +624,16 @@
     "show": "The Empire Film Podcast",
     "episode": "Middle-Aged Sex And Death At Camp Empire",
     "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
+  },
+  {
+    "path": "npr-music/2026-08-21.html",
+    "slug": "npr-music",
+    "datum": "2026-08-21",
+    "geoogst": "2026-08-22",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "NPR Music",
+    "episode": "New Music Friday: The best albums out Aug. 21",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   }
 ]
