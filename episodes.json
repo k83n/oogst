@@ -700,5 +700,16 @@
     "show": "The Empire Film Podcast",
     "episode": "Helen Vs Peter Lorre: Dawn Of Justice (ft. guest, Dave Green)",
     "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
+  },
+  {
+    "path": "the-watch/2026-08-27.html",
+    "slug": "the-watch",
+    "datum": "2026-08-27",
+    "geoogst": "2026-08-29",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "The Watch",
+    "episode": "Is 'The Uprising' a Secret Robin Hood Movie? Plus, 'The Pitt' Season 3 Trailer, an 'Adults' S2 Preview, and Late Summer Recommendations.",
+    "beeld": "https://megaphone.imgix.net/podcasts/f78d6b50-7837-11ea-9c78-731a047fd120/image/e0a00a4163c6242d19c01404d5baf089.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
