@@ -689,5 +689,16 @@
     "show": "De Videogame Show",
     "episode": "#153 — Gerda! Er is Duskbloods!",
     "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
+  },
+  {
+    "path": "empire/2026-08-28.html",
+    "slug": "empire",
+    "datum": "2026-08-28",
+    "geoogst": "2026-08-29",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "The Empire Film Podcast",
+    "episode": "Helen Vs Peter Lorre: Dawn Of Justice (ft. guest, Dave Green)",
+    "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
   }
 ]
