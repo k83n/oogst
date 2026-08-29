@@ -722,5 +722,16 @@
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out Aug. 28",
     "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
+  },
+  {
+    "path": "movies-update-nyt/2026-08-28.html",
+    "slug": "movies-update-nyt",
+    "datum": "2026-08-28",
+    "geoogst": "2026-08-29",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "Movies Update (The New York Times)",
+    "episode": "Movies Update: This one thing made Dolly Parton a great movie star",
+    "beeld": "https://static01.nyt.com/images/2026/08/26/multimedia/26cul-dolly-morris-movies-03-chzq/26cul-dolly-morris-movies-03-chzq-videoLarge.jpg"
   }
 ]
