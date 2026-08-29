@@ -711,5 +711,16 @@
     "show": "The Watch",
     "episode": "Is 'The Uprising' a Secret Robin Hood Movie? Plus, 'The Pitt' Season 3 Trailer, an 'Adults' S2 Preview, and Late Summer Recommendations.",
     "beeld": "https://megaphone.imgix.net/podcasts/f78d6b50-7837-11ea-9c78-731a047fd120/image/e0a00a4163c6242d19c01404d5baf089.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "npr-music/2026-08-28.html",
+    "slug": "npr-music",
+    "datum": "2026-08-28",
+    "geoogst": "2026-08-29",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "NPR Music",
+    "episode": "New Music Friday: The best albums out Aug. 28",
+    "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
   }
 ]
