@@ -777,5 +777,16 @@
     "show": "Opgedoken",
     "episode": "Acht platen die weer bovenkomen",
     "beeld": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/cf/77/41cf7744-535f-3679-0ca6-c1b8d3f98c8f/196874557266.jpg/300x300bb.jpg"
+  },
+  {
+    "path": "movies-update-nyt/2026-09-04.html",
+    "slug": "movies-update-nyt",
+    "datum": "2026-09-04",
+    "geoogst": "2026-09-04",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "Movies Update (The New York Times)",
+    "episode": "Movies Update: The one real lesson of the summer box office",
+    "beeld": "https://static01.nyt.com/images/2026/09/06/arts/post-content-notebook-sub-02/post-content-notebook-sub-02-videoLarge.jpg"
   }
 ]
