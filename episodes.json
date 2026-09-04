@@ -788,5 +788,16 @@
     "show": "Movies Update (The New York Times)",
     "episode": "Movies Update: The one real lesson of the summer box office",
     "beeld": "https://static01.nyt.com/images/2026/09/06/arts/post-content-notebook-sub-02/post-content-notebook-sub-02-videoLarge.jpg"
+  },
+  {
+    "path": "boeken-fm/2026-09-02.html",
+    "slug": "boeken-fm",
+    "datum": "2026-09-02",
+    "geoogst": "2026-09-04",
+    "type": "leestips",
+    "domein": "boeken film",
+    "show": "Boeken FM",
+    "episode": "Bestond Homerus wel? | Homerus - Odyssee",
+    "beeld": "https://www.omnycontent.com/d/playlist/61ee9ca4-a1b2-4660-9651-b2b70035edf5/e6e46e6b-430a-4c7a-8a8d-b30c0070083a/ae45be2f-1b95-406b-bc4e-b30c00700849/image.jpg?t=1788330330&size=Large"
   }
 ]
