@@ -843,5 +843,16 @@
     "show": "Skip Intro",
     "episode": "Basta (goed!), Furious (geweldig!) en nog veel meer nieuwe series",
     "beeld": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42300535/91ccb90dffe18fa7.jpg"
+  },
+  {
+    "path": "empire/2026-09-04.html",
+    "slug": "empire",
+    "datum": "2026-09-04",
+    "geoogst": "2026-09-05",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "The Empire Film Podcast",
+    "episode": "Our Favourite Curry (ft. guests Jodie Comer & Michael Sarnoski)",
+    "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
   }
 ]
