@@ -832,5 +832,16 @@
     "show": "Pop Culture Happy Hour (NPR)",
     "episode": "5 great games to keep you from doomscrolling",
     "beeld": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/29/ca/0b/29ca0bf1-aa5b-3da8-9be0-f357793116a7/mza_16337213754400532987.jpg/600x600bb.jpg"
+  },
+  {
+    "path": "skip-intro/2026-09-04.html",
+    "slug": "skip-intro",
+    "datum": "2026-09-04",
+    "geoogst": "2026-09-05",
+    "type": "kijktips",
+    "domein": "tv",
+    "show": "Skip Intro",
+    "episode": "Basta (goed!), Furious (geweldig!) en nog veel meer nieuwe series",
+    "beeld": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42300535/91ccb90dffe18fa7.jpg"
   }
 ]
