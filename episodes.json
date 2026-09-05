@@ -854,5 +854,16 @@
     "show": "The Empire Film Podcast",
     "episode": "Our Favourite Curry (ft. guests Jodie Comer & Michael Sarnoski)",
     "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
+  },
+  {
+    "path": "the-big-picture/2026-09-04.html",
+    "slug": "the-big-picture",
+    "datum": "2026-09-04",
+    "geoogst": "2026-09-05",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "The Big Picture",
+    "episode": "The Black-and-Chrome Action Movie Pack and 'Onslaught' With Michael Biehn and Adam Wingard!",
+    "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/0f8c8aaf40da9412c472b190ab4c13bd.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
