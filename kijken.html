@@ -192,6 +192,16 @@ const TYPEN = [{ t: "f", kleur: "--film", label: "film", meervoud: "films" },
 let eenheid = "uren";
 let dagenHuidig = 0;
 
+// Voor lege-blokmeldingen: "in deze periode" zegt niets bij een korte
+// periode ("week" toont dan al twee keer "periode" op hetzelfde scherm).
+// Vaste frases per periodeknop lezen prettiger; onbekende dagen (kan niet
+// voorkomen bij de huidige knoppen) vallen terug op de oude, generieke tekst.
+const PERIODE_FRASE = { 7: "deze week", 31: "deze maand", 92: "dit kwartaal",
+  183: "dit half jaar", 365: "dit jaar", 0: "in totaal" };
+function periodeFrase() {
+  return PERIODE_FRASE[dagenHuidig] || "in deze periode";
+}
+
 function isoMin(dagen) {
   if (!dagen) return null;
   const d = new Date();
@@ -288,9 +298,9 @@ function tekenMaanden(sel) {
       + "één titel, niet als het aantal afleveringen.";
   houder.innerHTML = ""; as.innerHTML = "";
   if (!sleutels.length) {
-    houder.innerHTML = '<div class="leeg">Niets afgevinkt in deze periode.</div>';
+    houder.innerHTML = `<div class="leeg">Niets afgevinkt ${periodeFrase()}.</div>`;
     toelichting.textContent = basisTekst;
-    vulTabel("maandTabel", koppenTabel, []);
+    vulTabel("maandTabel", koppenTabel, [], `Geen gegevens ${periodeFrase()}.`);
     return;
   }
   // bij lange reeksen alleen de laatste 36 maanden: smaller dan ~6px per
@@ -360,7 +370,7 @@ function tekenMaanden(sel) {
 function tekenRecords(sel) {
   const houder = document.getElementById("records");
   if (!sel.length) {
-    houder.innerHTML = '<div class="leeg">Niets afgevinkt in deze periode.</div>';
+    houder.innerHTML = `<div class="leeg">Niets afgevinkt ${periodeFrase()}.</div>`;
     return;
   }
   const tegel = (waarde, label, sub) =>
@@ -370,7 +380,12 @@ function tekenRecords(sel) {
 
   const metLengte = sel.filter(x => x.m > 0);
   const kaarten = [];
-  if (metLengte.length) {
+  if (metLengte.length === 1) {
+    // met precies één titel zijn "langste" en "kortste" hetzelfde record;
+    // twee identieke tegels naast elkaar oogt als een bug, dus dan telt de
+    // enige titel als losse tegel — vooral bij "week" komt dit voor.
+    kaarten.push(tegel(duurTekst(metLengte[0].m), "enige titel", titelLabel(metLengte[0])));
+  } else if (metLengte.length) {
     const langste = metLengte.reduce((a, b) => b.m > a.m ? b : a);
     const kortste = metLengte.reduce((a, b) => b.m < a.m ? b : a);
     kaarten.push(tegel(duurTekst(langste.m), "langste", titelLabel(langste)));
@@ -399,7 +414,8 @@ function tekenRecords(sel) {
       gat ? `tussen ${formatDatum(van)} en ${formatDatum(tot)}` : ""));
   }
 
-  houder.innerHTML = kaarten.length ? kaarten.join("") : '<div class="leeg">Te weinig gegevens.</div>';
+  houder.innerHTML = kaarten.length ? kaarten.join("")
+    : `<div class="leeg">Te weinig gegevens ${periodeFrase()}.</div>`;
 }
 
 function tekenTop(sel) {
@@ -408,7 +424,7 @@ function tekenTop(sel) {
     .slice(0, 25);
   const houder = document.getElementById("top");
   if (!top.length) {
-    houder.innerHTML = '<div class="leeg">Niets met 4,5 of hoger in deze periode.</div>';
+    houder.innerHTML = `<div class="leeg">Niets met 4,5 of hoger ${periodeFrase()}.</div>`;
     return;
   }
   houder.innerHTML = `<table><thead><tr><th>Titel</th><th>Gezien</th>`
@@ -420,7 +436,7 @@ function tekenTop(sel) {
     }).join("") + "</tbody></table>";
 }
 
-function vulTabel(id, koppen, rijen) {
+function vulTabel(id, koppen, rijen, leegTekst) {
   const el = document.getElementById(id);
   if (!el) return;
   el.innerHTML = rijen.length
@@ -429,7 +445,7 @@ function vulTabel(id, koppen, rijen) {
       + rijen.map(r => `<tr>${r.map((c, i) =>
         `<td${i ? ' class="num"' : ""}>${typeof c === "number" ? nf.format(c) : esc(String(c))}</td>`).join("")}</tr>`).join("")
       + "</tbody></table>"
-    : '<p class="leeg">Geen gegevens.</p>';
+    : `<p class="leeg">${esc(leegTekst || "Geen gegevens.")}</p>`;
 }
 
 function esc(s) {
