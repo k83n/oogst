@@ -82,17 +82,17 @@ h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:19px; margin
 .tip b { font-weight:600; }
 .tip .r { color:var(--dim); display:block; margin-top:2px; }
 
-/* horizontale gestapelde balken — momenteel ongebruikt sinds het
-   decenniumblok verdween, bewust laten staan voor het verhoudingsblok
-   film/serie/boek dat hierna komt */
+/* horizontale balken — sectie "Verhouding": drie losse balken (film/serie/
+   boek), geen stapeling, dus maar één .vul per .spoor. De grid bleef
+   generiek genoeg staan van het decenniumblok dat deze CSS oorspronkelijk
+   gebruikte (met wél gestapelde .vul's per rij) */
 .balken { display:flex; flex-direction:column; gap:7px; }
 .balk { display:grid; grid-template-columns:52px 1fr auto; align-items:center; gap:10px; }
 .balk .naam { color:var(--dim); font-size:12.5px; font-variant-numeric:tabular-nums; text-align:right; }
-/* flex, niet block: een gestapelde balk zet twee vullingen naast elkaar
-   (de afronding zit op het spoor, dat toch al overflow:hidden heeft) */
+/* flex, niet block: een gestapelde balk zou twee vullingen naast elkaar
+   zetten (de afronding zit op het spoor, dat toch al overflow:hidden heeft) */
 .balk .spoor { display:flex; background:var(--grid); border-radius:4px; height:15px; overflow:hidden; }
-/* min-width houdt één afgevinkte titel zichtbaar naast een balk van 80;
-   segmenten met waarde 0 worden niet gerenderd, dus ze duwen niets scheef */
+/* min-width houdt een balk op 0 nog zichtbaar als streepje i.p.v. onzichtbaar */
 .balk .vul { display:block; height:100%; flex:0 0 auto; min-width:2px; }
 .balk .n { color:var(--dim); font-size:12px; font-variant-numeric:tabular-nums; min-width:34px; }
 
@@ -160,6 +160,12 @@ a { color:var(--accent); }
     </div>
     <button class="tabelknop" data-tabel="maandTabel">Toon als tabel</button>
     <div id="maandTabel" class="verborgen"></div>
+  </section>
+
+  <section>
+    <h2>Verhouding</h2>
+    <p class="toelichting" id="verhoudingToelichting">Films, series en boeken naast elkaar, deze periode.</p>
+    <div class="balken" id="verhouding"></div>
   </section>
 
   <section>
@@ -272,8 +278,41 @@ function toon(dagen) {
     : "—";
 
   tekenMaanden(sel);
+  tekenVerhouding(sel);
   tekenRecords(sel);
   tekenTop(sel);
+}
+
+// Verhouding films/series/boeken: drie losse balken (geen stapeling), de
+// langste op 100% en de andere twee daar relatief tegenaan — volgt dezelfde
+// eenheid-schakelaar als "Tijd per maand". Alle drie de balken blijven staan
+// ook als een type op 0 uitkomt (dat ís de verhouding); alleen als alle drie
+// leeg zijn komt de generieke leegmelding.
+const VERHOUDING_LABEL = { f: "films", s: "series", b: "boeken" };
+function tekenVerhouding(sel) {
+  const houder = document.getElementById("verhouding");
+  const toelichting = document.getElementById("verhoudingToelichting");
+  toelichting.textContent = eenheid === "uren"
+    ? "Uren per type, deze periode."
+    : "Aantal titels per type, deze periode — een seizoen telt als één titel.";
+  const rijen = TYPEN.map(({ t, kleur }) => {
+    const items = sel.filter(x => x.t === t);
+    const waarde = eenheid === "uren"
+      ? uren(items.reduce((s, x) => s + (x.m || 0), 0))
+      : items.length;
+    return { t, kleur, waarde };
+  });
+  const max = Math.max(...rijen.map(r => r.waarde));
+  if (!max) {
+    houder.innerHTML = `<div class="leeg">Niets afgevinkt ${periodeFrase()}.</div>`;
+    return;
+  }
+  houder.innerHTML = rijen.map(({ t, kleur, waarde }) => {
+    const pct = (waarde / max) * 100;
+    return `<div class="balk"><span class="naam">${VERHOUDING_LABEL[t]}</span>`
+      + `<span class="spoor"><span class="vul" style="width:${pct}%;background:var(${kleur})"></span></span>`
+      + `<span class="n">${nf.format(waarde)}</span></div>`;
+  }).join("");
 }
 
 function tekenMaanden(sel) {
