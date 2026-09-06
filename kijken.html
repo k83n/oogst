@@ -39,6 +39,8 @@ main { max-width:760px; margin:0 auto; padding:8px 18px 60px; }
 .chip { background:none; cursor:pointer; color:var(--dim); font:600 12.5px Inter,sans-serif; letter-spacing:.05em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:6px 14px; min-height:32px; }
 .chip:hover { color:var(--accent); border-color:var(--accent); }
 .chip.actief { color:var(--bg); background:var(--accent); border-color:var(--accent); }
+/* eenheid-schakelaar boven de tijdgrafiek: zelfde chip, kleinere rij */
+.eenheidRij { display:flex; gap:7px; margin:0 0 14px; }
 
 /* hero + tegels */
 .periodeLabel { text-align:center; color:var(--dim); font-size:12.5px; margin:0 0 4px; }
@@ -147,6 +149,10 @@ a { color:var(--accent); }
       <span><i class="vlak" style="background:var(--serie)"></i>series</span>
       <span><i class="vlak" style="background:var(--boek)"></i>boeken</span>
     </div>
+    <nav class="eenheidRij" id="eenheidRij" aria-label="Eenheid">
+      <button class="chip actief" data-e="uren">Uren</button>
+      <button class="chip" data-e="aantal">Aantal</button>
+    </nav>
     <div class="grafiek">
       <div class="staven" id="maanden"></div>
       <div class="asx" id="maandenAs"></div>
@@ -180,6 +186,11 @@ const uren = m => Math.round(m / 60);
 const TYPEN = [{ t: "f", kleur: "--film", label: "film", meervoud: "films" },
   { t: "s", kleur: "--serie", label: "serie", meervoud: "seizoenen" },
   { t: "b", kleur: "--boek", label: "boek", meervoud: "boeken" }];
+// eenheid geldt alleen voor de tijdgrafiek en het hero-cijfer; de tegels
+// blijven aantallen. dagenHuidig onthoudt de actieve periode zodat de
+// eenheid-schakelaar kan hertekenen zonder de periodeknoppen aan te raken.
+let eenheid = "uren";
+let dagenHuidig = 0;
 
 function isoMin(dagen) {
   if (!dagen) return null;
@@ -222,6 +233,7 @@ function periodeTekst(dagen) {
 }
 
 function toon(dagen) {
+  dagenHuidig = dagen;
   const sel = selecteer(dagen);
   const films = sel.filter(x => x.t === "f");
   const series = sel.filter(x => x.t === "s");
@@ -231,11 +243,16 @@ function toon(dagen) {
   const scores = sel.map(x => x.w).filter(w => w);
 
   document.getElementById("periodeLabel").textContent = periodeTekst(dagen);
-  document.getElementById("hero").textContent = nf.format(uren(minuten));
-  const dagenTekst = minuten >= 60 * 24
-    ? ` · dat is ${nf.format(Math.round(minuten / 60 / 24 * 10) / 10)} etmalen`
-    : "";
-  document.getElementById("heroBij").textContent = "uur gekeken en gelezen" + dagenTekst;
+  if (eenheid === "uren") {
+    document.getElementById("hero").textContent = nf.format(uren(minuten));
+    const dagenTekst = minuten >= 60 * 24
+      ? ` · dat is ${nf.format(Math.round(minuten / 60 / 24 * 10) / 10)} etmalen`
+      : "";
+    document.getElementById("heroBij").textContent = "uur gekeken en gelezen" + dagenTekst;
+  } else {
+    document.getElementById("hero").textContent = nf.format(films.length + series.length + boeken.length);
+    document.getElementById("heroBij").textContent = "films, seizoenen en boeken samen";
+  }
   document.getElementById("tFilms").textContent = nf.format(films.length);
   document.getElementById("tSeizoenen").textContent = nf.format(series.length);
   document.getElementById("tAfl").textContent = nf.format(afl);
@@ -251,28 +268,37 @@ function toon(dagen) {
 
 function tekenMaanden(sel) {
   const per = new Map();
+  // bij "aantal" telt elke titel als 1 — ook een seizoen, niet het aantal
+  // afleveringen (veld "a"); dat blijft alleen in de tegel "afleveringen"
   sel.filter(x => x.d).forEach(x => {
     const k = x.d.slice(0, 7);
     if (!per.has(k)) per.set(k, { f: 0, s: 0, b: 0 });
-    per.get(k)[x.t] += x.m || 0;
+    per.get(k)[x.t] += eenheid === "uren" ? (x.m || 0) : 1;
   });
   const sleutels = [...per.keys()].sort();
   const houder = document.getElementById("maanden");
   const as = document.getElementById("maandenAs");
   const toelichting = document.getElementById("maandToelichting");
+  const koppenTabel = eenheid === "uren"
+    ? ["Maand", "Films (u)", "Series (u)", "Boeken (u)"]
+    : ["Maand", "Films", "Series", "Boeken"];
+  const basisTekst = eenheid === "uren"
+    ? "Uren per maand, films, series en boeken gestapeld."
+    : "Aantal per maand, films, series en boeken gestapeld. Een seizoen telt als "
+      + "één titel, niet als het aantal afleveringen.";
   houder.innerHTML = ""; as.innerHTML = "";
   if (!sleutels.length) {
     houder.innerHTML = '<div class="leeg">Niets afgevinkt in deze periode.</div>';
-    toelichting.textContent = "Uren per maand, films, series en boeken gestapeld.";
-    vulTabel("maandTabel", ["Maand", "Films (u)", "Series (u)", "Boeken (u)"], []);
+    toelichting.textContent = basisTekst;
+    vulTabel("maandTabel", koppenTabel, []);
     return;
   }
   // bij lange reeksen alleen de laatste 36 maanden: smaller dan ~6px per
   // staaf wordt onleesbaar
   const zichtbaar = sleutels.slice(-36);
   toelichting.textContent = zichtbaar.length < sleutels.length
-    ? `Uren per maand, films, series en boeken gestapeld. Toont de laatste ${zichtbaar.length} van ${sleutels.length} maanden.`
-    : "Uren per maand, films, series en boeken gestapeld.";
+    ? `${basisTekst} Toont de laatste ${zichtbaar.length} van ${sleutels.length} maanden.`
+    : basisTekst;
   const max = Math.max(...zichtbaar.map(k => per.get(k).f + per.get(k).s + per.get(k).b));
   const tip = document.getElementById("tip");
 
@@ -297,8 +323,12 @@ function tekenMaanden(sel) {
     const [jr, mnd] = k.split("-");
     const label = `${MAANDEN[+mnd - 1]} ${jr}`;
     kolom.addEventListener("pointerenter", () => {
-      tip.innerHTML = `<b>${label}</b><span class="r">${nf.format(uren(tot))} uur — `
-        + `${nf.format(uren(v.f))} film · ${nf.format(uren(v.s))} serie · ${nf.format(uren(v.b))} boek</span>`;
+      const totTekst = eenheid === "uren"
+        ? `${nf.format(uren(tot))} uur`
+        : `${nf.format(tot)} titel${tot === 1 ? "" : "s"}`;
+      const naar = eenheid === "uren" ? uren : (n => n);
+      tip.innerHTML = `<b>${label}</b><span class="r">${totTekst} — `
+        + `${nf.format(naar(v.f))} film · ${nf.format(naar(v.s))} serie · ${nf.format(naar(v.b))} boek</span>`;
       tip.classList.add("zichtbaar");
       const g = kolom.getBoundingClientRect();
       const h = houder.getBoundingClientRect();
@@ -316,11 +346,12 @@ function tekenMaanden(sel) {
     as.appendChild(s);
   });
 
-  vulTabel("maandTabel", ["Maand", "Films (u)", "Series (u)", "Boeken (u)"],
+  vulTabel("maandTabel", koppenTabel,
     zichtbaar.slice().reverse().map(k => {
       const v = per.get(k);
       const [jr, mnd] = k.split("-");
-      return [`${MAANDEN[+mnd - 1]} ${jr}`, uren(v.f), uren(v.s), uren(v.b)];
+      const naar = eenheid === "uren" ? uren : (n => n);
+      return [`${MAANDEN[+mnd - 1]} ${jr}`, naar(v.f), naar(v.s), naar(v.b)];
     }));
 }
 
@@ -410,6 +441,15 @@ document.querySelectorAll("#filters .chip").forEach(chip => {
     document.querySelectorAll("#filters .chip").forEach(c =>
       c.classList.toggle("actief", c === chip));
     toon(+chip.dataset.p);
+  });
+});
+document.querySelectorAll("#eenheidRij .chip").forEach(chip => {
+  chip.addEventListener("click", () => {
+    if (chip.classList.contains("actief")) return;
+    document.querySelectorAll("#eenheidRij .chip").forEach(c =>
+      c.classList.toggle("actief", c === chip));
+    eenheid = chip.dataset.e;
+    toon(dagenHuidig);
   });
 });
 document.querySelectorAll(".tabelknop").forEach(knop => {
