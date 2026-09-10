@@ -909,5 +909,16 @@
     "show": "De Videogame Show",
     "episode": "#155 - Fred Grimm [met oa The Blood of Dawnwalker, Cairn, TMNT Splintered Fate, Firewatch]",
     "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
+  },
+  {
+    "path": "altlatino/2026-09-09.html",
+    "slug": "altlatino",
+    "datum": "2026-09-09",
+    "geoogst": "2026-09-10",
+    "type": "songs",
+    "domein": "muziek",
+    "show": "Alt.Latino",
+    "episode": "Brazil and Colombia on our minds",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   }
 ]
