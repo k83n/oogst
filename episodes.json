@@ -876,5 +876,16 @@
     "show": "The Big Picture",
     "episode": "The 10 Best Movies at the Telluride and Venice Film Festivals. Plus: Nathan Fielder’s Stunning Elizabeth Holmes Doc.",
     "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/0f8c8aaf40da9412c472b190ab4c13bd.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "the-watch/2026-09-08.html",
+    "slug": "the-watch",
+    "datum": "2026-09-08",
+    "geoogst": "2026-09-10",
+    "type": "kijktips",
+    "domein": "tv",
+    "show": "The Watch",
+    "episode": "The Fall TV We’re Most Excited For. Plus, ‘Lanterns’ E4 and ‘Lioness’ After Dark.",
+    "beeld": "https://megaphone.imgix.net/podcasts/f78d6b50-7837-11ea-9c78-731a047fd120/image/e0a00a4163c6242d19c01404d5baf089.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
