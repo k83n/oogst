@@ -898,5 +898,16 @@
     "show": "TV Is Good",
     "episode": "Colin From Accounts or Wishbone: Who's the goodest boy?",
     "beeld": "https://assets.pippa.io/shows/69f4aa1b9dcd58edd9e316e9/1778158492973-a6dbfd2d-6d9b-45a2-90a7-b65ddcbc944f.jpeg"
+  },
+  {
+    "path": "de-videogame-show/2026-09-09.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-09-09",
+    "geoogst": "2026-09-10",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#155 - Fred Grimm [met oa The Blood of Dawnwalker, Cairn, TMNT Splintered Fate, Firewatch]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
