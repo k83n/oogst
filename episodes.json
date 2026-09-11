@@ -964,5 +964,15 @@
     "show": "Bandsplain",
     "episode": "Best New U.K. Music with Shaad D’Souza, Plus An Interview with Mary in the Junkyard",
     "beeld": "https://megaphone.imgix.net/podcasts/5a6931da-a539-11f0-a327-bb42d980c6cd/image/83cc2fdfb97a392a61abcb7ef572e033.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "opgedoken/2026-09-11.html",
+    "slug": "opgedoken",
+    "datum": "2026-09-11",
+    "geoogst": "2026-09-11",
+    "type": "opgedoken",
+    "domein": "muziek",
+    "show": "Opgedoken",
+    "episode": null
   }
 ]
