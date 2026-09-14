@@ -1,0 +1,26 @@
+# Deze repo publiceert rechtstreeks via GitHub Pages: alles wat hier staat,
+# staat straks online. Daarom hoort er niets in dat niet bedoeld is om te
+# publiceren, en hoort die zeef hier en niet in een globale config — die reist
+# niet mee naar een Cowork-sandbox, een cloud-sessie of een verse kloon.
+# Tot 14 september 2026 had deze repo geen .gitignore; dat er nooit iets
+# doorglipte, is geen bewijs dat het goed stond.
+
+# macOS. Finder maakt deze aan zodra iemand de map opent.
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Per-machine permissies van Claude Code, als er ooit een sessie in deze map
+# draait: paden en toestemmingen van één machine.
+.claude/settings.local.json
+
+# Sleutels en omgevingsvariabelen horen in de sleutelhanger, nooit hier — en
+# hier al helemaal niet, want dit wordt gepubliceerd.
+.env
+.env.*
+
+# Python-bijproducten, mocht er ooit een scriptje in deze map belanden. Kost
+# een regel en sluit de categorie; dat er nu geen Python staat is geen zeef.
+__pycache__/
+*.py[cod]
