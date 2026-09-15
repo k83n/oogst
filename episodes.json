@@ -1031,17 +1031,6 @@
     "beeld": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/6823649/nes-classic-trailer-screencap_1920.jpg?w=1600&h=900&fit=crop"
   },
   {
-    "path": "l-and-q-weekly/2026-09-11.html",
-    "slug": "l-and-q-weekly",
-    "datum": "2026-09-11",
-    "geoogst": "2026-09-15",
-    "type": "albums",
-    "domein": "muziek",
-    "show": "L&Q Weekly (nieuwsbrief)",
-    "episode": "L&Q Weekly — 11 september",
-    "beeld": "https://substackcdn.com/image/fetch/$s_!AWdG!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0a141789-c5c1-428e-a2af-7553fcdf3ba5_1200x842.jpeg"
-  },
-  {
     "path": "best-fit/2026-09-11.html",
     "slug": "best-fit",
     "datum": "2026-09-11",
@@ -1051,5 +1040,16 @@
     "show": "The Line of Best Fit",
     "episode": "The Friday Dispatch — 11 september",
     "beeld": "https://substackcdn.com/image/fetch/$s_!-QOn!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cdac14f-6395-47a5-b694-cc7c7ebc3672_2400x1600.webp"
+  },
+  {
+    "path": "l-and-q-weekly/2026-09-11.html",
+    "slug": "l-and-q-weekly",
+    "datum": "2026-09-11",
+    "geoogst": "2026-09-15",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "L&Q Weekly (nieuwsbrief)",
+    "episode": "L&Q Weekly — 11 september",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!AWdG!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0a141789-c5c1-428e-a2af-7553fcdf3ba5_1200x842.jpeg"
   }
 ]
