@@ -1061,5 +1061,16 @@
     "domein": "muziek",
     "show": "Opgedoken",
     "episode": "Selectie van 18 september 2026"
+  },
+  {
+    "path": "polygon/2026-09-13.html",
+    "slug": "polygon",
+    "datum": "2026-09-13",
+    "geoogst": "2026-09-18",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "Polygon.com",
+    "episode": "10 Near-Perfect GameCube Games Nobody Played",
+    "beeld": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/assets/4489221/gamecube-controller-photo_1280.jpg?w=1200&h=675&fit=crop"
   }
 ]
