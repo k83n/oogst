@@ -1160,5 +1160,16 @@
     "show": "The Empire Film Podcast",
     "episode": "Witches, Leave (ft. guests, Zach Cregger & Austin Abrams)",
     "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
+  },
+  {
+    "path": "de-videogame-show/2026-09-16.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-09-16",
+    "geoogst": "2026-09-21",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#156 - Trips and Shit [met oa The Legend of Zelda: Ocarina Of Time Remake, The Blood of Dawnwalker, AYN Thor, Resident Evil 1, The Talos Principle, Firewatch]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
