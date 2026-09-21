@@ -1105,5 +1105,16 @@
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out Sept. 18",
     "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
+  },
+  {
+    "path": "polygon/2026-09-17.html",
+    "slug": "polygon",
+    "datum": "2026-09-17",
+    "geoogst": "2026-09-21",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "Polygon.com",
+    "episode": "10 Near-Perfect PS4 Games Nobody Played",
+    "beeld": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/anthony-rlvi1td5bm4-unsplash.jpg?w=1600&h=900&fit=crop"
   }
 ]
