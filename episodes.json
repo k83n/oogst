@@ -1140,17 +1140,6 @@
     "beeld": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/psi-ops-the-mindgate-conspiracy-key-art.avif?w=1600&h=900&fit=crop"
   },
   {
-    "path": "empire/2026-09-18.html",
-    "slug": "empire",
-    "datum": "2026-09-18",
-    "geoogst": "2026-09-21",
-    "type": "kijktips",
-    "domein": "film",
-    "show": "The Empire Film Podcast",
-    "episode": "Witches, Leave (ft. guests, Zach Cregger & Austin Abrams)",
-    "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
-  },
-  {
     "path": "de-videogame-show/2026-09-16.html",
     "slug": "de-videogame-show",
     "datum": "2026-09-16",
@@ -1182,5 +1171,16 @@
     "show": "The Filmcast",
     "episode": "Ep. 892 - Hope",
     "beeld": "https://audioboom.com/i/38227180.jpg"
+  },
+  {
+    "path": "empire/2026-09-18.html",
+    "slug": "empire",
+    "datum": "2026-09-18",
+    "geoogst": "2026-09-21",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "The Empire Film Podcast",
+    "episode": "Witches, Leave (ft. guests, Zach Cregger & Austin Abrams)",
+    "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
   }
 ]
