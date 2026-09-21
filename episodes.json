@@ -1140,17 +1140,6 @@
     "beeld": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/psi-ops-the-mindgate-conspiracy-key-art.avif?w=1600&h=900&fit=crop"
   },
   {
-    "path": "the-filmcast/2026-09-15.html",
-    "slug": "the-filmcast",
-    "datum": "2026-09-15",
-    "geoogst": "2026-09-21",
-    "type": "kijktips",
-    "domein": "film tv",
-    "show": "The Filmcast",
-    "episode": "Ep. 892 - Hope",
-    "beeld": "https://audioboom.com/i/38227180.jpg"
-  },
-  {
     "path": "empire/2026-09-18.html",
     "slug": "empire",
     "datum": "2026-09-18",
@@ -1182,5 +1171,16 @@
     "show": "Boeken FM",
     "episode": "Late style Connie | Connie Palmen - Johnnie Walker",
     "beeld": "https://www.omnycontent.com/d/playlist/61ee9ca4-a1b2-4660-9651-b2b70035edf5/e6e46e6b-430a-4c7a-8a8d-b30c0070083a/ae45be2f-1b95-406b-bc4e-b30c00700849/image.jpg?t=1788330330&size=Large"
+  },
+  {
+    "path": "the-filmcast/2026-09-15.html",
+    "slug": "the-filmcast",
+    "datum": "2026-09-15",
+    "geoogst": "2026-09-21",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "The Filmcast",
+    "episode": "Ep. 892 - Hope",
+    "beeld": "https://audioboom.com/i/38227180.jpg"
   }
 ]
