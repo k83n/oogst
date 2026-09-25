@@ -1224,5 +1224,15 @@
     "domein": "boeken",
     "show": "VPRO Boekengids",
     "episode": "VPRO Boekengids — nieuwsbrief van 20 september 2026"
+  },
+  {
+    "path": "iliketowatch-substack-com/2026-09-17.html",
+    "slug": "iliketowatch-substack-com",
+    "datum": "2026-09-17",
+    "geoogst": "2026-09-25",
+    "type": "kijktips",
+    "domein": "tv",
+    "show": "I Like To Watch",
+    "episode": "De 24 tv-series om dit najaar naar uit te kijken"
   }
 ]
