@@ -1214,5 +1214,15 @@
     "domein": "muziek",
     "show": "Opgedoken",
     "episode": "Selectie van 25 september 2026"
+  },
+  {
+    "path": "vpro-boekengids/2026-09-20.html",
+    "slug": "vpro-boekengids",
+    "datum": "2026-09-20",
+    "geoogst": "2026-09-25",
+    "type": "leestips",
+    "domein": "boeken",
+    "show": "VPRO Boekengids",
+    "episode": "VPRO Boekengids — nieuwsbrief van 20 september 2026"
   }
 ]
