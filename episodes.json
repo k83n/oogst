@@ -1300,5 +1300,16 @@
     "domein": "boeken",
     "show": "VPRO Boekengids",
     "episode": "Over een kinderdroom, een gammel vliegtuigje en rauwe levens"
+  },
+  {
+    "path": "de-videogame-show/2026-09-23.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-09-23",
+    "geoogst": "2026-09-28",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#157 - Cool en lief [Met oa. Marvel’s Wolverine, Fire Emblem Fortunes Weave + Nieuws: Nintendo Direct, Sony State of Play, Physinth, Starcraft, World of Warcraft, Gamescom, Steam Frame]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
