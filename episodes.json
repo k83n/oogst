@@ -1311,5 +1311,15 @@
     "show": "De Videogame Show",
     "episode": "#157 - Cool en lief [Met oa. Marvel’s Wolverine, Fire Emblem Fortunes Weave + Nieuws: Nintendo Direct, Sony State of Play, Physinth, Starcraft, World of Warcraft, Gamescom, Steam Frame]",
     "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
+  },
+  {
+    "path": "vpro-cinema/2026-09-26.html",
+    "slug": "vpro-cinema",
+    "datum": "2026-09-26",
+    "geoogst": "2026-09-28",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "VPRO Cinema",
+    "episode": "De sleutel van Pete, en andere mooie documentairetips"
   }
 ]
