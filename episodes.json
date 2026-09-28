@@ -1375,5 +1375,16 @@
     "show": "The Filmcast",
     "episode": "Ep. 893 - Resident Evil",
     "beeld": "https://audioboom.com/i/38227180.jpg"
+  },
+  {
+    "path": "the-big-picture/2026-09-22.html",
+    "slug": "the-big-picture",
+    "datum": "2026-09-22",
+    "geoogst": "2026-09-28",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "The Big Picture",
+    "episode": "2026 Best Picture Power Rankings, and the Best Movies at TIFF. Plus: Zach Cregger on ‘Resident Evil’!",
+    "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/0f8c8aaf40da9412c472b190ab4c13bd.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
