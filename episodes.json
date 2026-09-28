@@ -1246,5 +1246,16 @@
     "show": "Movies Update (The New York Times)",
     "episode": "Movies Update: What you shouldn’t miss this fall.",
     "beeld": "https://static01.nyt.com/email-images/newsletters/padded-logos/MoviesUpdate.png"
+  },
+  {
+    "path": "line-of-best-fit/2026-09-25.html",
+    "slug": "line-of-best-fit",
+    "datum": "2026-09-25",
+    "geoogst": "2026-09-28",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "The Line of Best Fit",
+    "episode": "The Friday Dispatch | The week in music from Best Fit",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!vPTX!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b6553c6-8b57-41dc-af97-610e3c10ac0e_1200x871.webp"
   }
 ]
