@@ -1408,5 +1408,16 @@
     "show": "NPR Music",
     "episode": "Phoebe Bridgers, Gilla Band, Wednesday, and more of the week’s best songs",
     "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
+  },
+  {
+    "path": "de-videogame-show/2026-09-30.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-09-30",
+    "geoogst": "2026-10-02",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#158 Duurzaam met Talent [met oa Witcher 3, Fire Emblem Fortunes Weave, Dawnwalker, Xbox nieuws, Strange Jigsaws, Shining Force 3, Phoenix Wright: Ace Attorney, JRPG’s]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
