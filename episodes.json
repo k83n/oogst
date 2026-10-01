@@ -1386,5 +1386,16 @@
     "show": "The Big Picture",
     "episode": "2026 Best Picture Power Rankings, and the Best Movies at TIFF. Plus: Zach Cregger on ‘Resident Evil’!",
     "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/0f8c8aaf40da9412c472b190ab4c13bd.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "altlatino/2026-09-30.html",
+    "slug": "altlatino",
+    "datum": "2026-09-30",
+    "geoogst": "2026-10-02",
+    "type": "muziek",
+    "domein": "muziek",
+    "show": "Alt.Latino",
+    "episode": "Melissa Aldana and Gonzalo Rubalcaba talk jazz",
+    "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
   }
 ]
