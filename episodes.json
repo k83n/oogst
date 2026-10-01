@@ -1452,5 +1452,16 @@
     "show": "The Big Picture",
     "episode": "Old Movies vs. New Movies: How ‘Avengers: Endgame Encore’ Beat Brad Pitt, Robert Pattinson, and an Awesome Weekend Movie Lineup",
     "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/619ca7b27d9ff21dd43129cfd44688a1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "tv-is-good/2026-09-28.html",
+    "slug": "tv-is-good",
+    "datum": "2026-09-28",
+    "geoogst": "2026-10-02",
+    "type": "kijktips",
+    "domein": "tv boeken",
+    "show": "TV Is Good",
+    "episode": "What fall TV are we excited about?",
+    "beeld": "https://assets.pippa.io/shows/69f4aa1b9dcd58edd9e316e9/1778158492973-a6dbfd2d-6d9b-45a2-90a7-b65ddcbc944f.jpeg"
   }
 ]
