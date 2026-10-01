@@ -1441,5 +1441,16 @@
     "show": "The Filmcast",
     "episode": "Ep. 894 - Primetime",
     "beeld": "https://audioboom.com/i/38227180.jpg"
+  },
+  {
+    "path": "the-big-picture/2026-09-28.html",
+    "slug": "the-big-picture",
+    "datum": "2026-09-28",
+    "geoogst": "2026-10-02",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "The Big Picture",
+    "episode": "Old Movies vs. New Movies: How ‘Avengers: Endgame Encore’ Beat Brad Pitt, Robert Pattinson, and an Awesome Weekend Movie Lineup",
+    "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/619ca7b27d9ff21dd43129cfd44688a1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
