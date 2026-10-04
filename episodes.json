@@ -1516,5 +1516,15 @@
     "domein": "boeken",
     "show": "VPRO Boekengids",
     "episode": "VPRO Boekengids — nieuwsbrief van 4 oktober 2026"
+  },
+  {
+    "path": "movies-update-nyt/2026-10-02.html",
+    "slug": "movies-update-nyt",
+    "datum": "2026-10-02",
+    "geoogst": "2026-10-05",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "Movies Update (The New York Times)",
+    "episode": "Movies Update: Is this Tom Cruise’s worst movie?"
   }
 ]
