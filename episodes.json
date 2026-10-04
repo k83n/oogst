@@ -1473,5 +1473,16 @@
     "domein": "muziek",
     "show": "Opgedoken",
     "episode": "Selectie van 2 oktober 2026"
+  },
+  {
+    "path": "loud-and-quiet/2026-10-02.html",
+    "slug": "loud-and-quiet",
+    "datum": "2026-10-02",
+    "geoogst": "2026-10-05",
+    "type": "muziek",
+    "domein": "muziek",
+    "show": "The Loud And Quiet Podcast",
+    "episode": "L&Q Weekly",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!WmHc!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54f6d7e1-2a99-4e6d-b2b6-4a27d8633121_800x507.jpeg"
   }
 ]
