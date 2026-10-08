@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Videogame Show — 7 oktober 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Oogst">
+<meta property="og:title" content="De Videogame Show — #159 - Beetje Kapot [met Zero Parades, The Blood of Dawnwalker, The Witcher 3, Shining Force 3, CRT avonturen, GOTY]">
+<meta property="og:description" content="Oogst uit De Videogame Show — 7 oktober 2026.">
+<meta property="og:image" content="https://k83n.github.io/oogst/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.extra-kop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:34px 0 2px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">De Videogame Show</div>
+  <h1>#159 - Beetje Kapot [met Zero Parades, The Blood of Dawnwalker, The Witcher 3, Shining Force 3, CRT avonturen, GOTY]</h1>
+  <div class="datum">Aflevering 7 oktober 2026</div>
+  <p class="intro">Maarten en Kees bespreken wat ze spelen: een van de hosts begon aan Zero Parades for Dead Spies en speelde The Blood of Dawnwalker uit, met een uitstapje naar The Witcher 3 ter vergelijking; Maarten speelt Shining Force 3 op een oude CRT-tv. Verder een luisteraarsbrief over waarom menu&#x27;s in zware games haperen en een eerste GOTY-lijstje.</p>
+  
+</header>
+<main>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Zero Parades for Dead Spies</h2><div class="albumtitel">pc (Steam); PS5 vanaf 3 november</div></div><span class="pill">Hoofdonderwerp</span></div>
+    <p class="aanleiding">Een duidelijke aanrader: de host die hem net begon (twee uur, op Steam via een AYN Thor) zat er meteen in en noemt hem een &#x27;disco-like&#x27; met alles wat Disco Elysium goed maakt — droge humor (een deur-dialoog die eindigt met &#x27;that&#x27;s enough door&#x27;), prachtige muziek, sterke voice acting en geschilderde achtergronden waar hij lang naar blijft kijken. Lezen is het spel zelf; daarnaast tabletop-achtige dobbelsteenrollen en een anxiety-meter met stevige straffen. Kanttekening die hij er zelf bij zet: de controverse rond de studio, waar de makers van Disco Elysium uit zijn gewerkt; hij koos ervoor de game toch te kopen en begrijpt wie hem overslaat.</p>
+    <p class="ontvangst">OpenCritic 83/100, 68 recensies</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Zero%20Parades%20for%20Dead%20Spies">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://opencritic.com/game/20490/zero-parades-for-dead-spies">OpenCritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/3751260/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Blood of Dawnwalker</h2><div class="albumtitel">2026</div></div><span class="pill">Uitgespeeld</span></div>
+    <p class="aanleiding">Na zo&#x27;n 35 uur uitgespeeld en &#x27;absoluut een aanrader&#x27;: het debuut van Rebel Wolves (oud-Witcher-ontwikkelaars) staat op 3 in het GOTY-lijstje van de host. Sterk in sfeer, de worldbuilding van de afgesloten vallei, de personages, de vele goed geschreven quests en een einde dat niet alles rechtbreit. Minder: de combat wordt eentonig en is ook op de moeilijkste stand te makkelijk, de loot met stat-bonussen voegt niets toe, de aftellende dertig dagen lieten hem perkpoints oppotten, en de wereld oogt generieker dan The Witcher 3 (&#x27;Unreal Engine 5-moeheid&#x27;).</p>
+    <p class="ontvangst">OpenCritic 84/100, 161 recensies</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Blood%20of%20Dawnwalker">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://opencritic.com/game/20499/the-blood-of-dawnwalker">OpenCritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Witcher 3</h2><div class="albumtitel"></div></div><span class="pill">Ter vergelijking</span></div>
+    <p class="aanleiding">Na Dawnwalker speelde de host een uur van de nieuwe versie: art direction, sound design en de levendigheid van de wereld zijn &#x27;een paar stappen beter&#x27; en de quests nog altijd geweldig. Over de nieuwe versie zelf is hij minder te spreken: de belichting is veranderd en de kleuren zijn te verzadigd, waardoor de duisternis en sfeer van het origineel ontbreken; volgens hem wordt daar inmiddels aan gesleuteld.</p>
+    <p class="ontvangst">OpenCritic 91/100, 25 recensies (The Witcher 3: Wild Hunt - Remastered)</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Witcher%203">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://opencritic.com/game/21276/the-witcher-3-wild-hunt-remastered">OpenCritic</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Shining Force 3</h2><div class="albumtitel">Sega Saturn</div></div><span class="pill">Retro</span></div>
+    <p class="aanleiding">Maarten speelt hem voor de zesde keer, nu op een kleine Sony Trinitron, uit jeugdsentiment. Het politieke verhaal snapt hij nog steeds niet, maar &#x27;de combat is heerlijk&#x27; en daar draait het om. Over de CRT zelf is hij eerlijk: het verschil met een OLED valt mee, al blenden de pixels mooier en speelt het gezelliger.</p>
+    <p class="ontvangst">&quot;Shining Force III is an excellent game. It does everything right and carries the tradition on to the next generation of systems.&quot; (RPGFan)</p>
+    <p class="notion-status">○ Nog niet in mijn Sequel-lijst</p>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Shining%20Force%203">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rpgfan.com/review/shining-force-iii/">RPGFan</a></p>
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/de-videogame-show/7340f460-d0ce-013b-f469-0acc26574db2/159-beetje-kapot-met-zero-parades-the-blood-of-dawnwalker-the-witcher-3-shining-force-3-crt-avonturen-goty/a88a87c0-0c27-489a-acde-291bc2a13b02">De Videogame Show — #159 - Beetje Kapot [met Zero Parades, The Blood of Dawnwalker, The Witcher 3, Shining Force 3, CRT avonturen, GOTY]</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li></ul>
+  </section>
+
+</main>
+<footer>4 games</footer>
+<!-- houdt de Notion-statusregels actueel; zie scripts/tips_status.py -->
+<script src="../tipstatus.js" defer></script>
+</body>
+</html>

@@ -1570,5 +1570,16 @@
     "show": "Alt.Latino",
     "episode": "Tim, The Beatles and all of Brazil",
     "beeld": "https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&c=66&f=jpg"
+  },
+  {
+    "path": "de-videogame-show/2026-10-07.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-10-07",
+    "geoogst": "2026-10-09",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#159 - Beetje Kapot [met Zero Parades, The Blood of Dawnwalker, The Witcher 3, Shining Force 3, CRT avonturen, GOTY]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
