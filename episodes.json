@@ -1613,5 +1613,16 @@
     "domein": "muziek",
     "show": "Opgedoken",
     "episode": "Selectie van 9 oktober 2026"
+  },
+  {
+    "path": "loud-and-quiet/2026-10-09.html",
+    "slug": "loud-and-quiet",
+    "datum": "2026-10-09",
+    "geoogst": "2026-10-12",
+    "type": "albums",
+    "domein": "muziek",
+    "show": "The Loud And Quiet Podcast",
+    "episode": "L&Q Weekly",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!FYef!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3a7fd32-13b5-452d-a148-9c606ea56ddd_800x535.jpeg"
   }
 ]
