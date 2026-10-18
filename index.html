@@ -62,7 +62,9 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .ingangen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 30px; }
 a.ingang { display:block; text-decoration:none; color:var(--tekst); background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:14px 15px; }
 a.ingang:hover { border-color:var(--accent); }
-a.ingang .teken { color:var(--accent); font-size:17px; line-height:1; }
+a.ingang .teken { color:var(--accent); display:block; line-height:1; }
+a.ingang .teken .k-icoon { width:20px; height:20px; vertical-align:top; }
+.k-icoon { fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
 /* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
 a.ingang.breed { grid-column:1 / -1; }
 a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
@@ -89,27 +91,27 @@ a.kaart.later { display:none; }
 <main>
 <div class="ingangen">
   <a class="ingang" href="aanraders.html">
-    <span class="teken">★</span>
+    <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 2.5l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.6-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z"/></svg></span>
     <h2>Aanraders</h2>
     <p>Wat hoog scoorde, van film tot album</p>
   </a>
   <a class="ingang" href="cijfers.html">
-    <span class="teken">▦</span>
+    <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 3h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zM3 8.5h14M3 13h14M8.5 8.5V17"/></svg></span>
     <h2>Cijfers</h2>
     <p>Kijken en luisteren, per periode uitgesplitst</p>
   </a>
   <a class="ingang" href="gids/">
-    <span class="teken">♪</span>
+    <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span>
     <h2>Concertgidsen</h2>
     <p>Voorbereiding op wat je gaat zien</p>
   </a>
   <a class="ingang" href="namen.html">
-    <span class="teken">☰</span>
+    <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7.5 5h9.5M7.5 10h9.5M7.5 15h9.5M3.5 5h.01M3.5 10h.01M3.5 15h.01"/></svg></span>
     <h2>Namen</h2>
     <p>Wie in meer dan één oogst voorkwam</p>
   </a>
   <a class="ingang breed" href="archief-2026.html">
-    <span class="teken">↯</span>
+    <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 4.5a11.5 11.5 0 0111.5 11.5M4 9.5a6.5 6.5 0 016.5 6.5"/><circle cx="4.8" cy="15.2" r="1"/></svg></span>
     <h2>Alle oogsten</h2>
     <p>Het volledige archief — 158 posts</p>
   </a>

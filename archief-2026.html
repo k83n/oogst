@@ -62,7 +62,9 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .ingangen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 30px; }
 a.ingang { display:block; text-decoration:none; color:var(--tekst); background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:14px 15px; }
 a.ingang:hover { border-color:var(--accent); }
-a.ingang .teken { color:var(--accent); font-size:17px; line-height:1; }
+a.ingang .teken { color:var(--accent); display:block; line-height:1; }
+a.ingang .teken .k-icoon { width:20px; height:20px; vertical-align:top; }
+.k-icoon { fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
 /* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
 a.ingang.breed { grid-column:1 / -1; }
 a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
