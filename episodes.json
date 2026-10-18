@@ -1784,5 +1784,16 @@
     "show": "The Big Picture",
     "episode": "You Must See ‘You Can See Everything.’ Plus: Judd Apatow!",
     "beeld": "https://megaphone.imgix.net/podcasts/c31ba87c-781a-11ea-821b-1fddd08f6464/image/619ca7b27d9ff21dd43129cfd44688a1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "empire/2026-10-16.html",
+    "slug": "empire",
+    "datum": "2026-10-16",
+    "geoogst": "2026-10-19",
+    "type": "kijktips",
+    "domein": "film",
+    "show": "The Empire Film Podcast",
+    "episode": "Name That Stath! (ft. Tom Hiddleston & Genden Phuntsok)",
+    "beeld": "https://studio-podplay.imgix.net/img/957d0590187dbae2b3fc418b6e0c7193.png?auto=compress&h=1500&w=1500&s=6a762a9b020795352cb68f92dbc69062"
   }
 ]
