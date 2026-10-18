@@ -1742,5 +1742,15 @@
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out Oct. 16",
     "beeld": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png"
+  },
+  {
+    "path": "vpro-boeken/2026-10-18.html",
+    "slug": "vpro-boeken",
+    "datum": "2026-10-18",
+    "geoogst": "2026-10-19",
+    "type": "leestips",
+    "domein": "boeken",
+    "show": "VPRO Boeken",
+    "episode": "Over Noorse fjorden, Hitchcockvogels en boothuisgeheimen"
   }
 ]
