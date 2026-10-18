@@ -1752,5 +1752,16 @@
     "domein": "boeken",
     "show": "VPRO Boeken",
     "episode": "Over Noorse fjorden, Hitchcockvogels en boothuisgeheimen"
+  },
+  {
+    "path": "de-videogame-show/2026-10-14.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-10-14",
+    "geoogst": "2026-10-19",
+    "type": "speeltips",
+    "domein": "games",
+    "show": "De Videogame Show",
+    "episode": "#160 - De Grote Win [met Orbitals, Phoenix Wright, The Blood of Dawnwalker, Brievenbus]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
