@@ -25,7 +25,7 @@ header { padding:46px 20px 20px; text-align:center; background:radial-gradient(e
 .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
 h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,46px); margin:8px 0 6px; }
 header p { color:var(--dim); font-size:15px; max-width:520px; margin:0 auto; }
-a.rss { display:inline-block; margin-top:14px; color:var(--dim); text-decoration:none; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:4px 12px; }
+a.rss { display:inline-flex; align-items:center; margin-top:14px; color:var(--dim); text-decoration:none; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:4px 12px; }
 a.rss:hover { color:var(--accent); border-color:var(--accent); }
 main { max-width:680px; margin:0 auto; padding:14px 18px 60px; }
 a.kaart { display:flex; align-items:center; gap:16px; text-decoration:none; background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:16px 18px; margin:12px 0; color:var(--tekst); }
@@ -34,7 +34,7 @@ a.kaart:hover { border-color:var(--accent); }
 .kaart-inhoud { flex:1; min-width:0; }
 a.kaart .kaart-kop { display:flex; align-items:center; justify-content:space-between; gap:10px; }
 a.kaart .pod { color:var(--accent); font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:600; }
-a.kaart .badge { color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
+a.kaart .badge { display:inline-flex; align-items:center; gap:5px; color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
 a.kaart h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:20px; margin:4px 0 2px; }
 a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .zoek { margin:18px auto 0; max-width:340px; }
@@ -54,7 +54,8 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
 .terug a:hover { color:var(--accent); }
 .maand { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:30px 0 4px; letter-spacing:.04em; text-transform:uppercase; }
-.sterren { color:var(--accent); letter-spacing:2.5px; }
+.sterren { color:var(--accent); display:inline-flex; gap:2px; vertical-align:middle; }
+.sterren .k-icoon.vol { fill:currentColor; }
 .archief { text-align:center; color:var(--dim); font-size:13px; margin-top:40px; }
 .archief a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
 .archief a:hover { color:var(--accent); }
@@ -64,7 +65,7 @@ a.ingang { display:block; text-decoration:none; color:var(--tekst); background:v
 a.ingang:hover { border-color:var(--accent); }
 a.ingang .teken { color:var(--accent); display:block; line-height:1; }
 a.ingang .teken .k-icoon { width:20px; height:20px; vertical-align:top; }
-.k-icoon { fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.k-icoon { width:1.25em; height:1.25em; vertical-align:-0.25em; flex:none; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
 /* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
 a.ingang.breed { grid-column:1 / -1; }
 a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
@@ -93,7 +94,7 @@ a.kaart.later { display:none; }
 <h2 class="maand" id="m-2026-09" data-maand="2026-09">September 2026</h2>
   <a class="kaart" href="2026-09-10.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://megaphone.imgix.net/podcasts/5a6931da-a539-11f0-a327-bb42d980c6cd/image/83cc2fdfb97a392a61abcb7ef572e033.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span></span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span></span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>Best New U.K. Music with Shaad D’Souza, Plus An Interview with Mary in the Junkyard</h2>
     <div class="datum">10 september 2026</div>
     </div>

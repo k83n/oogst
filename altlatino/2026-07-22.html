@@ -70,6 +70,10 @@ main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
 .bron-noot { opacity:.75; }
 footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
 a { color:var(--accent); }
+.k-icoon { width:1.25em; height:1.25em; vertical-align:-0.25em; flex:none; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.sterren { color:var(--accent); display:inline-flex; gap:2px; vertical-align:middle; }
+.sterren .k-icoon.vol { fill:currentColor; }
+.noot { display:inline-flex; }
 </style>
 </head>
 <body>
@@ -79,7 +83,7 @@ a { color:var(--accent); }
   <h1>Spain wins (at music, too)</h1>
   <div class="datum">Aflevering 22 juli 2026</div>
   <p class="intro">Naar aanleiding van Spanje&#x27;s WK-winst maken Felix Contreras en Ana Maria Sayer een liefdesverklaring aan de Spaanse muziekscene: van de elektronische producers in Madrid en de indierock in het noorden tot de organische jazz-folk van Barcelona.</p>
-  <a class="spotify-knop" href="https://open.spotify.com/playlist/0AuoVFlHLqZ38N9pRUNBZs">▶ Open de playlist <small>in Spotify</small></a>
+  <a class="spotify-knop" href="https://open.spotify.com/playlist/0AuoVFlHLqZ38N9pRUNBZs"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6.5 3.5l9 6.5-9 6.5z"/></svg> Open de playlist <small>in Spotify</small></a>
 </header>
 <main>
 
@@ -87,8 +91,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/53/f3/fc/53f3fccd-2024-789e-8858-c9562cc1edfa/886449216321.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>C. Tangana</h2></div><span class="pill">Tiny Desk-klassieker</span></div>
     <p class="beschrijving">Madrileense artiest/producer, spilfiguur van de nieuwe Spaanse golf; werkte mee aan Rosalía&#x27;s vroege werk en bracht met El Madrileño een ode aan tradities uit de hele Spaanstalige wereld.</p>
     <p class="aanleiding">Aanleiding: Zijn befaamde home-Tiny Desk uit 2021, waarin hij &#x27;Me Maten&#x27; (met Antonio Carmona) debuteerde temidden van de sobremesa-sfeer..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/el-madrile%C3%B1o-live-at-nprs-tiny-desk-single/1562779045?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Me Maten</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/el-madrile%C3%B1o-live-at-nprs-tiny-desk-single/1562779045?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Me Maten</span></li></ul>
     
   </section>
 
@@ -97,7 +101,7 @@ a { color:var(--accent); }
     <p class="beschrijving">Een van de originators van het Madrileense producerscollectief Rusia IDK — regelvrije, elektronische pop die zonder schroom uit alle hoeken van de Spaanstalige muziek plukt.</p>
     <p class="aanleiding">Aanleiding: Zijn nieuwe single &#x27;Baby Baby&#x27;..</p>
     
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Baby Baby</span></li></ul>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Baby Baby</span></li></ul>
     
   </section>
 
@@ -106,7 +110,7 @@ a { color:var(--accent); }
     <p class="beschrijving">Puerto Ricaanse artiest die opereert in de kruisbestuiving tussen Latijns-Amerika en de Madrid-scene.</p>
     <p class="aanleiding">Aanleiding: &#x27;Droga&#x27;, zijn collab met C. Tangana van het album &#x27;Lo Mismo De Siempre&#x27; — een bachata met een urban randje die Ana een van haar favoriete nummers van het jaar noemt..</p>
     
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Droga</span></li></ul>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Droga</span></li></ul>
     
   </section>
 
@@ -114,8 +118,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3a/cb/6a/3acb6a12-6e48-454f-8438-a9fdc5ef22ff/5063549393380_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Bikôkô</h2></div><span class="pill">Alt-pop uit Barcelona</span></div>
     <p class="beschrijving">Eigenzinnige alternatieve artiest met een flamenco-getinte ritmiek en veel Europese dance-invloed; thema&#x27;s van afgunst en mentale gezondheid.</p>
     <p class="aanleiding">Aanleiding: Twee singles van haar project &#x27;A 1 IS BETTER THAN A 0&#x27;: &#x27;Força&#x27; (met AMORE &amp; Irenegarry) en &#x27;La Mano&#x27; (met Crystal Murray)..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/a-1-is-better-than-a-0-ep/1760332465?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Força</span></li><li><span class="noot">♪</span> <span class="titel">La Mano</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/a-1-is-better-than-a-0-ep/1760332465?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Força</span></li><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">La Mano</span></li></ul>
     
   </section>
 
@@ -123,8 +127,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music/v4/9c/11/ff/9c11ffe6-b589-6cfa-a363-be96ef6c8ae6/825646442805.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Buika</h2></div><span class="pill">Flamenco-stem</span></div>
     <p class="beschrijving">Vocaliste uit Palma de Mallorca met een diepe flamenco-stem en een brede muzikale horizon (o.a. een plaat met Chucho Valdés); een grote NPR-favoriet.</p>
     <p class="aanleiding">Aanleiding: Haar Tiny Desk uit 2013 met &#x27;La Nave del Olvido&#x27;..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/la-noche-m%C3%A1s-larga/640810955?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">La Nave del Olvido</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/la-noche-m%C3%A1s-larga/640810955?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">La Nave del Olvido</span></li></ul>
     
   </section>
 
@@ -133,7 +137,7 @@ a { color:var(--accent); }
     <p class="beschrijving">Rauwe indierock/punk-band uit het noorden van Spanje — erfgenamen van de punkgolf die na het einde van de Franco-dictatuur losbarstte.</p>
     <p class="aanleiding">Aanleiding: &#x27;Barrio Somavilla&#x27;, dat Ana live zag op het Monkey Week-festival..</p>
     
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Barrio Somavilla</span></li></ul>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Barrio Somavilla</span></li></ul>
     
   </section>
 
@@ -141,8 +145,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/1c/81/681c81ed-1520-d148-58ab-db942697c3a8/8447352001088.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Lucía Fumero</h2></div><span class="pill">Barcelona jazz-folk</span></div>
     <p class="beschrijving">Pianiste/zangeres uit de organische, lokale Barcelonese scene, waar muziek maken vooral uit vriendschap en samenspel ontstaat.</p>
     <p class="aanleiding">Aanleiding: &#x27;La bamba&#x27; met Rita Payés, van haar dubbelalbum &#x27;Folklore I&#x27; (2024)..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/folklore-i-feat-rita-pay%C3%A9s-magal%C3%AD-datzira-eva-fern%C3%A1ndez/1764005157?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">La bamba</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/folklore-i-feat-rita-pay%C3%A9s-magal%C3%AD-datzira-eva-fern%C3%A1ndez/1764005157?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">La bamba</span></li></ul>
     
   </section>
 
@@ -150,8 +154,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8c/c5/39/8cc5394c-6235-99b3-18e5-7c17a57eba08/196872109009.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Maestro Espada</h2></div><span class="pill">Broerduo</span></div>
     <p class="beschrijving">Duo van twee broers met een warme, akoestische klank en verrassende texturen (tot een Indiase tabla in de percussie aan toe); beholden to no one.</p>
     <p class="aanleiding">Aanleiding: &#x27;La Despedida&#x27;, een van Ana&#x27;s favoriete nummers uit deze scene..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/maestro-espada/1754925754?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">La Despedida</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/maestro-espada/1754925754?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">La Despedida</span></li></ul>
     
   </section>
 

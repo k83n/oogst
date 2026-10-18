@@ -25,7 +25,7 @@ header { padding:46px 20px 20px; text-align:center; background:radial-gradient(e
 .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
 h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,46px); margin:8px 0 6px; }
 header p { color:var(--dim); font-size:15px; max-width:520px; margin:0 auto; }
-a.rss { display:inline-block; margin-top:14px; color:var(--dim); text-decoration:none; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:4px 12px; }
+a.rss { display:inline-flex; align-items:center; margin-top:14px; color:var(--dim); text-decoration:none; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:4px 12px; }
 a.rss:hover { color:var(--accent); border-color:var(--accent); }
 main { max-width:680px; margin:0 auto; padding:14px 18px 60px; }
 a.kaart { display:flex; align-items:center; gap:16px; text-decoration:none; background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:16px 18px; margin:12px 0; color:var(--tekst); }
@@ -34,7 +34,7 @@ a.kaart:hover { border-color:var(--accent); }
 .kaart-inhoud { flex:1; min-width:0; }
 a.kaart .kaart-kop { display:flex; align-items:center; justify-content:space-between; gap:10px; }
 a.kaart .pod { color:var(--accent); font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:600; }
-a.kaart .badge { color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
+a.kaart .badge { display:inline-flex; align-items:center; gap:5px; color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
 a.kaart h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:20px; margin:4px 0 2px; }
 a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .zoek { margin:18px auto 0; max-width:340px; }
@@ -54,7 +54,8 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
 .terug a:hover { color:var(--accent); }
 .maand { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:30px 0 4px; letter-spacing:.04em; text-transform:uppercase; }
-.sterren { color:var(--accent); letter-spacing:2.5px; }
+.sterren { color:var(--accent); display:inline-flex; gap:2px; vertical-align:middle; }
+.sterren .k-icoon.vol { fill:currentColor; }
 .archief { text-align:center; color:var(--dim); font-size:13px; margin-top:40px; }
 .archief a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
 .archief a:hover { color:var(--accent); }
@@ -64,7 +65,7 @@ a.ingang { display:block; text-decoration:none; color:var(--tekst); background:v
 a.ingang:hover { border-color:var(--accent); }
 a.ingang .teken { color:var(--accent); display:block; line-height:1; }
 a.ingang .teken .k-icoon { width:20px; height:20px; vertical-align:top; }
-.k-icoon { fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.k-icoon { width:1.25em; height:1.25em; vertical-align:-0.25em; flex:none; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
 /* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
 a.ingang.breed { grid-column:1 / -1; }
 a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
@@ -93,7 +94,7 @@ a.kaart.later { display:none; }
 <h2 class="maand" id="m-2026-10" data-maand="2026-10">Oktober 2026</h2>
   <a class="kaart" href="opgedoken/2026-10-16.html" data-domein="muziek" data-maand="2026-10">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Selectie van 16 oktober 2026</h2>
     <div class="datum">16 oktober 2026</div>
     </div>
@@ -107,21 +108,21 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="loud-and-quiet/2026-10-09.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!FYef!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3a7fd32-13b5-452d-a148-9c606ea56ddd_800x535.jpeg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>L&amp;Q Weekly</h2>
     <div class="datum">9 oktober 2026</div>
     </div>
   </a>
   <a class="kaart" href="line-of-best-fit/2026-10-09.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!xXYK!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7afba1ad-7d64-4f66-9953-f69151a13668_1200x798.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch | The week in music from Best Fit</h2>
     <div class="datum">9 oktober 2026</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-10-09.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Oct. 9</h2>
     <div class="datum">9 oktober 2026</div>
     </div>
@@ -156,21 +157,21 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="loud-and-quiet/2026-10-07.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://substackcdn.com/feed/podcast/45221/s/163033/ed71c7896d4a88e0ee31e392c0833123.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>Roundtable podcast: 300skullsandcounting and the revival of MySpace screamo</h2>
     <div class="datum">7 oktober 2026</div>
     </div>
   </a>
   <a class="kaart" href="opgedoken/2026-10-09.html" data-domein="muziek" data-maand="2026-10">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Selectie van 9 oktober 2026</h2>
     <div class="datum">9 oktober 2026</div>
     </div>
   </a>
   <a class="kaart" href="altlatino/2026-10-07.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Tim, The Beatles and all of Brazil</h2>
     <div class="datum">7 oktober 2026</div>
     </div>
@@ -205,21 +206,21 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="loud-and-quiet/2026-10-02.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!WmHc!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54f6d7e1-2a99-4e6d-b2b6-4a27d8633121_800x507.jpeg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums · ♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums · <svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>L&amp;Q Weekly</h2>
     <div class="datum">2 oktober 2026</div>
     </div>
   </a>
   <a class="kaart" href="line-of-best-fit/2026-10-02.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!Swp1!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5fb1934-7dfe-47af-ad93-9bc8a3c1ac11_1200x819.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge">◎ albums · ♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums · <svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>The Friday Dispatch | the week in music from Best Fit</h2>
     <div class="datum">2 oktober 2026</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-10-02.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Oct. 2</h2>
     <div class="datum">2 oktober 2026</div>
     </div>
@@ -254,7 +255,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="opgedoken/2026-10-02.html" data-domein="muziek" data-maand="2026-10">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Selectie van 2 oktober 2026</h2>
     <div class="datum">2 oktober 2026</div>
     </div>
@@ -268,7 +269,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="altlatino/2026-09-30.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">◎ albums · ♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums · <svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Melissa Aldana and Gonzalo Rubalcaba talk jazz</h2>
     <div class="datum">30 september 2026</div>
     </div>
@@ -282,7 +283,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-09-29.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Phoebe Bridgers, Gilla Band, Wednesday, and more of the week’s best songs</h2>
     <div class="datum">29 september 2026</div>
     </div>
@@ -325,21 +326,21 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="line-of-best-fit/2026-09-25.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!vPTX!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b6553c6-8b57-41dc-af97-610e3c10ac0e_1200x871.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch | The week in music from Best Fit</h2>
     <div class="datum">25 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="loud-and-quiet/2026-09-25.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!jiwh!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F18863abb-4442-4b83-9f74-899d214ea381_2094x1382.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>L&amp;Q Weekly</h2>
     <div class="datum">25 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-09-25.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Sept. 25</h2>
     <div class="datum">25 september 2026</div>
     </div>
@@ -381,7 +382,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-09-22.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>Lizzy McAlpine, Víkingur Ólafsson plays Bach, and more of the week&#x27;s best songs</h2>
     <div class="datum">22 september 2026</div>
     </div>
@@ -402,7 +403,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="opgedoken/2026-09-25.html" data-domein="muziek" data-maand="2026-09">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Selectie van 25 september 2026</h2>
     <div class="datum">25 september 2026</div>
     </div>
@@ -416,14 +417,14 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="loud-and-quiet/2026-09-18.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!qQQp!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdab77880-ef3d-476c-9880-2b8512a89a4e_800x578.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>L&amp;Q Weekly</h2>
     <div class="datum">18 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="line-of-best-fit/2026-09-18.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!z1jt!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1c5b2091-db82-4af3-aee7-343ba584356a_1200x857.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch | The week in music from Best Fit</h2>
     <div class="datum">18 september 2026</div>
     </div>
@@ -444,7 +445,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-09-18.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Sept. 18</h2>
     <div class="datum">18 september 2026</div>
     </div>
@@ -465,7 +466,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="altlatino/2026-09-16.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Los Texmaniacs keep tradition alive</h2>
     <div class="datum">16 september 2026</div>
     </div>
@@ -486,7 +487,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-09-15.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>M83, Shygirl, FKJ and the best songs we heard this week</h2>
     <div class="datum">15 september 2026</div>
     </div>
@@ -514,7 +515,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="opgedoken/2026-09-18.html" data-domein="muziek" data-maand="2026-09">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Selectie van 18 september 2026</h2>
     <div class="datum">18 september 2026</div>
     </div>
@@ -528,14 +529,14 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="l-and-q-weekly/2026-09-11.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!AWdG!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0a141789-c5c1-428e-a2af-7553fcdf3ba5_1200x842.jpeg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">L&amp;Q Weekly (nieuwsbrief)</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">L&amp;Q Weekly (nieuwsbrief)</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>L&amp;Q Weekly — 11 september</h2>
     <div class="datum">11 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="line-of-best-fit/2026-09-11.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!-QOn!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cdac14f-6395-47a5-b694-cc7c7ebc3672_2400x1600.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch — 11 september</h2>
     <div class="datum">11 september 2026</div>
     </div>
@@ -570,28 +571,28 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="hearing-things/2026-09-11.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://storage.ghost.io/c/72/f7/72f77b03-9993-4be5-b648-4115e28d0ad0/content/images/size/w1200/2026/08/sweepingpromises-2026-promo-45-shawnbrackbill-2247x1500-300.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Hearing Things</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Hearing Things</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Sweeping Promises On the Songs They Want to Soundtrack Their Funerals</h2>
     <div class="datum">11 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-09-11.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Sept. 11</h2>
     <div class="datum">11 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="opgedoken/2026-09-11.html" data-domein="muziek" data-maand="2026-09">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2></h2>
     <div class="datum">11 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="bandsplain/2026-09-10.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://megaphone.imgix.net/podcasts/5a6931da-a539-11f0-a327-bb42d980c6cd/image/83cc2fdfb97a392a61abcb7ef572e033.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Bandsplain</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">Bandsplain</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>Best New U.K. Music with Shaad D’Souza, Plus An Interview with Mary in the Junkyard</h2>
     <div class="datum">10 september 2026</div>
     </div>
@@ -605,7 +606,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="altlatino/2026-09-09.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Brazil and Colombia on our minds</h2>
     <div class="datum">9 september 2026</div>
     </div>
@@ -633,7 +634,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="line-of-best-fit/2026-09-04.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!NUng!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcab8a49e-4ae8-4b3c-84c2-b8aeabea2906_1200x800.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Line of Best Fit</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch</h2>
     <div class="datum">4 september 2026</div>
     </div>
@@ -675,7 +676,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="opgedoken/2026-09-04.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/cf/77/41cf7744-535f-3679-0ca6-c1b8d3f98c8f/196874557266.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Acht platen die weer bovenkomen</h2>
     <div class="datum">4 september 2026</div>
     </div>
@@ -689,21 +690,21 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-09-04.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Sept. 4</h2>
     <div class="datum">4 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="altlatino/2026-09-02.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Guadalajara loves metal?</h2>
     <div class="datum">2 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="loud-and-quiet/2026-09-02.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/feed/podcast/45221/s/163033/ed71c7896d4a88e0ee31e392c0833123.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>Roundtable: The Strokes, Phoebe Bridgers, Charli XCX, and British Prime Ministers’ drugs of choice</h2>
     <div class="datum">2 september 2026</div>
     </div>
@@ -724,7 +725,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-09-01.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Dahi, Kendrick and Amber Mark, Dominic Fike, more</h2>
     <div class="datum">1 september 2026</div>
     </div>
@@ -739,7 +740,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-08-28.html" data-domein="muziek" data-maand="2026-08">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Aug. 28</h2>
     <div class="datum">28 augustus 2026</div>
     </div>
@@ -760,7 +761,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="opgedoken/2026-08-28.html" data-domein="muziek" data-maand="2026-08">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Acht platen die weer bovenkomen</h2>
     <div class="datum">28 augustus 2026</div>
     </div>
@@ -816,14 +817,14 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-08-21.html" data-domein="muziek" data-maand="2026-08">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Aug. 21</h2>
     <div class="datum">21 augustus 2026</div>
     </div>
   </a>
   <a class="kaart" href="opgedoken/2026-08-21.html" data-domein="muziek" data-maand="2026-08">
     <div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Acht platen die weer bovenkomen</h2>
     <div class="datum">21 augustus 2026</div>
     </div>
@@ -844,7 +845,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="altlatino/2026-08-19.html" data-domein="muziek" data-maand="2026-08">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1900x1900+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb0%2Fdc%2Fcccd303b46dd84c8e4736db41487%2F30317de6-2100-4f49-9ec2-eae0125fe65b.jpeg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Electrónica rising in Mexico</h2>
     <div class="datum">19 augustus 2026</div>
     </div>
@@ -879,7 +880,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="opgedoken/2026-08-15.html" data-domein="muziek" data-maand="2026-08">
     <img class="kaart-beeld" src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5b/da/8d/5bda8d04-7f2f-4417-12a0-e039dd011152/886449800193.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge">⟲ opgedoken</span></div>
+    <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
     <h2>Vijf platen uit het archief</h2>
     <div class="datum">15 augustus 2026</div>
     </div>
@@ -942,7 +943,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-08-07.html" data-domein="muziek" data-maand="2026-08">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out Aug. 7</h2>
     <div class="datum">7 augustus 2026</div>
     </div>
@@ -956,7 +957,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="altlatino/2026-08-05.html" data-domein="muziek" data-maand="2026-08">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Ana&#x27;s summer playlist</h2>
     <div class="datum">5 augustus 2026</div>
     </div>
@@ -970,7 +971,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-08-04.html" data-domein="muziek" data-maand="2026-08">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Slayyyter&#x27;s new single, King Princess covers Neil Young</h2>
     <div class="datum">4 augustus 2026</div>
     </div>
@@ -992,7 +993,7 @@ a.kaart.later { display:none; }
 <h2 class="maand" id="m-2026-07" data-maand="2026-07">Juli 2026</h2>
   <a class="kaart" href="npr-music/2026-07-31.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out July 31</h2>
     <div class="datum">31 juli 2026</div>
     </div>
@@ -1013,7 +1014,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="altlatino/2026-07-29.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Is Bill Evans techno?</h2>
     <div class="datum">29 juli 2026</div>
     </div>
@@ -1048,14 +1049,14 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-07-24.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out July 24</h2>
     <div class="datum">24 juli 2026</div>
     </div>
   </a>
   <a class="kaart" href="altlatino/2026-07-22.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Spain wins (at music, too)</h2>
     <div class="datum">22 juli 2026</div>
     </div>
@@ -1069,7 +1070,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-07-21.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Sylvan Esso, Phoebe Bridgers, feeble little horse, more</h2>
     <div class="datum">21 juli 2026</div>
     </div>
@@ -1083,7 +1084,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="npr-music/2026-07-17.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out July 17</h2>
     <div class="datum">17 juli 2026</div>
     </div>
@@ -1111,7 +1112,7 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="loud-and-quiet/2026-07-08.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://substackcdn.com/feed/podcast/45221/s/163033/ed71c7896d4a88e0ee31e392c0833123.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>Roundtable: Kelsey Lu, YHWH Nailgun, Madonna, albums of the year so far</h2>
     <div class="datum">8 juli 2026</div>
     </div>
@@ -1132,70 +1133,70 @@ a.kaart.later { display:none; }
   </a>
   <a class="kaart" href="altlatino/2026-07-15.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Country twang, Brazilian flow</h2>
     <div class="datum">15 juli 2026</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-07-14.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>beabadoobee, The Rolling Stones, Four Tet, more</h2>
     <div class="datum">14 juli 2026</div>
     </div>
   </a>
   <a class="kaart" href="loud-and-quiet/2024-11-28.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!o8vV!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb414724c-f438-4227-b90d-04f74521fc60_1440x951.gif" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Loud And Quiet Podcast</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>Albums of the Year 2024</h2>
     <div class="datum">28 november 2024</div>
     </div>
   </a>
   <a class="kaart" href="guardian/2023-12-26.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://i.guim.co.uk/img/media/f1ccb2116a5750e7cf891d36d55a9bcae670b56d/0_0_5000_3000/master/5000.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctYWdlLTIwMjMucG5n&amp;enable=upscale&amp;s=5416ec9eff4d2dec233f0c3a4460379e" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">The Guardian</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">The Guardian</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The 10 best jazz albums of 2023</h2>
     <div class="datum">26 december 2023</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-07-10.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out July 10</h2>
     <div class="datum">10 juli 2026</div>
     </div>
   </a>
   <a class="kaart" href="altlatino/2026-07-08.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The best Latin music of 2026 (so far)</h2>
     <div class="datum">8 juli 2026</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-07-03.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The best albums of 2026 (so far)</h2>
     <div class="datum">3 juli 2026</div>
     </div>
   </a>
   <a class="kaart" href="npr-music/2026-06-19.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F5e%2Fcce9847a4c6293486671ce4e36c0%2Fnpr-music-podcast-feed-tile.png" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>New Music Friday: The best albums out June 19</h2>
     <div class="datum">19 juni 2026</div>
     </div>
   </a>
   <a class="kaart" href="spin/2026-01-01.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://static.spinmagazine.com/files/2025/12/GettyImages-1362561389-e1767223100733.jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">SPIN</span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span class="pod">SPIN</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The 40 Best Albums From the Last 40 Years That You Probably Didn&#x27;t Hear (But Should&#x27;ve)</h2>
     <div class="datum">1 januari 2026</div>
     </div>
   </a>
   <a class="kaart" href="altlatino/2026-07-01.html" data-domein="muziek" data-maand="2026-07">
     <img class="kaart-beeld" src="https://media.npr.org/assets/img/2022/09/20/alt-latino_podcasttile_npr-network-01-copy_sq-6e0cb86a3ebf2d22a44a42e6a9acf6b0cdbe38b3.jpg?s=1400&amp;c=66&amp;f=jpg" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>Mon Laferte&#x27;s captivating coda</h2>
     <div class="datum">1 juli 2026</div>
     </div>

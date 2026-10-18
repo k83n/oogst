@@ -25,7 +25,7 @@ header { padding:46px 20px 20px; text-align:center; background:radial-gradient(e
 .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
 h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,46px); margin:8px 0 6px; }
 header p { color:var(--dim); font-size:15px; max-width:520px; margin:0 auto; }
-a.rss { display:inline-block; margin-top:14px; color:var(--dim); text-decoration:none; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:4px 12px; }
+a.rss { display:inline-flex; align-items:center; margin-top:14px; color:var(--dim); text-decoration:none; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:4px 12px; }
 a.rss:hover { color:var(--accent); border-color:var(--accent); }
 main { max-width:680px; margin:0 auto; padding:14px 18px 60px; }
 a.kaart { display:flex; align-items:center; gap:16px; text-decoration:none; background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:16px 18px; margin:12px 0; color:var(--tekst); }
@@ -34,7 +34,7 @@ a.kaart:hover { border-color:var(--accent); }
 .kaart-inhoud { flex:1; min-width:0; }
 a.kaart .kaart-kop { display:flex; align-items:center; justify-content:space-between; gap:10px; }
 a.kaart .pod { color:var(--accent); font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:600; }
-a.kaart .badge { color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
+a.kaart .badge { display:inline-flex; align-items:center; gap:5px; color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
 a.kaart h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:20px; margin:4px 0 2px; }
 a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .zoek { margin:18px auto 0; max-width:340px; }
@@ -54,7 +54,8 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
 .terug a:hover { color:var(--accent); }
 .maand { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:30px 0 4px; letter-spacing:.04em; text-transform:uppercase; }
-.sterren { color:var(--accent); letter-spacing:2.5px; }
+.sterren { color:var(--accent); display:inline-flex; gap:2px; vertical-align:middle; }
+.sterren .k-icoon.vol { fill:currentColor; }
 .archief { text-align:center; color:var(--dim); font-size:13px; margin-top:40px; }
 .archief a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
 .archief a:hover { color:var(--accent); }
@@ -64,7 +65,7 @@ a.ingang { display:block; text-decoration:none; color:var(--tekst); background:v
 a.ingang:hover { border-color:var(--accent); }
 a.ingang .teken { color:var(--accent); display:block; line-height:1; }
 a.ingang .teken .k-icoon { width:20px; height:20px; vertical-align:top; }
-.k-icoon { fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.k-icoon { width:1.25em; height:1.25em; vertical-align:-0.25em; flex:none; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
 /* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
 a.ingang.breed { grid-column:1 / -1; }
 a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
@@ -93,14 +94,14 @@ a.kaart.later { display:none; }
 <h2 class="maand" id="m-2026-10" data-maand="2026-10">Oktober 2026</h2>
   <a class="kaart" href="2026-10-09.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!xXYK!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7afba1ad-7d64-4f66-9953-f69151a13668_1200x798.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span></span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span></span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch | The week in music from Best Fit</h2>
     <div class="datum">9 oktober 2026</div>
     </div>
   </a>
   <a class="kaart" href="2026-10-02.html" data-domein="muziek" data-maand="2026-10">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!Swp1!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5fb1934-7dfe-47af-ad93-9bc8a3c1ac11_1200x819.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span></span><span class="badge">◎ albums · ♪ nummers</span></div>
+    <div class="kaart-kop"><span></span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums · <svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg> nummers</span></div>
     <h2>The Friday Dispatch | the week in music from Best Fit</h2>
     <div class="datum">2 oktober 2026</div>
     </div>
@@ -108,28 +109,28 @@ a.kaart.later { display:none; }
 <h2 class="maand" id="m-2026-09" data-maand="2026-09">September 2026</h2>
   <a class="kaart" href="2026-09-25.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!vPTX!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b6553c6-8b57-41dc-af97-610e3c10ac0e_1200x871.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span></span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span></span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch | The week in music from Best Fit</h2>
     <div class="datum">25 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="2026-09-18.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!z1jt!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1c5b2091-db82-4af3-aee7-343ba584356a_1200x857.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span></span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span></span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch | The week in music from Best Fit</h2>
     <div class="datum">18 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="2026-09-11.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!-QOn!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cdac14f-6395-47a5-b694-cc7c7ebc3672_2400x1600.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span></span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span></span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch — 11 september</h2>
     <div class="datum">11 september 2026</div>
     </div>
   </a>
   <a class="kaart" href="2026-09-04.html" data-domein="muziek" data-maand="2026-09">
     <img class="kaart-beeld" src="https://substackcdn.com/image/fetch/$s_!NUng!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcab8a49e-4ae8-4b3c-84c2-b8aeabea2906_1200x800.webp" alt="" loading="lazy"><div class="kaart-inhoud">
-    <div class="kaart-kop"><span></span><span class="badge">◎ albums</span></div>
+    <div class="kaart-kop"><span></span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> albums</span></div>
     <h2>The Friday Dispatch</h2>
     <div class="datum">4 september 2026</div>
     </div>

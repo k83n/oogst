@@ -75,6 +75,10 @@ main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
 .bron-noot { opacity:.75; }
 footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
 a { color:var(--accent); }
+.k-icoon { width:1.25em; height:1.25em; vertical-align:-0.25em; flex:none; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.sterren { color:var(--accent); display:inline-flex; gap:2px; vertical-align:middle; }
+.sterren .k-icoon.vol { fill:currentColor; }
+.noot { display:inline-flex; }
 </style>
 </head>
 <body>
@@ -84,7 +88,7 @@ a { color:var(--accent); }
   <h1>Guadalajara loves metal?</h1>
   <div class="datum">Aflevering 2 september 2026</div>
   <p class="intro">Hosts Felix Contreras en Ana Maria Sayre spelen om beurten nieuwe tracks — deze week extra whiplash: reggae, Chileense jazz, Braziliaanse singer-songwriters, Argentijnse folk en tot slot corridos tumbados vermengd met metal.</p>
-  <a class="spotify-knop" href="https://open.spotify.com/playlist/05zBWUOjhmQFr3prxTphU1">▶ Open de playlist <small>in Spotify</small></a>
+  <a class="spotify-knop" href="https://open.spotify.com/playlist/05zBWUOjhmQFr3prxTphU1"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6.5 3.5l9 6.5-9 6.5z"/></svg> Open de playlist <small>in Spotify</small></a>
 </header>
 <main>
 
@@ -92,8 +96,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/42/4a/cb/424acba4-ceee-c5c1-b833-c857233a9789/820233901314.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Cultura Profética</h2></div><span class="pill">Nieuw album uit</span></div>
     <p class="beschrijving">Puerto Ricaanse reggaeband, actief sinds 1996, bekend om folkloristische invloeden binnen een reggaebasis.</p>
     <p class="aanleiding">Aanleiding: Nieuw album &quot;En Bucle&quot;, met gastbijdrages van Capo (Latin Afrobeats) en oud-lid Bebo Tumán..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/en-bucle/6785949145?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Flaca</span></li><li><span class="noot">♪</span> <span class="titel">Lento</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/en-bucle/6785949145?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Flaca</span></li><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Lento</span></li></ul>
     
   </section>
 
@@ -101,8 +105,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/14/27/26/14272687-6c3c-454d-47f6-232e489629ab/33073.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Claudia Acuña</h2></div><span class="pill">Album uit in juli</span></div>
     <p class="beschrijving">Chileense jazzzangeres.</p>
     <p class="aanleiding">Aanleiding: Album &quot;Ave de Luz: Chilean Jazz &amp; Soul&quot;, eerder deze zomer uitgekomen maar nog niet besproken in de show..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/ave-de-luz-chilean-jazz-soul/6786376595?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Chinga La Cachinga</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/ave-de-luz-chilean-jazz-soul/6786376595?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Chinga La Cachinga</span></li></ul>
     
   </section>
 
@@ -110,8 +114,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/23/2a/8b/232a8bfe-3d7f-1e3b-5b77-f4210f0743ee/196874519189.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Mari Froes</h2></div><span class="pill">Langverwacht debuutalbum</span></div>
     <p class="beschrijving">Braziliaanse (Brasília) zangeres die al langer singles uitbrengt.</p>
     <p class="aanleiding">Aanleiding: Haar langverwachte debuutalbum &quot;Esquina do Sol&quot;..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/esquina-do-sol/6783835265?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Rio Lua</span></li><li><span class="noot">♪</span> <span class="titel">Coco Caramelo</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/esquina-do-sol/6783835265?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Rio Lua</span></li><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Coco Caramelo</span></li></ul>
     
   </section>
 
@@ -119,8 +123,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1b/41/b31b41ed-11e3-6f7a-b596-14697cad2af1/artwork.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Valeria Stewart</h2></div><span class="pill">Debuut volledig album</span></div>
     <p class="beschrijving">In Washington D.C. gevestigde artiest, geboren in Argentinië; folk/country-invloeden met een vleugje Argentijnse folk.</p>
     <p class="aanleiding">Aanleiding: Na een handvol singles nu haar eerste volledige album &quot;On A Wing&quot;..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/on-a-wing/6803405918?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Waiting on Your Love</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/on-a-wing/6803405918?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Waiting on Your Love</span></li></ul>
     
   </section>
 
@@ -128,8 +132,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/26/e9/3826e9e4-2c6b-912e-b297-a32b566818bb/885288038132.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Raquel Dimantas</h2></div><span class="pill">Nieuw album — geschreven tijdens zwangerschap</span></div>
     <p class="beschrijving">Braziliaanse artiest uit de Rio-indiescene, eerder te horen bij Ana Frango Elétrico en bevriend met Tim Bernardes.</p>
     <p class="aanleiding">Aanleiding: Album &quot;Cosmo Dorme&quot; (“Cosmos slaapt”), geschreven terwijl ze zwanger was — de hoes toont haar baby..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/cosmo-dorme/6788848371?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Meu Baby</span></li><li><span class="noot">♪</span> <span class="titel">Mira Que Belo Dia</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/cosmo-dorme/6788848371?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Meu Baby</span></li><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Mira Que Belo Dia</span></li></ul>
     
   </section>
 
@@ -137,8 +141,8 @@ a { color:var(--accent); }
     <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f1/0c/ba/f10cbaa7-e569-10b1-0fc0-66e31c9bfce4/4099964257311.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Ladrones</h2></div><span class="pill">Corridos tumbados metal uit Guadalajara</span></div>
     <p class="beschrijving">Trio uit Guadalajara (Alan Dadesma, Jose Marcario en zanger Zxmyr) dat corridos tumbados combineert met metal.</p>
     <p class="aanleiding">Aanleiding: Volgens de show notes van het album &quot;Arriba La L&quot;; eerdere albums waren &quot;Flow Pesado&quot; (2024) en &quot;Mexican Pesado&quot; (2025)..</p>
-    <a class="apple" href="https://music.apple.com/nl/album/arriba-la-l/6779018509?uo=4">◎ Album op Apple Music →</a>
-    <ul class="nummers"><li><span class="noot">♪</span> <span class="titel">Pa Mis Carnales</span></li><li><span class="noot">♪</span> <span class="titel">Fierro Viejo</span></li></ul>
+    <a class="apple" href="https://music.apple.com/nl/album/arriba-la-l/6779018509?uo=4"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="2"/></svg> Album op Apple Music →</a>
+    <ul class="nummers"><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Pa Mis Carnales</span></li><li><span class="noot"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span> <span class="titel">Fierro Viejo</span></li></ul>
     
   </section>
 
