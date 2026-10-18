@@ -1720,5 +1720,16 @@
     "domein": "muziek",
     "show": "Opgedoken",
     "episode": "Selectie van 16 oktober 2026"
+  },
+  {
+    "path": "line-of-best-fit/2026-10-16.html",
+    "slug": "line-of-best-fit",
+    "datum": "2026-10-16",
+    "geoogst": "2026-10-19",
+    "type": "albums",
+    "domein": "muziek boek film",
+    "show": "The Line of Best Fit",
+    "episode": "The Friday Dispatch | The week in music from Best Fit",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!B3nX!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6d974eb-1d60-48e0-aeaf-5fdbb77bf6de_1200x800.webp"
   }
 ]
