@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" data-theme="dark" data-onderdeel="oogst">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,17 +14,17 @@
 <link rel="icon" type="image/png" href="https://oogst.k83n.net/favicon.png?v=3">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://k83n.net/k83n-1.css">
 <style>
-:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --grid:#262218; }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+:root { --bg:var(--k-bg,#12100d); --kaart:var(--k-kaart,#1c1915); --rand:var(--k-rand,#2c2822); --tekst:var(--k-tekst,#ece5d8); --dim:var(--k-dim,#a89f8d); --accent:var(--k-accent,#e8b04b); --grid:#262218; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; }
 header { padding:40px 20px 18px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
 .terug { text-align:left; max-width:700px; margin:0 auto 14px; }
 .terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
 .terug a:hover { color:var(--accent); }
 .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
-h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(28px,6.5vw,40px); margin:8px 0 6px; }
+h1 { font-size:clamp(28px,6.5vw,40px); margin:8px 0 6px; }
 header p { color:var(--dim); font-size:15px; max-width:520px; margin:0 auto; }
 main { max-width:700px; margin:0 auto; padding:14px 18px 60px; }
 .balk { display:grid; grid-template-columns:1fr auto; gap:4px 12px; padding:13px 0; border-bottom:1px solid var(--grid); }
