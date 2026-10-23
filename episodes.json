@@ -1828,5 +1828,16 @@
     "show": "Bandsplain",
     "episode": "The Best New Music of Summer 2026 With Patrik Sandberg. Plus, an Interview With Jennifer Herrema and Kurt Midness of Black Bananas.",
     "beeld": "https://megaphone.imgix.net/podcasts/5a6931da-a539-11f0-a327-bb42d980c6cd/image/3f6c560ca10fc0bc4b263aadc99fb931.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+    "path": "de-videogame-show/2026-10-21.html",
+    "slug": "de-videogame-show",
+    "datum": "2026-10-21",
+    "geoogst": "2026-10-23",
+    "type": "speeltips",
+    "domein": "games film",
+    "show": "De Videogame Show",
+    "episode": "#161 - Schoolplein voor Orcs [met oa Star Wars Galactic Racer, Lord of The Rings: Shadows of War, Rune Factory Guardians of Azuma]",
+    "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
   }
 ]
