@@ -1839,5 +1839,16 @@
     "show": "De Videogame Show",
     "episode": "#161 - Schoolplein voor Orcs [met oa Star Wars Galactic Racer, Lord of The Rings: Shadows of War, Rune Factory Guardians of Azuma]",
     "beeld": "https://assets.pippa.io/shows/65e06e5abe19080017615433/1709712249377-8111a2d12330f4f1ad8d2fa277ed1adf.jpeg"
+  },
+  {
+    "path": "the-filmcast/2026-10-20.html",
+    "slug": "the-filmcast",
+    "datum": "2026-10-20",
+    "geoogst": "2026-10-23",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "The Filmcast",
+    "episode": "Ep. 897 - Street Fighter (2026)",
+    "beeld": "https://audioboom.com/i/38227180.jpg"
   }
 ]
