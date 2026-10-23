@@ -1817,5 +1817,16 @@
     "show": "The Filmcast",
     "episode": "Ep. 896 - The Social Reckoning",
     "beeld": "https://audioboom.com/i/38227180.jpg"
+  },
+  {
+    "path": "bandsplain/2026-10-22.html",
+    "slug": "bandsplain",
+    "datum": "2026-10-22",
+    "geoogst": "2026-10-23",
+    "type": "albums",
+    "domein": "muziek tv",
+    "show": "Bandsplain",
+    "episode": "The Best New Music of Summer 2026 With Patrik Sandberg. Plus, an Interview With Jennifer Herrema and Kurt Midness of Black Bananas.",
+    "beeld": "https://megaphone.imgix.net/podcasts/5a6931da-a539-11f0-a327-bb42d980c6cd/image/3f6c560ca10fc0bc4b263aadc99fb931.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
 ]
