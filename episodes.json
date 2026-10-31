@@ -1969,5 +1969,15 @@
     "show": "The Filmcast",
     "episode": "Ep. 898 - You Can See Everything",
     "beeld": "https://audioboom.com/i/38227180.jpg"
+  },
+  {
+    "path": "opgedoken/2026-10-30.html",
+    "slug": "opgedoken",
+    "datum": "2026-10-30",
+    "geoogst": "2026-10-31",
+    "type": "opgedoken",
+    "domein": "muziek",
+    "show": "Opgedoken",
+    "episode": "Selectie van 30 oktober 2026"
   }
 ]
