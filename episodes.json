@@ -2032,5 +2032,16 @@
     "domein": "film",
     "show": "VPRO Cinema",
     "episode": "Filmtips van VPRO Cinema — nieuwsbrief van 30 oktober 2026"
+  },
+  {
+    "path": "skip-intro/2026-10-30.html",
+    "slug": "skip-intro",
+    "datum": "2026-10-30",
+    "geoogst": "2026-11-02",
+    "type": "kijktips",
+    "domein": "tv",
+    "show": "Skip Intro",
+    "episode": "Nocturne (eng!), Small Prophets (prachtig!), Dirty Business (woedend makend)",
+    "beeld": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42300535/91ccb90dffe18fa7.jpg"
   }
 ]
