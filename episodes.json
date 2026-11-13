@@ -2151,5 +2151,16 @@
     "domein": "film",
     "show": "Movies Update (The New York Times)",
     "episode": "Movies Update: Club classics"
+  },
+  {
+    "path": "i-like-to-watch/2026-11-05.html",
+    "slug": "i-like-to-watch",
+    "datum": "2026-11-05",
+    "geoogst": "2026-11-13",
+    "type": "kijktips",
+    "domein": "film tv",
+    "show": "I Like To Watch",
+    "episode": "Iedereen - behalve Liev Schreiber - wil viral gaan",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!9-p5!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1d07cfb-5544-4492-b38e-a2a05c855c52_600x314.png"
   }
 ]
