@@ -60,15 +60,38 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .archief a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
 .archief a:hover { color:var(--accent); }
 /* Portaal: de ingangen naast de feed. Alleen de index vult {ingangen}. */
-.ingangen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 30px; }
+.ingangen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 26px; }
 a.ingang { display:block; text-decoration:none; color:var(--tekst); background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:14px 15px; }
 a.ingang:hover { border-color:var(--accent); }
 a.ingang .teken { color:var(--accent); display:block; line-height:1; }
 a.ingang .teken .k-icoon { width:20px; height:20px; vertical-align:top; }
-/* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
+/* over de volle breedte: de tegel van een aankomend concert */
 a.ingang.breed { grid-column:1 / -1; }
 a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
 a.ingang p { color:var(--dim); font-size:13px; margin:0; }
+/* Compacte kop op het portaal (de enige pagina met .ingangen): daar kom je
+   voor de oogsten, niet voor de titel. De andere pagina's houden de ruime kop. */
+header p:empty { display:none; }
+body:has(.ingangen) header { padding:26px 20px 8px; }
+body:has(.ingangen) .logo { width:44px; height:44px; margin-bottom:6px; }
+body:has(.ingangen) h1 { font-size:clamp(22px,5.5vw,28px); margin:4px 0 0; }
+/* shows: dicht in rust, één tik om ze te zien */
+details.shows summary { cursor:pointer; list-style:none; display:inline-block; text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+details.shows summary::-webkit-details-marker { display:none; }
+details.shows summary::after { content:" ▾"; }
+details.shows[open] summary::after { content:" ▴"; }
+details.shows summary:hover { color:var(--accent); }
+details.shows nav { margin-top:10px; line-height:1.9; }
+/* een concert dat nog moet komen: de enige tegel met een datum eraan */
+a.ingang.straks { border-color:var(--accent); }
+/* op het portaal wordt niet gezocht, dus de telregel is daar lege ruimte */
+.ingangen + .telling { display:none; }
+/* filters bij de kaarten i.p.v. in de kop: links, op één regel, schuifbaar */
+.filters.links { justify-content:flex-start; flex-wrap:nowrap; overflow-x:auto; margin:10px -18px 14px; padding:0 18px 2px; scrollbar-width:none; }
+.filters.links::-webkit-scrollbar { display:none; }
+.filters.links .chip { flex:none; }
+a.meer { display:block; text-align:center; margin:18px 0 0; padding:11px 16px; color:var(--dim); text-decoration:none; font-size:14px; font-weight:500; border:1px solid var(--rand); border-radius:999px; }
+a.meer:hover { color:var(--accent); border-color:var(--accent); }
 .sectiekop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 2px; letter-spacing:.04em; text-transform:uppercase; }
 /* Op het portaal staan álle kaarten in de pagina (zoeken en filteren moeten
    over het hele jaar werken), maar in rust tonen we alleen de nieuwste —
@@ -82,11 +105,11 @@ a.kaart.later { display:none; }
 <header>
   <img class="logo" src="logo.svg" alt="" width="72" height="72">
   <div class="boventitel">Oogst</div>
-  <h1>Tips, cijfers en gidsen</h1>
-  <p>Wat ik uit podcasts en artikelen meeneem, plus de overzichten die daaruit volgen.</p>
-  <a class="rss" href="feed.xml"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 4.5a11.5 11.5 0 0111.5 11.5M4 9.5a6.5 6.5 0 016.5 6.5"/><circle cx="4.8" cy="15.2" r="1"/></svg> RSS</a>
-  <div class="zoek"><input id="zoekveld" type="search" placeholder="Zoek op artiest, film, game, album…" aria-label="Zoeken" autocomplete="off"></div>
-  <nav class="filters"><button class="chip actief" data-domein="alles">alles</button><button class="chip" data-domein="muziek">muziek</button><button class="chip" data-domein="film">film</button><button class="chip" data-domein="tv">tv</button><button class="chip" data-domein="games">games</button><button class="chip" data-domein="boeken">boeken</button></nav>
+  <h1>Tips en overzichten</h1>
+  <p></p>
+  
+  
+  
 </header>
 <main>
 <div class="ingangen">
@@ -95,24 +118,15 @@ a.kaart.later { display:none; }
     <h2>Aanraders</h2>
     <p>Wat hoog scoorde, van film tot album</p>
   </a>
-  <a class="ingang" href="gids/">
-    <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 15V4.5l8-1.5v10.5"/><circle cx="6" cy="15" r="2"/><circle cx="14" cy="13.5" r="2"/></svg></span>
-    <h2>Concertgidsen</h2>
-    <p>Voorbereiding op wat je gaat zien</p>
-  </a>
   <a class="ingang" href="namen.html">
     <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7.5 5h9.5M7.5 10h9.5M7.5 15h9.5M3.5 5h.01M3.5 10h.01M3.5 15h.01"/></svg></span>
     <h2>Namen</h2>
     <p>Wie in meer dan één oogst voorkwam</p>
   </a>
-  <a class="ingang breed" href="archief-2026.html">
-    <span class="teken"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 4.5a11.5 11.5 0 0111.5 11.5M4 9.5a6.5 6.5 0 016.5 6.5"/><circle cx="4.8" cy="15.2" r="1"/></svg></span>
-    <h2>Alle oogsten</h2>
-    <p>Het volledige archief — 206 posts</p>
-  </a>
 </div>
 <div class="telling" id="telling"></div>
 <div class="sectiekop">Laatste oogsten</div>
+<nav class="filters links"><button class="chip actief" data-domein="alles">alles</button><button class="chip" data-domein="muziek">muziek</button><button class="chip" data-domein="film">film</button><button class="chip" data-domein="tv">tv</button><button class="chip" data-domein="games">games</button><button class="chip" data-domein="boeken">boeken</button></nav>
   <a class="kaart" href="opgedoken/2026-11-13.html" data-domein="muziek" data-maand="2026-11">
     <div class="kaart-inhoud">
     <div class="kaart-kop"><span class="pod">Opgedoken</span><span class="badge"><svg class="k-icoon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M14.5 3.5L17 6l-2.5 2.5M3 10V9a3 3 0 013-3h11M5.5 16.5L3 14l2.5-2.5M17 10v1a3 3 0 01-3 3H3"/></svg> opgedoken</span></div>
@@ -1555,7 +1569,9 @@ a.kaart.later { display:none; }
     <div class="datum">1 juli 2026</div>
     </div>
   </a>
-<nav class="archief">Shows: <a href="altlatino/">Alt.Latino</a> · <a href="bandsplain/">Bandsplain</a> · <a href="boeken-fm/">Boeken FM</a> · <a href="de-videogame-show/">De Videogame Show</a> · <a href="film-met-cineville/">Film met Cineville</a> · <a href="filmspotting/">Filmspotting</a> · <a href="hearing-things/">Hearing Things</a> · <a href="i-like-to-watch/">I Like To Watch</a> · <a href="l-and-q-weekly/">L&amp;Q Weekly (nieuwsbrief)</a> · <a href="movies-update-nyt/">Movies Update (The New York Times)</a> · <a href="npr-music/">NPR Music</a> · <a href="opgedoken/">Opgedoken</a> · <a href="polygon/">Polygon.com</a> · <a href="pop-culture-happy-hour/">Pop Culture Happy Hour (NPR)</a> · <a href="skip-intro/">Skip Intro</a> · <a href="spin/">SPIN</a> · <a href="the-big-picture/">The Big Picture</a> · <a href="empire/">The Empire Film Podcast</a> · <a href="the-filmcast/">The Filmcast</a> · <a href="guardian/">The Guardian</a> · <a href="line-of-best-fit/">The Line of Best Fit</a> · <a href="loud-and-quiet/">The Loud And Quiet Podcast</a> · <a href="nyt-book-review/">The New York Times Book Review</a> · <a href="prestige-tv-podcast/">The Prestige TV Podcast</a> · <a href="the-watch/">The Watch</a> · <a href="the-x-button-video-game-podcast/">The X Button Video Game Podcast</a> · <a href="tv-is-good/">TV Is Good</a> · <a href="vpro-boeken/">VPRO Boeken</a> · <a href="vpro-boekengids/">VPRO Boekengids</a> · <a href="vpro-cinema/">VPRO Cinema</a></nav>
+<a class="meer" href="archief-2026.html">Alle 206 oogsten, met zoekveld →</a>
+<details class="archief shows"><summary>Shows (30)</summary><nav><a href="altlatino/">Alt.Latino</a> · <a href="bandsplain/">Bandsplain</a> · <a href="boeken-fm/">Boeken FM</a> · <a href="de-videogame-show/">De Videogame Show</a> · <a href="film-met-cineville/">Film met Cineville</a> · <a href="filmspotting/">Filmspotting</a> · <a href="hearing-things/">Hearing Things</a> · <a href="i-like-to-watch/">I Like To Watch</a> · <a href="l-and-q-weekly/">L&amp;Q Weekly (nieuwsbrief)</a> · <a href="movies-update-nyt/">Movies Update (The New York Times)</a> · <a href="npr-music/">NPR Music</a> · <a href="opgedoken/">Opgedoken</a> · <a href="polygon/">Polygon.com</a> · <a href="pop-culture-happy-hour/">Pop Culture Happy Hour (NPR)</a> · <a href="skip-intro/">Skip Intro</a> · <a href="spin/">SPIN</a> · <a href="the-big-picture/">The Big Picture</a> · <a href="empire/">The Empire Film Podcast</a> · <a href="the-filmcast/">The Filmcast</a> · <a href="guardian/">The Guardian</a> · <a href="line-of-best-fit/">The Line of Best Fit</a> · <a href="loud-and-quiet/">The Loud And Quiet Podcast</a> · <a href="nyt-book-review/">The New York Times Book Review</a> · <a href="prestige-tv-podcast/">The Prestige TV Podcast</a> · <a href="the-watch/">The Watch</a> · <a href="the-x-button-video-game-podcast/">The X Button Video Game Podcast</a> · <a href="tv-is-good/">TV Is Good</a> · <a href="vpro-boeken/">VPRO Boeken</a> · <a href="vpro-boekengids/">VPRO Boekengids</a> · <a href="vpro-cinema/">VPRO Cinema</a></nav></details>
+<nav class="archief">Ook: <a href="gids/">Concertgidsen</a></nav>
 <nav class="archief">RSS: <a href="feed.xml">alles</a> · <a href="feed-muziek.xml">muziek</a> · <a href="feed-film.xml">film</a> · <a href="feed-tv.xml">tv</a> · <a href="feed-games.xml">games</a> · <a href="feed-boeken.xml">boeken</a></nav>
 </main>
 <script>
@@ -1563,6 +1579,15 @@ a.kaart.later { display:none; }
   var domein = 'alles', term = '', index = null;
   var veld = document.getElementById('zoekveld');
   var telling = document.getElementById('telling');
+
+  // Tegel van een concert dat inmiddels voorbij is: weg, ook als de pagina
+  // sinds die dag niet opnieuw gebouwd is.
+  var nu = new Date();
+  var vandaag = nu.getFullYear() + '-' + ('0' + (nu.getMonth() + 1)).slice(-2)
+    + '-' + ('0' + nu.getDate()).slice(-2);
+  document.querySelectorAll('[data-tot]').forEach(function (el) {
+    if (el.dataset.tot < vandaag) el.style.display = 'none';
+  });
 
   // de zoekindex bevat per post de besproken namen (artiesten, films,
   // games, albums, nummers); zonder die index zoekt het veld alleen op

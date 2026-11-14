@@ -60,15 +60,38 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 .archief a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
 .archief a:hover { color:var(--accent); }
 /* Portaal: de ingangen naast de feed. Alleen de index vult {ingangen}. */
-.ingangen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 30px; }
+.ingangen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 26px; }
 a.ingang { display:block; text-decoration:none; color:var(--tekst); background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:14px 15px; }
 a.ingang:hover { border-color:var(--accent); }
 a.ingang .teken { color:var(--accent); display:block; line-height:1; }
 a.ingang .teken .k-icoon { width:20px; height:20px; vertical-align:top; }
-/* de feed is de brede ingang onder de vier andere, niet een vijfde weesje */
+/* over de volle breedte: de tegel van een aankomend concert */
 a.ingang.breed { grid-column:1 / -1; }
 a.ingang h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:17px; margin:7px 0 3px; }
 a.ingang p { color:var(--dim); font-size:13px; margin:0; }
+/* Compacte kop op het portaal (de enige pagina met .ingangen): daar kom je
+   voor de oogsten, niet voor de titel. De andere pagina's houden de ruime kop. */
+header p:empty { display:none; }
+body:has(.ingangen) header { padding:26px 20px 8px; }
+body:has(.ingangen) .logo { width:44px; height:44px; margin-bottom:6px; }
+body:has(.ingangen) h1 { font-size:clamp(22px,5.5vw,28px); margin:4px 0 0; }
+/* shows: dicht in rust, één tik om ze te zien */
+details.shows summary { cursor:pointer; list-style:none; display:inline-block; text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+details.shows summary::-webkit-details-marker { display:none; }
+details.shows summary::after { content:" ▾"; }
+details.shows[open] summary::after { content:" ▴"; }
+details.shows summary:hover { color:var(--accent); }
+details.shows nav { margin-top:10px; line-height:1.9; }
+/* een concert dat nog moet komen: de enige tegel met een datum eraan */
+a.ingang.straks { border-color:var(--accent); }
+/* op het portaal wordt niet gezocht, dus de telregel is daar lege ruimte */
+.ingangen + .telling { display:none; }
+/* filters bij de kaarten i.p.v. in de kop: links, op één regel, schuifbaar */
+.filters.links { justify-content:flex-start; flex-wrap:nowrap; overflow-x:auto; margin:10px -18px 14px; padding:0 18px 2px; scrollbar-width:none; }
+.filters.links::-webkit-scrollbar { display:none; }
+.filters.links .chip { flex:none; }
+a.meer { display:block; text-align:center; margin:18px 0 0; padding:11px 16px; color:var(--dim); text-decoration:none; font-size:14px; font-weight:500; border:1px solid var(--rand); border-radius:999px; }
+a.meer:hover { color:var(--accent); border-color:var(--accent); }
 .sectiekop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 2px; letter-spacing:.04em; text-transform:uppercase; }
 /* Op het portaal staan álle kaarten in de pagina (zoeken en filteren moeten
    over het hele jaar werken), maar in rust tonen we alleen de nieuwste —
@@ -206,6 +229,15 @@ a.kaart.later { display:none; }
   var domein = 'alles', term = '', index = null;
   var veld = document.getElementById('zoekveld');
   var telling = document.getElementById('telling');
+
+  // Tegel van een concert dat inmiddels voorbij is: weg, ook als de pagina
+  // sinds die dag niet opnieuw gebouwd is.
+  var nu = new Date();
+  var vandaag = nu.getFullYear() + '-' + ('0' + (nu.getMonth() + 1)).slice(-2)
+    + '-' + ('0' + nu.getDate()).slice(-2);
+  document.querySelectorAll('[data-tot]').forEach(function (el) {
+    if (el.dataset.tot < vandaag) el.style.display = 'none';
+  });
 
   // de zoekindex bevat per post de besproken namen (artiesten, films,
   // games, albums, nummers); zonder die index zoekt het veld alleen op
