@@ -2238,5 +2238,16 @@
     "domein": "muziek",
     "show": "Opgedoken",
     "episode": "Acht platen die weer bovenkomen"
+  },
+  {
+    "path": "loud-and-quiet/2026-11-13.html",
+    "slug": "loud-and-quiet",
+    "datum": "2026-11-13",
+    "geoogst": "2026-11-16",
+    "type": "muziek",
+    "domein": "muziek",
+    "show": "The Loud And Quiet Podcast",
+    "episode": "L&Q Weekly",
+    "beeld": "https://substackcdn.com/image/fetch/$s_!lGaX!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff1fd8af5-1087-4c88-b224-eb3d69f2c3df_1762x1181.jpeg"
   }
 ]
